@@ -197,14 +197,17 @@
     "optLangSystem": {
         "message": "Sistem Varsayılanı"
     },
-    "optLangEn": {
-        "message": "English"
-    },
     "optLangTr": {
         "message": "Türkçe"
     },
+    "optLangAz": {
+        "message": "Azərbaycan dili"
+    },
     "optLangDe": {
         "message": "Deutsch"
+    },
+    "optLangEn": {
+        "message": "English"
     },
     "optLangFr": {
         "message": "Français"
@@ -217,5 +220,8 @@
     },
     "lblVersion": {
         "message": "Sürüm"
+    },
+    "descLanguage": {
+        "message": "Uzantı arayüzü için tercih ettiğiniz dili seçin."
     }
 }

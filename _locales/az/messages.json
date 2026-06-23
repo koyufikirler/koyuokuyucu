@@ -1,0 +1,227 @@
+{
+    "extensionName": {
+        "message": "KOYU OKUYUCU"
+    },
+    "extensionDescription": {
+        "message": "Hər sayta uyğun tünd oxucu. Gecə və gündüz üçün tünd rənglərdən istifadə edin."
+    },
+    "darkModeTitle": {
+        "message": "KOYU OKUYUCU"
+    },
+    "statusOn": {
+        "message": "Açıq"
+    },
+    "statusOff": {
+        "message": "Qapalı"
+    },
+    "statusAuto": {
+        "message": "Avtomatik"
+    },
+    "disableForSite": {
+        "message": "Bu sayt üçün deaktiv et"
+    },
+    "thisSite": {
+        "message": "bu sayt"
+    },
+    "thisPage": {
+        "message": "bu səhifə"
+    },
+    "tabVisuals": {
+        "message": "Görünüş"
+    },
+    "tabMedia": {
+        "message": "Media"
+    },
+    "tabType": {
+        "message": "Şrift"
+    },
+    "tabAuto": {
+        "message": "Avtomatik"
+    },
+    "tabSites": {
+        "message": "Saytlar"
+    },
+    "tabKeys": {
+        "message": "Düymələr"
+    },
+    "lblBrightness": {
+        "message": "Parlaqlıq: "
+    },
+    "lblContrast": {
+        "message": "Kontrast: "
+    },
+    "lblSepia": {
+        "message": "Sepiya (İstilik): "
+    },
+    "lblGrayscale": {
+        "message": "Boz Ton: "
+    },
+    "lblVisProtect": {
+        "message": "🎨 Vizual Qoruma Rejimi"
+    },
+    "descVisProtect": {
+        "message": "Şəkillərdəki və videolardakı orijinal rəngləri qoruyur. Rəngləri tərs çevirmək əvəzinə ağıllı şəkildə qaraldır. <b>Çox şəkil olan saytlar üçün tövsiyə olunur.</b>"
+    },
+    "lblSmartImages": {
+        "message": "Ağıllı Şəkil Qaraltma"
+    },
+    "descSmartImages": {
+        "message": "Göz qamaşmasını azaltmaq üçün şəkilləri solğunlaşdırır. <b>Üzərinə gələrək</b> şəkli işıqlandıra bilərsiniz!"
+    },
+    "lblDynamic": {
+        "message": "🤖 Dinamik Aşkarlama"
+    },
+    "descDynamic": {
+        "message": "CSS dəyişdikdə avtomatik olaraq uyğunlaşır. <b>SPA-lar (React, Vue və s.) üçün vacibdir.</b> Canlı üslub yeniləmələrini izləyir."
+    },
+    "lblPerformance": {
+        "message": "⚡ Performans Rejimi"
+    },
+    "descPerformance": {
+        "message": "Enerji istehlakını azaldır və batareya ömrünü uzadır. Ən az DOM dəyişikliyi üçün ağıllı rəng qorumasını deaktiv edir. <b>Noutbuk istifadəçiləri üçün tövsiyə olunur.</b>"
+    },
+    "lblCustomFonts": {
+        "message": "Özəl Şrift"
+    },
+    "lblFontFamily": {
+        "message": "Şrift Növü"
+    },
+    "optFontSystem": {
+        "message": "Sistem Defoltu"
+    },
+    "optFontSans": {
+        "message": "Sans Serif"
+    },
+    "optFontSerif": {
+        "message": "Serif"
+    },
+    "optFontMono": {
+        "message": "Monospace"
+    },
+    "optFontDyslexic": {
+        "message": "OpenDyslexic (Disleksiya Dostu)"
+    },
+    "lblFontWeight": {
+        "message": "Şrift Qalınlığı: "
+    },
+    "lblActivationMode": {
+        "message": "Aktivləşdirmə Rejimi"
+    },
+    "optModeManual": {
+        "message": "Mexaniki (Klikləyərək)"
+    },
+    "optModeSystem": {
+        "message": "Sistem Görünüşünü İzlə"
+    },
+    "optModeTime": {
+        "message": "Zaman Qrafiki"
+    },
+    "lblStartTime": {
+        "message": "Başlama Zamanı (Gün Batımı)"
+    },
+    "lblEndTime": {
+        "message": "Bitmə Zamanı (Gün Doğumu)"
+    },
+    "descAutoInfoManual": {
+        "message": "Qaranlıq rejimin nə vaxt avtomatik açılacağını idarə edir."
+    },
+    "descAutoInfoSystem": {
+        "message": "Qaranlıq rejim sisteminizin ümumi görünüş parametrlərinə əsasən işləyir."
+    },
+    "descAutoInfoTime": {
+        "message": "Qaranlıq rejim təyin olunmuş vaxt intervalında açılır/bağlanır."
+    },
+    "subTabWhitelist": {
+        "message": "Yalnız Siyahı"
+    },
+    "subTabBlacklist": {
+        "message": "Siyahını İstisna Et"
+    },
+    "btnAdd": {
+        "message": "Əlavə et"
+    },
+    "lblCurrentSite": {
+        "message": "Cari: "
+    },
+    "btnAddCurrent": {
+        "message": "Cari Saytı Əlavə Et"
+    },
+    "lblEmptyList": {
+        "message": "Siyahı boşdur"
+    },
+    "lblHotkeySite": {
+        "message": "Sayt əlavə etmə qısayolu: "
+    },
+    "lblToggleExt": {
+        "message": "Uzantını Aç/Qapat"
+    },
+    "lblAddRemoveSite": {
+        "message": "Cari Saytı Əlavə Et/Çıxart"
+    },
+    "descKeysInfo": {
+        "message": "Bir qutuya klikləyin və qeyd etmək üçün düymələrə basın."
+    },
+    "lblFooter": {
+        "message": "Dəyişikliklər avtomatik yadda saxlanılır"
+    },
+    "fontWeightNormal": {
+        "message": "Normal"
+    },
+    "fontWeightMedium": {
+        "message": "Orta"
+    },
+    "fontWeightBold": {
+        "message": "Qalın"
+    },
+    "shortcutNone": {
+        "message": "Yoxdur"
+    },
+    "shortcutPressKeys": {
+        "message": "Düymələrə basın..."
+    },
+    "lblSettings": {
+        "message": "Ayarlar"
+    },
+    "lblAboutUs": {
+        "message": "Haqqımızda"
+    },
+    "lblLanguage": {
+        "message": "Dil"
+    },
+    "lblClose": {
+        "message": "Bağla"
+    },
+    "descAboutUs": {
+        "message": "KOYU OKUYUCU, yaxşı bir oxu təcrübəsi üçün hazırlanmış dinamik və tam funksiyalı bir tünd rejim uzantısıdır."
+    },
+    "optLangSystem": {
+        "message": "Sistem Defoltu"
+    },
+    "optLangTr": {
+        "message": "Türkçe"
+    },
+    "optLangAz": {
+        "message": "Azərbaycan dili"
+    },
+    "optLangDe": {
+        "message": "Deutsch"
+    },
+    "optLangEn": {
+        "message": "English"
+    },
+    "optLangFr": {
+        "message": "Français"
+    },
+    "optLangJa": {
+        "message": "日本語"
+    },
+    "optLangRu": {
+        "message": "Русский"
+    },
+    "lblVersion": {
+        "message": "Versiya"
+    },
+    "descLanguage": {
+        "message": "Uzantı interfeysi üçün üstünlük verdiyiniz dili seçin."
+    }
+}

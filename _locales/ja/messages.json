@@ -197,14 +197,17 @@
     "optLangSystem": {
         "message": "システムデフォルト"
     },
-    "optLangEn": {
-        "message": "English"
-    },
     "optLangTr": {
         "message": "Türkçe"
     },
+    "optLangAz": {
+        "message": "Azərbaycan dili"
+    },
     "optLangDe": {
         "message": "Deutsch"
+    },
+    "optLangEn": {
+        "message": "English"
     },
     "optLangFr": {
         "message": "Français"
@@ -217,5 +220,8 @@
     },
     "lblVersion": {
         "message": "バージョン"
+    },
+    "descLanguage": {
+        "message": "拡張機能インターフェースの優先言語を選択してください。"
     }
 }

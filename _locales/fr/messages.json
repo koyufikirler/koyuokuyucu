@@ -197,14 +197,17 @@
     "optLangSystem": {
         "message": "Défaut du système"
     },
-    "optLangEn": {
-        "message": "English"
-    },
     "optLangTr": {
         "message": "Türkçe"
     },
+    "optLangAz": {
+        "message": "Azərbaycan dili"
+    },
     "optLangDe": {
         "message": "Deutsch"
+    },
+    "optLangEn": {
+        "message": "English"
     },
     "optLangFr": {
         "message": "Français"
@@ -217,5 +220,8 @@
     },
     "lblVersion": {
         "message": "Version"
+    },
+    "descLanguage": {
+        "message": "Choisissez votre langue préférée pour l'interface de l'extension."
     }
 }
