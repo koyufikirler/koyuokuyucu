@@ -1,5 +1,8 @@
 # <img src="icons/icon.png" width="40" height="40" valign="middle"> KOYU OKUYUCU
 
+<a href="https://addons.mozilla.org/tr/firefox/addon/koyu-okuyucu/"><img src="https://img.shields.io/badge/firefox-141e24.svg?style=for-the-badge&logo=firefox&logoColor=red" style="vertical-align: middle; margin-right: 5px;" alt="Firefox"></a>
+<a href="https://microsoftedge.microsoft.com/addons/detail/koyu-okuyucu/bccnfldlfepakpidbfoghegjbgkeepfe"><img src="https://img.shields.io/badge/edge-141e24.svg?style=for-the-badge&logo=edge" style="vertical-align: middle;" alt="Edge"></a>
+
 Koyu Okuyucu is a premium, feature-rich CHROME, FIREFOX, EDGE browser extension that brings a highly customizable, gorgeous dark mode experience to every website you visit. Designed for eye comfort, visual protection, and speed, it gives you complete control over how pages render.
 
 ## ✨ Features
