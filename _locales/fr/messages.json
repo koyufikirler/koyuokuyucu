@@ -223,5 +223,32 @@
     },
     "descLanguage": {
         "message": "Choisissez votre langue préférée pour l'interface de l'extension."
+    },
+    "lblAppearance": {
+        "message": "Apparence"
+    },
+    "descAppearance": {
+        "message": "Choisissez un thème visuel pour la fenêtre contextuelle de l'extension."
+    },
+    "themeDefault": {
+        "message": "Par défaut"
+    },
+    "themeLight": {
+        "message": "Clair"
+    },
+    "themeDark": {
+        "message": "Sombre"
+    },
+    "themeBlack": {
+        "message": "Noir"
+    },
+    "themeWhite": {
+        "message": "Blanc"
+    },
+    "themeSepia": {
+        "message": "Sépia"
+    },
+    "themeBlue": {
+        "message": "Nuit bleue"
     }
 }

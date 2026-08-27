@@ -223,5 +223,32 @@
     },
     "descLanguage": {
         "message": "Uzantı interfeysi üçün üstünlük verdiyiniz dili seçin."
+    },
+    "lblAppearance": {
+        "message": "Görünüş"
+    },
+    "descAppearance": {
+        "message": "Genişlənmə pəncərəsi üçün vizual tema seçin."
+    },
+    "themeDefault": {
+        "message": "Varsayılan"
+    },
+    "themeLight": {
+        "message": "Açıq"
+    },
+    "themeDark": {
+        "message": "Qaranlıq"
+    },
+    "themeBlack": {
+        "message": "Qara"
+    },
+    "themeWhite": {
+        "message": "Ağ"
+    },
+    "themeSepia": {
+        "message": "Sepya"
+    },
+    "themeBlue": {
+        "message": "Mavi Gecə"
     }
 }

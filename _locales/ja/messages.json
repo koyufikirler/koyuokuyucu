@@ -223,5 +223,32 @@
     },
     "descLanguage": {
         "message": "拡張機能インターフェースの優先言語を選択してください。"
+    },
+    "lblAppearance": {
+        "message": "外観"
+    },
+    "descAppearance": {
+        "message": "拡張機能ポップアップの外観テーマを選択してください。"
+    },
+    "themeDefault": {
+        "message": "デフォルト"
+    },
+    "themeLight": {
+        "message": "ライト"
+    },
+    "themeDark": {
+        "message": "ダーク"
+    },
+    "themeBlack": {
+        "message": "ブラック"
+    },
+    "themeWhite": {
+        "message": "ホワイト"
+    },
+    "themeSepia": {
+        "message": "セピア"
+    },
+    "themeBlue": {
+        "message": "ブルーナイト"
     }
 }

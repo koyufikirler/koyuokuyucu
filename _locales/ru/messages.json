@@ -223,5 +223,32 @@
     },
     "descLanguage": {
         "message": "Выберите предпочитаемый язык для интерфейса расширения."
+    },
+    "lblAppearance": {
+        "message": "Внешний вид"
+    },
+    "descAppearance": {
+        "message": "Выберите визуальную тему для всплывающего окна расширения."
+    },
+    "themeDefault": {
+        "message": "По умолчанию"
+    },
+    "themeLight": {
+        "message": "Светлая"
+    },
+    "themeDark": {
+        "message": "Тёмная"
+    },
+    "themeBlack": {
+        "message": "Чёрная"
+    },
+    "themeWhite": {
+        "message": "Белая"
+    },
+    "themeSepia": {
+        "message": "Сепия"
+    },
+    "themeBlue": {
+        "message": "Синяя ночь"
     }
 }

@@ -223,5 +223,32 @@
     },
     "descLanguage": {
         "message": "Wählen Sie Ihre bevorzugte Sprache für die Benutzeroberfläche der Erweiterung."
+    },
+    "lblAppearance": {
+        "message": "Darstellung"
+    },
+    "descAppearance": {
+        "message": "Wählen Sie ein visuelles Design für das Erweiterungs-Popup."
+    },
+    "themeDefault": {
+        "message": "Standard"
+    },
+    "themeLight": {
+        "message": "Hell"
+    },
+    "themeDark": {
+        "message": "Dunkel"
+    },
+    "themeBlack": {
+        "message": "Schwarz"
+    },
+    "themeWhite": {
+        "message": "Weiß"
+    },
+    "themeSepia": {
+        "message": "Sepia"
+    },
+    "themeBlue": {
+        "message": "Blaue Nacht"
     }
 }

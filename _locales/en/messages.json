@@ -223,5 +223,32 @@
     },
     "descLanguage": {
         "message": "Choose your preferred language for the extension interface."
+    },
+    "lblAppearance": {
+        "message": "Appearance"
+    },
+    "descAppearance": {
+        "message": "Choose a visual theme for the extension popup."
+    },
+    "themeDefault": {
+        "message": "Default"
+    },
+    "themeLight": {
+        "message": "Light"
+    },
+    "themeDark": {
+        "message": "Dark"
+    },
+    "themeBlack": {
+        "message": "Black"
+    },
+    "themeWhite": {
+        "message": "White"
+    },
+    "themeSepia": {
+        "message": "Sepia"
+    },
+    "themeBlue": {
+        "message": "Blue Night"
     }
 }

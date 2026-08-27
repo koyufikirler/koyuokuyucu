@@ -223,5 +223,32 @@
     },
     "descLanguage": {
         "message": "Uzantı arayüzü için tercih ettiğiniz dili seçin."
+    },
+    "lblAppearance": {
+        "message": "Görünüm"
+    },
+    "descAppearance": {
+        "message": "Uzantı açılır penceresi için bir görsel tema seçin."
+    },
+    "themeDefault": {
+        "message": "Varsayılan"
+    },
+    "themeLight": {
+        "message": "Açık"
+    },
+    "themeDark": {
+        "message": "Koyu"
+    },
+    "themeBlack": {
+        "message": "Siyah"
+    },
+    "themeWhite": {
+        "message": "Beyaz"
+    },
+    "themeSepia": {
+        "message": "Sepya"
+    },
+    "themeBlue": {
+        "message": "Mavi Gece"
     }
 }
