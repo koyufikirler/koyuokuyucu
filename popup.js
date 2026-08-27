@@ -93,6 +93,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const settingsPanels = document.querySelectorAll('.settings-panel');
     const languageSelect = document.getElementById('languageSelect');
     const appVersion = document.getElementById('appVersion');
+    const themeSwatches = document.querySelectorAll('.theme-swatch');
+
+    const THEME_CLASSES = ['theme-light', 'theme-dark', 'theme-black', 'theme-white', 'theme-sepia', 'theme-blue'];
+
+    function applyTheme(themeName) {
+        THEME_CLASSES.forEach(cls => document.body.classList.remove(cls));
+        if (themeName && themeName !== 'default' && THEME_CLASSES.includes('theme-' + themeName)) {
+            document.body.classList.add('theme-' + themeName);
+        }
+        themeSwatches.forEach(sw => {
+            if (sw.dataset.theme === themeName) sw.classList.add('active');
+            else sw.classList.remove('active');
+        });
+    }
 
     if (appVersion) {
         appVersion.textContent = browser.runtime.getManifest().version;
@@ -133,6 +147,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    themeSwatches.forEach(sw => {
+        sw.addEventListener('click', () => {
+            if (!currentSettings) return;
+            const theme = sw.dataset.theme;
+            currentSettings.uiTheme = theme;
+            applyTheme(theme);
+            broadcastSettings();
+        });
+    });
 
     async function setLanguageAndApply(lang) {
         if (!lang || lang === 'system') {
@@ -353,6 +377,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 endTime: timeEnd.value
             },
             language: languageSelect ? languageSelect.value : 'system',
+            uiTheme: currentSettings.uiTheme || 'default',
             shortcut: currentSettings.shortcut, // Preserve
             shortcutSite: currentSettings.shortcutSite, // Preserve
             siteList: {
@@ -420,6 +445,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 fontFamily: 'system',
                 fontWeight: 0,
                 automation: { mode: 'manual', startTime: '19:00', endTime: '07:00' },
+                language: 'system',
+                uiTheme: 'default',
                 shortcut: null,
                 shortcutSite: null,
                 siteList: { mode: 'blacklist', blacklist: [], whitelist: [] }
@@ -433,8 +460,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (s.visualProtection === undefined) s.visualProtection = false;
             if (s.dynamicDetection === undefined) s.dynamicDetection = true;
             if (!s.language) s.language = 'system';
+            if (!s.uiTheme) s.uiTheme = 'default';
 
             currentSettings = s;
+            applyTheme(s.uiTheme);
             if (languageSelect) languageSelect.value = s.language;
             setLanguageAndApply(s.language);
 

@@ -9,23 +9,130 @@
             --primary-color: #007aff;
             --bg-color: #f5f5f7;
             --text-color: #1d1d1f;
-            --text-muted: #86868b;
-            --border-color: #e5e5e5;
+            --text-muted: #515154;
+            --border-color: #d2d2d7;
             --tab-bg: #ffffff;
             --panel-bg: #ffffff;
             --accent-orange: #ff9500;
             --danger-color: #ff3b30;
+            --sidebar-bg: rgba(0, 0, 0, 0.03);
+            --surface-soft: rgba(0, 0, 0, 0.03);
+            --overlay-bg-rgb: 255, 255, 255;
+            --overlay-bg-alpha: 0.82;
         }
 
         @media (prefers-color-scheme: dark) {
             :root {
                 --bg-color: #000000;
                 --text-color: #f5f5f7;
-                --text-muted: #a1a1a6;
-                --border-color: #333336;
+                --text-muted: #8e8e93;
+                --border-color: #38383a;
                 --tab-bg: #1c1c1e;
                 --panel-bg: #1c1c1e;
+                --sidebar-bg: rgba(255, 255, 255, 0.05);
+                --surface-soft: rgba(255, 255, 255, 0.05);
+                --overlay-bg-rgb: 28, 28, 30;
+                --overlay-bg-alpha: 0.78;
             }
+        }
+
+        /* Theme Overrides: applied to <body> */
+        body.theme-light {
+            --bg-color: #f2f2f7;
+            --text-color: #000000;
+            --text-muted: #3c3c43;
+            --border-color: #c7c7cc;
+            --tab-bg: #ffffff;
+            --panel-bg: #ffffff;
+            --sidebar-bg: rgba(60, 60, 67, 0.08);
+            --surface-soft: rgba(60, 60, 67, 0.06);
+            --overlay-bg-rgb: 255, 255, 255;
+            --overlay-bg-alpha: 0.92;
+        }
+
+        body.theme-dark {
+            --bg-color: #000000;
+            --text-color: #ffffff;
+            --text-muted: #8e8e93;
+            --border-color: #38383a;
+            --tab-bg: #1c1c1e;
+            --panel-bg: #1c1c1e;
+            --sidebar-bg: rgba(255, 255, 255, 0.06);
+            --surface-soft: rgba(255, 255, 255, 0.06);
+            --overlay-bg-rgb: 28, 28, 30;
+            --overlay-bg-alpha: 0.85;
+        }
+
+        body.theme-black {
+            --bg-color: #000000;
+            --text-color: #ffffff;
+            --text-muted: #a1a1a6;
+            --border-color: #1f1f1f;
+            --tab-bg: #000000;
+            --panel-bg: #000000;
+            --sidebar-bg: rgba(255, 255, 255, 0.04);
+            --surface-soft: rgba(255, 255, 255, 0.04);
+            --overlay-bg-rgb: 0, 0, 0;
+            --overlay-bg-alpha: 0.92;
+        }
+
+        body.theme-white {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --text-muted: #3a3a3c;
+            --border-color: #d1d1d6;
+            --tab-bg: #ffffff;
+            --panel-bg: #ffffff;
+            --sidebar-bg: rgba(0, 0, 0, 0.05);
+            --surface-soft: rgba(0, 0, 0, 0.04);
+            --overlay-bg-rgb: 255, 255, 255;
+            --overlay-bg-alpha: 0.98;
+        }
+
+        body.theme-sepia {
+            --bg-color: #f4ecd8;
+            --text-color: #3d2f1f;
+            --text-muted: #6b5235;
+            --border-color: #d9c8a0;
+            --tab-bg: #faf3e0;
+            --panel-bg: #fdf6e3;
+            --sidebar-bg: rgba(120, 80, 30, 0.10);
+            --surface-soft: rgba(120, 80, 30, 0.07);
+            --overlay-bg-rgb: 253, 246, 227;
+            --overlay-bg-alpha: 0.92;
+        }
+
+        body.theme-blue {
+            --bg-color: #0b1724;
+            --text-color: #e9edf1;
+            --text-muted: #98a9bd;
+            --border-color: #1f3549;
+            --tab-bg: #102234;
+            --panel-bg: #102234;
+            --sidebar-bg: rgba(233, 237, 241, 0.05);
+            --surface-soft: rgba(233, 237, 241, 0.05);
+            --overlay-bg-rgb: 16, 34, 52;
+            --overlay-bg-alpha: 0.88;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body.theme-black input[type="time"]::-webkit-calendar-picker-indicator,
+            body.theme-dark input[type="time"]::-webkit-calendar-picker-indicator,
+            body.theme-blue input[type="time"]::-webkit-calendar-picker-indicator {
+                filter: invert(0.85) brightness(1.3);
+            }
+        }
+
+        body.theme-light input[type="time"]::-webkit-calendar-picker-indicator,
+        body.theme-white input[type="time"]::-webkit-calendar-picker-indicator,
+        body.theme-sepia input[type="time"]::-webkit-calendar-picker-indicator {
+            filter: invert(0.3);
+        }
+
+        body.theme-dark input[type="time"]::-webkit-calendar-picker-indicator,
+        body.theme-black input[type="time"]::-webkit-calendar-picker-indicator,
+        body.theme-blue input[type="time"]::-webkit-calendar-picker-indicator {
+            filter: invert(0.85) brightness(1.3);
         }
 
         body {
@@ -133,7 +240,8 @@
             background: var(--panel-bg);
             padding: 10px 12px;
             border-radius: 10px;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
         }
 
         .control-group label {
@@ -175,7 +283,8 @@
             background: var(--panel-bg);
             padding: 10px 12px;
             border-radius: 10px;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
         }
 
         .row span {
@@ -404,14 +513,9 @@
 
         @supports (backdrop-filter: blur(20px)) {
             .settings-card {
-                background: rgba(var(--overlay-bg-rgb, 255, 255, 255), 0.8);
-                backdrop-filter: blur(25px);
-            }
-
-            @media (prefers-color-scheme: dark) {
-                .settings-card {
-                    background: rgba(28, 28, 30, 0.8);
-                }
+                background: rgba(var(--overlay-bg-rgb), var(--overlay-bg-alpha));
+                backdrop-filter: blur(25px) saturate(180%);
+                -webkit-backdrop-filter: blur(25px) saturate(180%);
             }
         }
 
@@ -419,16 +523,10 @@
             width: 90px;
             display: flex;
             flex-direction: column;
-            background: rgba(0, 0, 0, 0.04);
+            background: var(--sidebar-bg);
             border-right: 1px solid var(--border-color);
             padding-top: 24px;
             flex-shrink: 0;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            #settingsSidebar {
-                background: rgba(255, 255, 255, 0.04);
-            }
         }
 
         .settings-tab {
@@ -458,7 +556,7 @@
 
         .settings-tab.active {
             color: var(--primary-color);
-            background: rgba(0, 122, 255, 0.12);
+            background: color-mix(in srgb, var(--primary-color) 14%, transparent);
             font-weight: 600;
         }
 
@@ -584,6 +682,83 @@
         #media hr {
             margin: 6px 0 !important;
             /* Çizgilerin yarattığı boşluğu daralttık (8px -> 6px) */
+        }
+
+        /* Theme Selector Swatches */
+        .theme-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 4px;
+        }
+
+        .theme-swatch {
+            cursor: pointer;
+            border: 1.5px solid var(--border-color);
+            border-radius: 12px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            background: var(--panel-bg);
+        }
+
+        .theme-swatch:hover {
+            transform: translateY(-1px);
+            border-color: var(--text-muted);
+        }
+
+        .theme-swatch.active {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary-color) 18%, transparent);
+        }
+
+        .theme-preview {
+            height: 50px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08);
+        }
+
+        .theme-preview-bar {
+            height: 14px;
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            gap: 4px;
+        }
+
+        .theme-preview-body {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            gap: 6px;
+        }
+
+        .theme-preview-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            opacity: 0.85;
+        }
+
+        .theme-preview-line {
+            height: 4px;
+            border-radius: 2px;
+            opacity: 0.7;
+        }
+
+        .theme-swatch-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-color);
+            text-align: center;
+            letter-spacing: 0.2px;
         }
     </style>
 </head>
@@ -825,6 +1000,10 @@
                     <span>🌐</span>
                     <span data-i18n="lblLanguage">Language</span>
                 </div>
+                <div class="settings-tab" data-stabs="appearance">
+                    <span>🎨</span>
+                    <span data-i18n="lblAppearance">Appearance</span>
+                </div>
                 <div style="flex: 1;"></div>
             </div>
 
@@ -850,7 +1029,7 @@
                         </div>
                     </div>
                     <div
-                        style="background: rgba(0,0,0,0.03); border-radius: 14px; padding: 14px; line-height: 1.5; font-size: 13px; color: var(--text-color);">
+                        style="background: var(--surface-soft); border: 1px solid var(--border-color); border-radius: 14px; padding: 14px; line-height: 1.5; font-size: 13px; color: var(--text-color);">
                         <p data-i18n="descAboutUs" style="margin: 0;">Experience the web in a new light. Universal Dark
                             Mode provides a smart, eye-friendly browsing experience across all websites.</p>
                     </div>
@@ -873,6 +1052,115 @@
                             <option value="ja" data-i18n="optLangJa">日本語</option>
                             <option value="ru" data-i18n="optLangRu">Русский</option>
                         </select>
+                    </div>
+                </div>
+
+                <!-- Appearance Panel -->
+                <div id="panel-appearance" class="settings-panel">
+                    <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 16px;" data-i18n="descAppearance">
+                        Choose a visual theme for the extension popup.
+                    </p>
+
+                    <div class="theme-grid">
+                        <div class="theme-swatch" data-theme="default">
+                            <div class="theme-preview">
+                                <div class="theme-preview-bar" style="background:#ffffff; border-bottom:1px solid #e5e5e5;">
+                                    <div class="theme-preview-dot" style="background:#ff9500;"></div>
+                                    <div class="theme-preview-line" style="background:#007aff; flex:1;"></div>
+                                </div>
+                                <div class="theme-preview-body" style="background:linear-gradient(90deg,#f5f5f7 50%,#1c1c1e 50%);">
+                                    <div class="theme-preview-dot" style="background:#007aff;"></div>
+                                    <div class="theme-preview-line" style="background:#86868b; flex:0 0 40%;"></div>
+                                    <div class="theme-preview-dot" style="background:#f5f5f7;"></div>
+                                    <div class="theme-preview-line" style="background:#a1a1a6; flex:1;"></div>
+                                </div>
+                            </div>
+                            <div class="theme-swatch-label" data-i18n="themeDefault">Default</div>
+                        </div>
+
+                        <div class="theme-swatch" data-theme="light">
+                            <div class="theme-preview">
+                                <div class="theme-preview-bar" style="background:#ffffff; border-bottom:1px solid #e5e5e5;">
+                                    <div class="theme-preview-dot" style="background:#ff9500;"></div>
+                                    <div class="theme-preview-line" style="background:#007aff; flex:1;"></div>
+                                </div>
+                                <div class="theme-preview-body" style="background:#f5f5f7;">
+                                    <div class="theme-preview-dot" style="background:#007aff;"></div>
+                                    <div class="theme-preview-line" style="background:#86868b; flex:1;"></div>
+                                </div>
+                            </div>
+                            <div class="theme-swatch-label" data-i18n="themeLight">Light</div>
+                        </div>
+
+                        <div class="theme-swatch" data-theme="dark">
+                            <div class="theme-preview">
+                                <div class="theme-preview-bar" style="background:#1c1c1e; border-bottom:1px solid #333336;">
+                                    <div class="theme-preview-dot" style="background:#ff9500;"></div>
+                                    <div class="theme-preview-line" style="background:#0a84ff; flex:1;"></div>
+                                </div>
+                                <div class="theme-preview-body" style="background:#000000;">
+                                    <div class="theme-preview-dot" style="background:#0a84ff;"></div>
+                                    <div class="theme-preview-line" style="background:#a1a1a6; flex:1;"></div>
+                                </div>
+                            </div>
+                            <div class="theme-swatch-label" data-i18n="themeDark">Dark</div>
+                        </div>
+
+                        <div class="theme-swatch" data-theme="black">
+                            <div class="theme-preview">
+                                <div class="theme-preview-bar" style="background:#000000; border-bottom:1px solid #1a1a1a;">
+                                    <div class="theme-preview-dot" style="background:#ff9500;"></div>
+                                    <div class="theme-preview-line" style="background:#0a84ff; flex:1;"></div>
+                                </div>
+                                <div class="theme-preview-body" style="background:#000000;">
+                                    <div class="theme-preview-dot" style="background:#0a84ff;"></div>
+                                    <div class="theme-preview-line" style="background:#6a6a6a; flex:1;"></div>
+                                </div>
+                            </div>
+                            <div class="theme-swatch-label" data-i18n="themeBlack">Black</div>
+                        </div>
+
+                        <div class="theme-swatch" data-theme="white">
+                            <div class="theme-preview">
+                                <div class="theme-preview-bar" style="background:#ffffff; border-bottom:1px solid #ebebeb;">
+                                    <div class="theme-preview-dot" style="background:#ff9500;"></div>
+                                    <div class="theme-preview-line" style="background:#007aff; flex:1;"></div>
+                                </div>
+                                <div class="theme-preview-body" style="background:#ffffff;">
+                                    <div class="theme-preview-dot" style="background:#007aff;"></div>
+                                    <div class="theme-preview-line" style="background:#707070; flex:1;"></div>
+                                </div>
+                            </div>
+                            <div class="theme-swatch-label" data-i18n="themeWhite">White</div>
+                        </div>
+
+                        <div class="theme-swatch" data-theme="sepia">
+                            <div class="theme-preview">
+                                <div class="theme-preview-bar" style="background:#faf3e0; border-bottom:1px solid #e4d8b8;">
+                                    <div class="theme-preview-dot" style="background:#b8860b;"></div>
+                                    <div class="theme-preview-line" style="background:#8b6914; flex:1;"></div>
+                                </div>
+                                <div class="theme-preview-body" style="background:#f4ecd8;">
+                                    <div class="theme-preview-dot" style="background:#8b6914;"></div>
+                                    <div class="theme-preview-line" style="background:#8a7258; flex:1;"></div>
+                                </div>
+                            </div>
+                            <div class="theme-swatch-label" data-i18n="themeSepia">Sepia</div>
+                        </div>
+
+                        <div class="theme-swatch" data-theme="blue">
+                            <div class="theme-preview">
+                                <div class="theme-preview-bar" style="background:#102031; border-bottom:1px solid #1b263b;">
+                                    <div class="theme-preview-dot" style="background:#ff9500;"></div>
+                                    <div class="theme-preview-line" style="background:#415a77; flex:1;"></div>
+                                </div>
+                                <div class="theme-preview-body" style="background:#0d1b2a;">
+                                    <div class="theme-preview-dot" style="background:#415a77;"></div>
+                                    <div class="theme-preview-line" style="background:#8d99ae; flex:1;"></div>
+                                </div>
+                            </div>
+                            <div class="theme-swatch-label" data-i18n="themeBlue">Blue Night</div>
+                        </div>
                     </div>
                 </div>
             </div>
