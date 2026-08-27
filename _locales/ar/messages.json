@@ -1,0 +1,257 @@
+{
+    "extensionName": {
+        "message": "KOYU OKUYUCU"
+    },
+    "extensionDescription": {
+        "message": "اللون الداكن مناسب لأي موقع. استخدم الألوان الداكنة ليلاً ونهاراً."
+    },
+    "darkModeTitle": {
+        "message": "KOYU OKUYUCU"
+    },
+    "statusOn": {
+        "message": "تشغيل"
+    },
+    "statusOff": {
+        "message": "إيقاف"
+    },
+    "statusAuto": {
+        "message": "تلقائي"
+    },
+    "disableForSite": {
+        "message": "تعطيل لهذا الموقع"
+    },
+    "thisSite": {
+        "message": "هذا الموقع"
+    },
+    "thisPage": {
+        "message": "هذه الصفحة"
+    },
+    "tabVisuals": {
+        "message": "المرئيات"
+    },
+    "tabMedia": {
+        "message": "الوسائط"
+    },
+    "tabType": {
+        "message": "النوع"
+    },
+    "tabAuto": {
+        "message": "تلقائي"
+    },
+    "tabSites": {
+        "message": "المواقع"
+    },
+    "tabKeys": {
+        "message": "المفاتيح"
+    },
+    "lblBrightness": {
+        "message": "السطوع: "
+    },
+    "lblContrast": {
+        "message": "التباين: "
+    },
+    "lblSepia": {
+        "message": "داكن (دفء): "
+    },
+    "lblGrayscale": {
+        "message": "درجة الرمادي: "
+    },
+    "lblVisProtect": {
+        "message": "🎨 وضع الحماية البصرية"
+    },
+    "descVisProtect": {
+        "message": "يحافظ على الألوان الأصلية في الصور ومقاطع الفيديو. يستخدم التعتيم الذكي بدلاً من عكس الألوان. <b>موصى به للمواقع المليئة بالصور.</b>"
+    },
+    "lblSmartImages": {
+        "message": "التعتيم الذكي للصور"
+    },
+    "descSmartImages": {
+        "message": "يُعتّم الصور لتقليل التوهج. <b>مرّر مؤشر الماوس فوق صورة</b> لتفتيحها!"
+    },
+    "lblDynamic": {
+        "message": "🤖 الكشف الديناميكي"
+    },
+    "descDynamic": {
+        "message": "يتكيف تلقائيًا عند تغير CSS. <b>أساسي لـ SPAs</b> (React, Vue, Angular). يراقب تحديثات النمط في الوقت الفعلي."
+    },
+    "lblPerformance": {
+        "message": "⚡ وضع الأداء"
+    },
+    "descPerformance": {
+        "message": "يقلل من استهلاك الطاقة ويحسن عمر البطارية. يعطل الحماية الذكية للألوان لتقليل تغييرات DOM. <b>موصى به لمستخدمي MacBook.</b>"
+    },
+    "lblCustomFonts": {
+        "message": "خطوط مخصصة"
+    },
+    "lblFontFamily": {
+        "message": "عائلة الخط"
+    },
+    "optFontSystem": {
+        "message": "النظام الافتراضي"
+    },
+    "optFontSans": {
+        "message": "بدون ذيول (Sans Serif)"
+    },
+    "optFontSerif": {
+        "message": "بذيول (Serif)"
+    },
+    "optFontMono": {
+        "message": "أحادي المسافة (Monospace)"
+    },
+    "optFontDyslexic": {
+        "message": "OpenDyslexic (صديق لعسر القراءة)"
+    },
+    "lblFontWeight": {
+        "message": "وزن الخط: "
+    },
+    "lblActivationMode": {
+        "message": "وضع التنشيط"
+    },
+    "optModeManual": {
+        "message": "يدوي (تبديل بالنقر)"
+    },
+    "optModeSystem": {
+        "message": "اتباع مظهر النظام"
+    },
+    "optModeTime": {
+        "message": "جدول زمني"
+    },
+    "lblStartTime": {
+        "message": "وقت البدء (الغروب)"
+    },
+    "lblEndTime": {
+        "message": "وقت الانتهاء (الشروق)"
+    },
+    "descAutoInfoManual": {
+        "message": "يتحكم في متى يعمل الوضع الداكن تلقائيًا."
+    },
+    "descAutoInfoSystem": {
+        "message": "يتم التحكم في الوضع الداكن من خلال إعدادات مظهر النظام."
+    },
+    "descAutoInfoTime": {
+        "message": "يعمل الوضع الداكن / يتوقف بناءً على الجدول الزمني أعلاه."
+    },
+    "subTabWhitelist": {
+        "message": "عكس القائمة فقط"
+    },
+    "subTabBlacklist": {
+        "message": "عدم عكس القائمة"
+    },
+    "btnAdd": {
+        "message": "إضافة"
+    },
+    "lblCurrentSite": {
+        "message": "الحالي: "
+    },
+    "btnAddCurrent": {
+        "message": "إضافة الحالي"
+    },
+    "lblEmptyList": {
+        "message": "قائمة فارغة"
+    },
+    "lblHotkeySite": {
+        "message": "مفتاح الاختصار لإضافة موقع: "
+    },
+    "lblToggleExt": {
+        "message": "تبديل الإضافة"
+    },
+    "lblAddRemoveSite": {
+        "message": "إضافة/إزالة الموقع الحالي"
+    },
+    "descKeysInfo": {
+        "message": "انقر فوق مربع واضغط على المفاتيح لتسجيل الاختصارات."
+    },
+    "lblFooter": {
+        "message": "حفظ التغييرات تلقائيًا"
+    },
+    "fontWeightNormal": {
+        "message": "عادي"
+    },
+    "fontWeightMedium": {
+        "message": "متوسط"
+    },
+    "fontWeightBold": {
+        "message": "غامق"
+    },
+    "shortcutNone": {
+        "message": "لا يوجد"
+    },
+    "shortcutPressKeys": {
+        "message": "اضغط على المفاتيح..."
+    },
+    "lblSettings": {
+        "message": "الإعدادات"
+    },
+    "lblAboutUs": {
+        "message": "معلومات عنا"
+    },
+    "lblLanguage": {
+        "message": "اللغة"
+    },
+    "lblClose": {
+        "message": "إغلاق"
+    },
+    "descAboutUs": {
+        "message": "KOYU OKUYUCU هي إضافة وضع داكن ديناميكية وكاملة الميزات مصممة لتجربة تصفح مميزة."
+    },
+    "optLangSystem": {
+        "message": "النظام الافتراضي"
+    },
+    "optLangTr": {
+        "message": "Türkçe"
+    },
+    "optLangAz": {
+        "message": "Azərbaycan dili"
+    },
+    "optLangDe": {
+        "message": "Deutsch"
+    },
+    "optLangEn": {
+        "message": "English"
+    },
+    "optLangFr": {
+        "message": "Français"
+    },
+    "optLangJa": {
+        "message": "日本語"
+    },
+    "optLangRu": {
+        "message": "Русский"
+    },
+    "optLangAr": {
+        "message": "العربية"
+    },
+    "lblVersion": {
+        "message": "الإصدار"
+    },
+    "descLanguage": {
+        "message": "اختر لغتك المفضلة لواجهة الإضافة."
+    },
+    "lblAppearance": {
+        "message": "المظهر"
+    },
+    "descAppearance": {
+        "message": "اختر سمة مرئية لنافذة الإضافة المنبثقة."
+    },
+    "themeDefault": {
+        "message": "الافتراضي"
+    },
+    "themeLight": {
+        "message": "فاتح"
+    },
+    "themeDark": {
+        "message": "داكن"
+    },
+    "themeBlack": {
+        "message": "أسود"
+    },
+    "themeWhite": {
+        "message": "أبيض"
+    },
+    "themeSepia": {
+        "message": "بني داكن"
+    },
+    "themeBlue": {
+        "message": "أزرق ليلي"
+    }
+}

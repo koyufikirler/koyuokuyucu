@@ -250,5 +250,8 @@
     },
     "themeBlue": {
         "message": "ブルーナイト"
+    },
+    "optLangAr": {
+        "message": "العربية"
     }
 }

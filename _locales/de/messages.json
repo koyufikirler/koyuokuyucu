@@ -250,5 +250,8 @@
     },
     "themeBlue": {
         "message": "Blaue Nacht"
+    },
+    "optLangAr": {
+        "message": "العربية"
     }
 }

@@ -250,5 +250,8 @@
     },
     "themeBlue": {
         "message": "Nuit bleue"
+    },
+    "optLangAr": {
+        "message": "العربية"
     }
 }

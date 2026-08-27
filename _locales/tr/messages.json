@@ -250,5 +250,8 @@
     },
     "themeBlue": {
         "message": "Mavi Gece"
+    },
+    "optLangAr": {
+        "message": "العربية"
     }
 }
