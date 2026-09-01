@@ -3,7 +3,7 @@ name: Create Extension Release
 on:
   push:
     tags:
-      - "v*"
+      - "s*"
 
 permissions:
   contents: write
