@@ -1,7 +1,8 @@
 # <img src="icons/icon.png" width="40" height="40" valign="middle"> KOYU OKUYUCU
 
-<a href="https://addons.mozilla.org/tr/firefox/addon/koyu-okuyucu/"><img src="https://img.shields.io/badge/firefox-141e24.svg?style=for-the-badge&logo=firefox&logoColor=red" style="vertical-align: middle; margin-right: 5px;" alt="Firefox"></a>
-<a href="https://microsoftedge.microsoft.com/addons/detail/koyu-okuyucu/bccnfldlfepakpidbfoghegjbgkeepfe"><img src="https://img.shields.io/badge/edge-141e24.svg?style=for-the-badge&logo=edge" style="vertical-align: middle;" alt="Edge"></a>
+<a href="https://chromewebstore.google.com/detail/koyu-okuyucu/fhnndeepnfmebmjaccodidacmdcffook"><img src="https://img.shields.io/badge/Chrome-141e24.svg?style=for-the-badge&logo=google-chrome&logoColor=white" style="vertical-align: middle; margin-right: 5px;" alt="Google Chrome Web Store"></a>
+<a href="https://addons.mozilla.org/tr/firefox/addon/koyu-okuyucu/"><img src="https://img.shields.io/badge/firefox-141e24.svg?style=for-the-badge&logo=firefox&logoColor=red" style="vertical-align: middle; margin-right: 5px;" alt="Firefox Add-ons"></a>
+<a href="https://microsoftedge.microsoft.com/addons/detail/koyu-okuyucu/bccnfldlfepakpidbfoghegjbgkeepfe"><img src="https://img.shields.io/badge/edge-141e24.svg?style=for-the-badge&logo=edge" style="vertical-align: middle;" alt="Microsoft Edge Add-ons"></a>
 
 Koyu Okuyucu is a premium, feature-rich CHROME, FIREFOX, EDGE browser extension that brings a highly customizable, gorgeous dark mode experience to every website you visit. Designed for eye comfort, visual protection, and speed, it gives you complete control over how pages render.
 
@@ -39,12 +40,6 @@ Koyu Okuyucu is a premium, feature-rich CHROME, FIREFOX, EDGE browser extension 
 
 ### 🌍 Multi-language Support
 - Built-in localization support for:
-  - 🇹🇷 Türkçe (Turkish - Default)
-  - 🇺🇸 English (English)
-  - 🇩🇪 Deutsch (German)
-  - 🇫🇷 Français (French)
-  - 🇯🇵 日本語 (Japanese)
-  - 🇷🇺 Русский (Russian)
 
 ---
 
