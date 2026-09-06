@@ -218,6 +218,9 @@
     "optLangRu": {
         "message": "Русский"
     },
+    "optLangAr": {
+        "message": "العربية"
+    },
     "lblVersion": {
         "message": "バージョン"
     },
@@ -251,10 +254,7 @@
     "themeBlue": {
         "message": "ブルーナイト"
     },
-    "optLangAr": {
-        "message": "العربية"
-    },
     "errShortcutExists": {
-        "message": "Shortcut already in use!"
+        "message": "ショートカットは既に使用されています！"
     }
 }

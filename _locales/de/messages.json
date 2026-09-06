@@ -218,6 +218,9 @@
     "optLangRu": {
         "message": "Русский"
     },
+    "optLangAr": {
+        "message": "العربية"
+    },
     "lblVersion": {
         "message": "Version"
     },
@@ -251,10 +254,7 @@
     "themeBlue": {
         "message": "Blaue Nacht"
     },
-    "optLangAr": {
-        "message": "العربية"
-    },
     "errShortcutExists": {
-        "message": "Shortcut already in use!"
+        "message": "Abkürzung wird bereits verwendet!"
     }
 }

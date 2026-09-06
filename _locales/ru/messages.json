@@ -218,6 +218,9 @@
     "optLangRu": {
         "message": "Русский"
     },
+    "optLangAr": {
+        "message": "العربية"
+    },
     "lblVersion": {
         "message": "Версия"
     },
@@ -251,10 +254,7 @@
     "themeBlue": {
         "message": "Синяя ночь"
     },
-    "optLangAr": {
-        "message": "العربية"
-    },
     "errShortcutExists": {
-        "message": "Shortcut already in use!"
+        "message": "Ярлык уже используется!"
     }
 }

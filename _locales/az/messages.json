@@ -218,6 +218,9 @@
     "optLangRu": {
         "message": "Русский"
     },
+    "optLangAr": {
+        "message": "العربية"
+    },
     "lblVersion": {
         "message": "Versiya"
     },
@@ -251,10 +254,7 @@
     "themeBlue": {
         "message": "Mavi Gecə"
     },
-    "optLangAr": {
-        "message": "العربية"
-    },
     "errShortcutExists": {
-        "message": "Shortcut already in use!"
+        "message": "Qısayol artıq istifadədədir!"
     }
 }

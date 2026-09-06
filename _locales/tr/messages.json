@@ -218,6 +218,9 @@
     "optLangRu": {
         "message": "Русский"
     },
+    "optLangAr": {
+        "message": "العربية"
+    },
     "lblVersion": {
         "message": "Sürüm"
     },
@@ -250,9 +253,6 @@
     },
     "themeBlue": {
         "message": "Mavi Gece"
-    },
-    "optLangAr": {
-        "message": "العربية"
     },
     "errShortcutExists": {
         "message": "Kısayol zaten kullanımda!"
