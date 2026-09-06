@@ -256,5 +256,35 @@
     },
     "errShortcutExists": {
         "message": "Kısayol zaten kullanımda!"
+    },
+    "lblDonate": {
+        "message": "Destek & Bağış"
+    },
+    "btnDonateCoffee": {
+        "message": "Buy Me a Coffee"
+    },
+    "descDonate": {
+        "message": "Koyu Okuyucu'yu beğendiyseniz, açık kaynak gelişimini aşağıdaki platformlardan biriyle destekleyebilirsiniz!"
+    },
+    "donateGhSponsors": {
+        "message": "GitHub Sponsors"
+    },
+    "donateGhDesc": {
+        "message": "GitHub üzerinden doğrudan sponsor olun"
+    },
+    "donatePatreon": {
+        "message": "Patreon"
+    },
+    "donatePatreonDesc": {
+        "message": "Patreon üzerinden geliştiriciye destek olun"
+    },
+    "donateOpenCollective": {
+        "message": "Open Collective"
+    },
+    "donateOcDesc": {
+        "message": "Şeffaf topluluk fonuna katkıda bulunun"
+    },
+    "donateCoffeeDesc": {
+        "message": "Bir kahve ısmarlayarak katkı sağlayın"
     }
 }

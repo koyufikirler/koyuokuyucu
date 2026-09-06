@@ -256,5 +256,35 @@
     },
     "errShortcutExists": {
         "message": "Qısayol artıq istifadədədir!"
+    },
+    "lblDonate": {
+        "message": "Dəstək Ol & İanə Et"
+    },
+    "btnDonateCoffee": {
+        "message": "Buy Me a Coffee"
+    },
+    "descDonate": {
+        "message": "Əgər Koyu Okuyucu bəyənirsinizsə, aşağıdakı platformalardan biri ilə inkişafı dəstəkləyə bilərsiniz!"
+    },
+    "donateGhSponsors": {
+        "message": "GitHub Sponsors"
+    },
+    "donateGhDesc": {
+        "message": "GitHub vasitəsilə birbaşa sponsor olun"
+    },
+    "donatePatreon": {
+        "message": "Patreon"
+    },
+    "donatePatreonDesc": {
+        "message": "Patreon üzərindən layihəyə dəstək verin"
+    },
+    "donateOpenCollective": {
+        "message": "Open Collective"
+    },
+    "donateOcDesc": {
+        "message": "İcma maliyyələşməsinə qatılın"
+    },
+    "donateCoffeeDesc": {
+        "message": "Bir qəhvə alaraq dəstək olun"
     }
 }

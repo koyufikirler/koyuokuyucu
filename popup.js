@@ -87,6 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // === Settings UI ===
     const openSettingsBtn = document.getElementById('openSettingsBtn');
+    const footerDonateBtn = document.getElementById('footerDonateBtn');
+    const aboutDonateBtn = document.getElementById('aboutDonateBtn');
     const closeSettingsBtn = document.getElementById('closeSettingsBtn');
     const settingsOverlay = document.getElementById('settingsOverlay');
     const settingsTabs = document.querySelectorAll('.settings-tab');
@@ -108,6 +110,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    function switchSettingsTab(target) {
+        settingsTabs.forEach(t => {
+            if (t.getAttribute('data-stabs') === target) t.classList.add('active');
+            else t.classList.remove('active');
+        });
+        settingsPanels.forEach(p => {
+            if (p.id === 'panel-' + target) p.classList.add('active');
+            else p.classList.remove('active');
+        });
+    }
+
     if (appVersion) {
         appVersion.textContent = browser.runtime.getManifest().version;
     }
@@ -116,6 +129,20 @@ document.addEventListener('DOMContentLoaded', () => {
         openSettingsBtn.addEventListener('click', () => {
             settingsOverlay.style.display = 'flex';
             document.body.classList.add('settings-open');
+        });
+    }
+
+    if (footerDonateBtn) {
+        footerDonateBtn.addEventListener('click', () => {
+            settingsOverlay.style.display = 'flex';
+            document.body.classList.add('settings-open');
+            switchSettingsTab('donate');
+        });
+    }
+
+    if (aboutDonateBtn) {
+        aboutDonateBtn.addEventListener('click', () => {
+            switchSettingsTab('donate');
         });
     }
 
@@ -128,13 +155,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     settingsTabs.forEach(tab => {
         tab.addEventListener('click', () => {
-            settingsTabs.forEach(t => t.classList.remove('active'));
-            settingsPanels.forEach(p => p.classList.remove('active'));
-
-            tab.classList.add('active');
             const target = tab.getAttribute('data-stabs');
-            const panel = document.getElementById('panel-' + target);
-            if (panel) panel.classList.add('active');
+            switchSettingsTab(target);
         });
     });
 

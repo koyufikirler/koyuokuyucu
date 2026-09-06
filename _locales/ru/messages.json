@@ -256,5 +256,35 @@
     },
     "errShortcutExists": {
         "message": "Ярлык уже используется!"
+    },
+    "lblDonate": {
+        "message": "Поддержать и сделать пожертвование"
+    },
+    "btnDonateCoffee": {
+        "message": "Buy Me a Coffee"
+    },
+    "descDonate": {
+        "message": "Если вам нравится Koyu Okuyucu, вы можете поддержать проект на одной из следующих платформ!"
+    },
+    "donateGhSponsors": {
+        "message": "GitHub Sponsors"
+    },
+    "donateGhDesc": {
+        "message": "Спонсировать напрямую на GitHub"
+    },
+    "donatePatreon": {
+        "message": "Patreon"
+    },
+    "donatePatreonDesc": {
+        "message": "Стать патроном и поддержать разработку"
+    },
+    "donateOpenCollective": {
+        "message": "Open Collective"
+    },
+    "donateOcDesc": {
+        "message": "Поддержать прозрачный фонд сообщества"
+    },
+    "donateCoffeeDesc": {
+        "message": "Угостить кофе разово или ежемесячно"
     }
 }

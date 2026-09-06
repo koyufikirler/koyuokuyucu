@@ -116,6 +116,7 @@
         }
 
         @media (prefers-color-scheme: dark) {
+
             body.theme-black input[type="time"]::-webkit-calendar-picker-indicator,
             body.theme-dark input[type="time"]::-webkit-calendar-picker-indicator,
             body.theme-blue input[type="time"]::-webkit-calendar-picker-indicator {
@@ -648,6 +649,166 @@
             border-radius: 2px;
         }
 
+        .footer-actions {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .footer-icon-btn {
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 4px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            transition: transform 0.15s ease, background 0.15s ease;
+            text-decoration: none;
+            line-height: 1;
+        }
+
+        .footer-icon-btn:hover {
+            transform: scale(1.15);
+            background: var(--surface-soft);
+        }
+
+        /* Donate Section Styles */
+        .donate-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .donate-option-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 14px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            background: var(--panel-bg);
+            text-decoration: none;
+            color: var(--text-color);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .donate-option-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            color: var(--text-color);
+        }
+
+        .donate-option-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .donate-platform-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .donate-platform-icon.coffee {
+            background: #ffdd00;
+            color: #000000;
+        }
+
+        .donate-platform-icon.github {
+            background: #ea4aaa;
+            color: #ffffff;
+        }
+
+        .donate-platform-icon.patreon {
+            background: #ff424d;
+            color: #ffffff;
+        }
+
+        .donate-platform-icon.opencollective {
+            background: #7fadf2;
+            color: #ffffff;
+        }
+
+        .donate-option-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            text-align: left;
+        }
+
+        .donate-option-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+
+        .donate-option-desc {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .donate-arrow {
+            font-size: 16px;
+            color: var(--text-muted);
+            transition: transform 0.2s ease;
+        }
+
+        .donate-option-card:hover .donate-arrow {
+            transform: translateX(3px);
+            color: var(--primary-color);
+        }
+
+        .donate-card {
+            margin-top: 14px;
+            background: var(--surface-soft);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 14px;
+            text-align: center;
+        }
+
+        .donate-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 10px;
+            padding: 10px 18px;
+            border-radius: 10px;
+            background: #ffdd00;
+            color: #000000;
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 3px 10px rgba(255, 221, 0, 0.35);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+            cursor: pointer;
+        }
+
+        .donate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(255, 221, 0, 0.45);
+            background: #ffea38;
+            color: #000000;
+        }
+
+        .donate-btn:active {
+            transform: translateY(0);
+        }
+
         /* Desktop optimizations */
         @media (min-width: 480px) {
             #settingsSidebar {
@@ -721,7 +882,7 @@
             flex-direction: column;
             overflow: hidden;
             border: 1px solid var(--border-color);
-            box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08);
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
         }
 
         .theme-preview-bar {
@@ -955,7 +1116,9 @@
 
     <!-- Keys Tab -->
     <div class="content" id="keys">
-        <div id="shortcutWarning" style="color: #ff4444; font-weight: bold; text-align: center; margin-bottom: 10px; display: none;" data-i18n="errShortcutExists">Shortcut already in use!</div>
+        <div id="shortcutWarning"
+            style="color: #ff4444; font-weight: bold; text-align: center; margin-bottom: 10px; display: none;"
+            data-i18n="errShortcutExists">Shortcut already in use!</div>
         <div class="control-group">
             <label data-i18n="lblToggleExt" style="display: block;">Toggle Extension</label>
             <div style="display: flex; gap: 10px;">
@@ -983,9 +1146,12 @@
 
     <div class="footer">
         <span data-i18n="lblFooter">Changes auto-save</span>
-        <button id="openSettingsBtn"
-            style="background: none; border: none; font-size: 20px; cursor: pointer; padding: 4px; display: flex; align-items: center;"
-            title="Settings">⚙️</button>
+        <div class="footer-actions">
+            <button class="footer-icon-btn" id="footerDonateBtn" title="Support & Donate"
+                data-i18n-attr="title:lblDonate">❤️</button>
+            <button id="openSettingsBtn" class="footer-icon-btn" title="Settings"
+                data-i18n-attr="title:lblSettings">⚙️</button>
+        </div>
     </div>
 
     <!-- Settings Overlay -->
@@ -996,6 +1162,10 @@
                 <div class="settings-tab active" data-stabs="about">
                     <span>ℹ️</span>
                     <span data-i18n="lblAboutUs">About</span>
+                </div>
+                <div class="settings-tab" data-stabs="donate">
+                    <span>❤️</span>
+                    <span data-i18n="lblDonate">Donate</span>
                 </div>
                 <div class="settings-tab" data-stabs="language">
                     <span>🌐</span>
@@ -1034,6 +1204,83 @@
                         <p data-i18n="descAboutUs" style="margin: 0;">Experience the web in a new light. Universal Dark
                             Mode provides a smart, eye-friendly browsing experience across all websites.</p>
                     </div>
+
+                    <div class="donate-card">
+                        <div style="font-weight: 600; font-size: 14px; margin-bottom: 6px;" data-i18n="lblDonate">
+                            Support & Donate</div>
+                        <p data-i18n="descDonate"
+                            style="margin: 0; font-size: 12px; color: var(--text-muted); line-height: 1.4;">If you love
+                            Universal Dark Mode, consider supporting its open-source development through any of the
+                            platforms below!</p>
+                        <button type="button" class="donate-btn" id="aboutDonateBtn" style="width: 100%; border: none;">
+                            <span style="font-size: 16px;">❤️</span>
+                            <span data-i18n="lblDonate">Support & Donate</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Donate Panel -->
+                <div id="panel-donate" class="settings-panel">
+                    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px; line-height: 1.4;"
+                        data-i18n="descDonate">
+                        If you love Universal Dark Mode, consider supporting its open-source development through any of
+                        the platforms below!
+                    </p>
+
+                    <div class="donate-list">
+                        <!-- GitHub Sponsors -->
+                        <a href="https://github.com/sponsors/bgr8" target="_blank" class="donate-option-card">
+                            <div class="donate-option-left">
+                                <div class="donate-platform-icon github">♥</div>
+                                <div class="donate-option-info">
+                                    <div class="donate-option-title" data-i18n="donateGhSponsors">GitHub Sponsors</div>
+                                    <div class="donate-option-desc" data-i18n="donateGhDesc">Sponsor directly on GitHub
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="donate-arrow">→</span>
+                        </a>
+
+                        <!-- Patreon -->
+                        <a href="https://patreon.com/koyufikirler" target="_blank" class="donate-option-card">
+                            <div class="donate-option-left">
+                                <div class="donate-platform-icon patreon">P</div>
+                                <div class="donate-option-info">
+                                    <div class="donate-option-title" data-i18n="donatePatreon">Patreon</div>
+                                    <div class="donate-option-desc" data-i18n="donatePatreonDesc">Become a patron and
+                                        back development</div>
+                                </div>
+                            </div>
+                            <span class="donate-arrow">→</span>
+                        </a>
+
+                        <!-- Open Collective -->
+                        <a href="https://opencollective.com/koyufikirler" target="_blank" class="donate-option-card">
+                            <div class="donate-option-left">
+                                <div class="donate-platform-icon opencollective">⭕</div>
+                                <div class="donate-option-info">
+                                    <div class="donate-option-title" data-i18n="donateOpenCollective">Open Collective
+                                    </div>
+                                    <div class="donate-option-desc" data-i18n="donateOcDesc">Support transparent
+                                        community funding</div>
+                                </div>
+                            </div>
+                            <span class="donate-arrow">→</span>
+                        </a>
+
+                        <!-- Buy Me a Coffee -->
+                        <a href="https://buymeacoffee.com/medyabumedk" target="_blank" class="donate-option-card">
+                            <div class="donate-option-left">
+                                <div class="donate-platform-icon coffee">☕</div>
+                                <div class="donate-option-info">
+                                    <div class="donate-option-title" data-i18n="btnDonateCoffee">Buy Me a Coffee</div>
+                                    <div class="donate-option-desc" data-i18n="donateCoffeeDesc">Buy a one-time or
+                                        monthly coffee</div>
+                                </div>
+                            </div>
+                            <span class="donate-arrow">→</span>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Language Panel -->
@@ -1059,18 +1306,21 @@
 
                 <!-- Appearance Panel -->
                 <div id="panel-appearance" class="settings-panel">
-                    <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 16px;" data-i18n="descAppearance">
+                    <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 16px;"
+                        data-i18n="descAppearance">
                         Choose a visual theme for the extension popup.
                     </p>
 
                     <div class="theme-grid">
                         <div class="theme-swatch" data-theme="default">
                             <div class="theme-preview">
-                                <div class="theme-preview-bar" style="background:#ffffff; border-bottom:1px solid #e5e5e5;">
+                                <div class="theme-preview-bar"
+                                    style="background:#ffffff; border-bottom:1px solid #e5e5e5;">
                                     <div class="theme-preview-dot" style="background:#ff9500;"></div>
                                     <div class="theme-preview-line" style="background:#007aff; flex:1;"></div>
                                 </div>
-                                <div class="theme-preview-body" style="background:linear-gradient(90deg,#f5f5f7 50%,#1c1c1e 50%);">
+                                <div class="theme-preview-body"
+                                    style="background:linear-gradient(90deg,#f5f5f7 50%,#1c1c1e 50%);">
                                     <div class="theme-preview-dot" style="background:#007aff;"></div>
                                     <div class="theme-preview-line" style="background:#86868b; flex:0 0 40%;"></div>
                                     <div class="theme-preview-dot" style="background:#f5f5f7;"></div>
@@ -1082,7 +1332,8 @@
 
                         <div class="theme-swatch" data-theme="light">
                             <div class="theme-preview">
-                                <div class="theme-preview-bar" style="background:#ffffff; border-bottom:1px solid #e5e5e5;">
+                                <div class="theme-preview-bar"
+                                    style="background:#ffffff; border-bottom:1px solid #e5e5e5;">
                                     <div class="theme-preview-dot" style="background:#ff9500;"></div>
                                     <div class="theme-preview-line" style="background:#007aff; flex:1;"></div>
                                 </div>
@@ -1096,7 +1347,8 @@
 
                         <div class="theme-swatch" data-theme="dark">
                             <div class="theme-preview">
-                                <div class="theme-preview-bar" style="background:#1c1c1e; border-bottom:1px solid #333336;">
+                                <div class="theme-preview-bar"
+                                    style="background:#1c1c1e; border-bottom:1px solid #333336;">
                                     <div class="theme-preview-dot" style="background:#ff9500;"></div>
                                     <div class="theme-preview-line" style="background:#0a84ff; flex:1;"></div>
                                 </div>
@@ -1110,7 +1362,8 @@
 
                         <div class="theme-swatch" data-theme="black">
                             <div class="theme-preview">
-                                <div class="theme-preview-bar" style="background:#000000; border-bottom:1px solid #1a1a1a;">
+                                <div class="theme-preview-bar"
+                                    style="background:#000000; border-bottom:1px solid #1a1a1a;">
                                     <div class="theme-preview-dot" style="background:#ff9500;"></div>
                                     <div class="theme-preview-line" style="background:#0a84ff; flex:1;"></div>
                                 </div>
@@ -1124,7 +1377,8 @@
 
                         <div class="theme-swatch" data-theme="white">
                             <div class="theme-preview">
-                                <div class="theme-preview-bar" style="background:#ffffff; border-bottom:1px solid #ebebeb;">
+                                <div class="theme-preview-bar"
+                                    style="background:#ffffff; border-bottom:1px solid #ebebeb;">
                                     <div class="theme-preview-dot" style="background:#ff9500;"></div>
                                     <div class="theme-preview-line" style="background:#007aff; flex:1;"></div>
                                 </div>
@@ -1138,7 +1392,8 @@
 
                         <div class="theme-swatch" data-theme="sepia">
                             <div class="theme-preview">
-                                <div class="theme-preview-bar" style="background:#faf3e0; border-bottom:1px solid #e4d8b8;">
+                                <div class="theme-preview-bar"
+                                    style="background:#faf3e0; border-bottom:1px solid #e4d8b8;">
                                     <div class="theme-preview-dot" style="background:#b8860b;"></div>
                                     <div class="theme-preview-line" style="background:#8b6914; flex:1;"></div>
                                 </div>
@@ -1152,7 +1407,8 @@
 
                         <div class="theme-swatch" data-theme="blue">
                             <div class="theme-preview">
-                                <div class="theme-preview-bar" style="background:#102031; border-bottom:1px solid #1b263b;">
+                                <div class="theme-preview-bar"
+                                    style="background:#102031; border-bottom:1px solid #1b263b;">
                                     <div class="theme-preview-dot" style="background:#ff9500;"></div>
                                     <div class="theme-preview-line" style="background:#415a77; flex:1;"></div>
                                 </div>

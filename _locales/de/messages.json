@@ -256,5 +256,35 @@
     },
     "errShortcutExists": {
         "message": "Abkürzung wird bereits verwendet!"
+    },
+    "lblDonate": {
+        "message": "Unterstützen & Spenden"
+    },
+    "btnDonateCoffee": {
+        "message": "Buy Me a Coffee"
+    },
+    "descDonate": {
+        "message": "Wenn dir Koyu Okuyucu gefällt, kannst du die Weiterentwicklung über eine der folgenden Plattformen unterstützen!"
+    },
+    "donateGhSponsors": {
+        "message": "GitHub Sponsors"
+    },
+    "donateGhDesc": {
+        "message": "Direkt auf GitHub sponsern"
+    },
+    "donatePatreon": {
+        "message": "Patreon"
+    },
+    "donatePatreonDesc": {
+        "message": "Werde Förderer und unterstütze die Entwicklung"
+    },
+    "donateOpenCollective": {
+        "message": "Open Collective"
+    },
+    "donateOcDesc": {
+        "message": "Gemeinschaftsförderung transparent unterstützen"
+    },
+    "donateCoffeeDesc": {
+        "message": "Mit einem Kaffee einmalig oder monatlich unterstützen"
     }
 }

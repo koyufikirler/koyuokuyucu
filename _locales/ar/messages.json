@@ -256,5 +256,35 @@
     },
     "errShortcutExists": {
         "message": "الاختصار قيد الاستخدام بالفعل!"
+    },
+    "lblDonate": {
+        "message": "الدعم والتبرع"
+    },
+    "btnDonateCoffee": {
+        "message": "Buy Me a Coffee"
+    },
+    "descDonate": {
+        "message": "إذا أعجبك Koyu Okuyucu يمكنك دعم تطويره المستمر عبر إحدى المنصات أدناه!"
+    },
+    "donateGhSponsors": {
+        "message": "GitHub Sponsors"
+    },
+    "donateGhDesc": {
+        "message": "رعاية مباشرة على GitHub"
+    },
+    "donatePatreon": {
+        "message": "Patreon"
+    },
+    "donatePatreonDesc": {
+        "message": "كن داعماً وشارك في تطوير المشروع"
+    },
+    "donateOpenCollective": {
+        "message": "Open Collective"
+    },
+    "donateOcDesc": {
+        "message": "دعم التمويل الجماعي الشفاف"
+    },
+    "donateCoffeeDesc": {
+        "message": "ادعمنا بقهوة لمرة واحدة أو شهرياً"
     }
 }

@@ -256,5 +256,35 @@
     },
     "errShortcutExists": {
         "message": "ショートカットは既に使用されています！"
+    },
+    "lblDonate": {
+        "message": "プロジェクトを支援・寄付"
+    },
+    "btnDonateCoffee": {
+        "message": "Buy Me a Coffee"
+    },
+    "descDonate": {
+        "message": "Koyu Okuyucuを気に入っていただけましたら、以下のプラットフォームから開発をご支援いただけます！"
+    },
+    "donateGhSponsors": {
+        "message": "GitHub Sponsors"
+    },
+    "donateGhDesc": {
+        "message": "GitHubで直接スポンサーになる"
+    },
+    "donatePatreon": {
+        "message": "Patreon"
+    },
+    "donatePatreonDesc": {
+        "message": "パトロンになって開発をサポート"
+    },
+    "donateOpenCollective": {
+        "message": "Open Collective"
+    },
+    "donateOcDesc": {
+        "message": "コミュニティファンドを支援"
+    },
+    "donateCoffeeDesc": {
+        "message": "コーヒーを1杯奢って支援"
     }
 }
