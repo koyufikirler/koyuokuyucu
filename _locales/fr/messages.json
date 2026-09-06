@@ -253,5 +253,8 @@
     },
     "optLangAr": {
         "message": "العربية"
+    },
+    "errShortcutExists": {
+        "message": "Shortcut already in use!"
     }
 }

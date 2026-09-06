@@ -253,5 +253,8 @@
     },
     "themeBlue": {
         "message": "أزرق ليلي"
+    },
+    "errShortcutExists": {
+        "message": "Shortcut already in use!"
     }
 }

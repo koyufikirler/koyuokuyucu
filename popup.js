@@ -656,11 +656,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    const shortcutWarning = document.getElementById('shortcutWarning');
+    let shortcutWarningTimeout;
+    function showShortcutWarning() {
+        shortcutWarning.style.display = 'block';
+        clearTimeout(shortcutWarningTimeout);
+        shortcutWarningTimeout = setTimeout(() => {
+            shortcutWarning.style.display = 'none';
+        }, 3000);
+    }
+    
+    function isShortcutSame(s1, s2) {
+        if (!s1 || !s2) return false;
+        return s1.key === s2.key && s1.ctrlKey === s2.ctrlKey && s1.shiftKey === s2.shiftKey && s1.altKey === s2.altKey && s1.metaKey === s2.metaKey;
+    }
+
     // Shortcut Recording (Main)
     shortcutInput.addEventListener('keydown', (e) => {
         e.preventDefault();
         if (['Control', 'Shift', 'Alt', 'Meta'].includes(e.key)) return;
-        currentSettings.shortcut = {
+        
+        const newShortcut = {
             key: e.key.toLowerCase(),
             code: e.code,
             ctrlKey: e.ctrlKey,
@@ -668,6 +684,14 @@ document.addEventListener('DOMContentLoaded', () => {
             altKey: e.altKey,
             metaKey: e.metaKey
         };
+        
+        if (isShortcutSame(newShortcut, currentSettings.shortcutSite)) {
+            showShortcutWarning();
+            return;
+        }
+        
+        shortcutWarning.style.display = 'none';
+        currentSettings.shortcut = newShortcut;
         broadcastSettings();
     });
     shortcutInput.addEventListener('focus', () => { shortcutInput.value = getMessage("shortcutPressKeys"); });
@@ -681,7 +705,8 @@ document.addEventListener('DOMContentLoaded', () => {
     shortcutInputSite.addEventListener('keydown', (e) => {
         e.preventDefault();
         if (['Control', 'Shift', 'Alt', 'Meta'].includes(e.key)) return;
-        currentSettings.shortcutSite = {
+        
+        const newShortcut = {
             key: e.key.toLowerCase(),
             code: e.code,
             ctrlKey: e.ctrlKey,
@@ -689,6 +714,14 @@ document.addEventListener('DOMContentLoaded', () => {
             altKey: e.altKey,
             metaKey: e.metaKey
         };
+        
+        if (isShortcutSame(newShortcut, currentSettings.shortcut)) {
+            showShortcutWarning();
+            return;
+        }
+        
+        shortcutWarning.style.display = 'none';
+        currentSettings.shortcutSite = newShortcut;
         broadcastSettings();
     });
     shortcutInputSite.addEventListener('focus', () => { shortcutInputSite.value = getMessage("shortcutPressKeys"); });
