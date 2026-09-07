@@ -286,5 +286,11 @@
     },
     "donateCoffeeDesc": {
         "message": "Bir kahve ısmarlayarak katkı sağlayın"
+    },
+    "optLangPt": {
+        "message": "Português"
+    },
+    "optLangEs": {
+        "message": "Español"
     }
 }

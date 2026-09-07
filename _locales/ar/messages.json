@@ -286,5 +286,11 @@
     },
     "donateCoffeeDesc": {
         "message": "ادعمنا بقهوة لمرة واحدة أو شهرياً"
+    },
+    "optLangPt": {
+        "message": "Português"
+    },
+    "optLangEs": {
+        "message": "Español"
     }
 }

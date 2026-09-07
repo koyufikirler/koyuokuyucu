@@ -286,5 +286,11 @@
     },
     "donateCoffeeDesc": {
         "message": "Offrez un café unique ou mensuel"
+    },
+    "optLangPt": {
+        "message": "Português"
+    },
+    "optLangEs": {
+        "message": "Español"
     }
 }

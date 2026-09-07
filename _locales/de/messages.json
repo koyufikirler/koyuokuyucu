@@ -286,5 +286,11 @@
     },
     "donateCoffeeDesc": {
         "message": "Mit einem Kaffee einmalig oder monatlich unterstützen"
+    },
+    "optLangPt": {
+        "message": "Português"
+    },
+    "optLangEs": {
+        "message": "Español"
     }
 }

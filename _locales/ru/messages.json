@@ -286,5 +286,11 @@
     },
     "donateCoffeeDesc": {
         "message": "Угостить кофе разово или ежемесячно"
+    },
+    "optLangPt": {
+        "message": "Português"
+    },
+    "optLangEs": {
+        "message": "Español"
     }
 }

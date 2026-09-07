@@ -1,0 +1,296 @@
+{
+    "extensionName": {
+        "message": "KOYU OKUYUCU"
+    },
+    "extensionDescription": {
+        "message": "El color oscuro es adecuado para cualquier sitio. Use colores oscuros tanto de día como de noche."
+    },
+    "darkModeTitle": {
+        "message": "KOYU OKUYUCU"
+    },
+    "statusOn": {
+        "message": "Encendido"
+    },
+    "statusOff": {
+        "message": "Apagado"
+    },
+    "statusAuto": {
+        "message": "Automático"
+    },
+    "disableForSite": {
+        "message": "Desactivar para este sitio"
+    },
+    "thisSite": {
+        "message": "este sitio"
+    },
+    "thisPage": {
+        "message": "esta página"
+    },
+    "tabVisuals": {
+        "message": "Visuales"
+    },
+    "tabMedia": {
+        "message": "Medios"
+    },
+    "tabType": {
+        "message": "Tipo"
+    },
+    "tabAuto": {
+        "message": "Automático"
+    },
+    "tabSites": {
+        "message": "Sitios"
+    },
+    "tabKeys": {
+        "message": "Teclas"
+    },
+    "lblBrightness": {
+        "message": "Brillo: "
+    },
+    "lblContrast": {
+        "message": "Contraste: "
+    },
+    "lblSepia": {
+        "message": "Sepia (Calidez): "
+    },
+    "lblGrayscale": {
+        "message": "Escala de grises: "
+    },
+    "lblVisProtect": {
+        "message": "🎨 Modo de protección visual"
+    },
+    "descVisProtect": {
+        "message": "Conserva los colores originales en imágenes y videos. Usa oscurecimiento inteligente en lugar de inversión de color. <b>Recomendado para sitios con muchas fotos.</b>"
+    },
+    "lblSmartImages": {
+        "message": "Oscurecimiento inteligente de imagen"
+    },
+    "descSmartImages": {
+        "message": "Oscurece las imágenes para reducir el brillo. <b>¡Pase el cursor sobre una imagen</b> para aclararla!"
+    },
+    "lblDynamic": {
+        "message": "🤖 Detección dinámica"
+    },
+    "descDynamic": {
+        "message": "Se adapta automáticamente cuando cambia el CSS. <b>Esencial para SPAs</b> (React, Vue, Angular). Monitorea las actualizaciones de estilo en tiempo real."
+    },
+    "lblPerformance": {
+        "message": "⚡ Modo de rendimiento"
+    },
+    "descPerformance": {
+        "message": "Reduce el consumo de energía y mejora la duración de la batería. Desactiva la protección de color inteligente para cambios mínimos en el DOM. <b>Recomendado para usuarios de MacBook.</b>"
+    },
+    "lblCustomFonts": {
+        "message": "Fuentes personalizadas"
+    },
+    "lblFontFamily": {
+        "message": "Familia de fuentes"
+    },
+    "optFontSystem": {
+        "message": "Predeterminado del sistema"
+    },
+    "optFontSans": {
+        "message": "Sans Serif"
+    },
+    "optFontSerif": {
+        "message": "Serif"
+    },
+    "optFontMono": {
+        "message": "Monospace"
+    },
+    "optFontDyslexic": {
+        "message": "OpenDyslexic (Amigable para dislexia)"
+    },
+    "lblFontWeight": {
+        "message": "Peso de fuente: "
+    },
+    "lblActivationMode": {
+        "message": "Modo de activación"
+    },
+    "optModeManual": {
+        "message": "Manual (Alternar al hacer clic)"
+    },
+    "optModeSystem": {
+        "message": "Seguir apariencia del sistema"
+    },
+    "optModeTime": {
+        "message": "Horario"
+    },
+    "lblStartTime": {
+        "message": "Hora de inicio (Atardecer)"
+    },
+    "lblEndTime": {
+        "message": "Hora de finalización (Amanecer)"
+    },
+    "descAutoInfoManual": {
+        "message": "Controla cuándo se activa automáticamente el modo oscuro."
+    },
+    "descAutoInfoSystem": {
+        "message": "El modo oscuro está controlado por la configuración de apariencia del sistema."
+    },
+    "descAutoInfoTime": {
+        "message": "El modo oscuro se enciende/apaga según el horario anterior."
+    },
+    "subTabWhitelist": {
+        "message": "Invertir solo los listados"
+    },
+    "subTabBlacklist": {
+        "message": "No invertir los listados"
+    },
+    "btnAdd": {
+        "message": "Agregar"
+    },
+    "lblCurrentSite": {
+        "message": "Actual: "
+    },
+    "btnAddCurrent": {
+        "message": "Agregar actual"
+    },
+    "lblEmptyList": {
+        "message": "Lista vacía"
+    },
+    "lblHotkeySite": {
+        "message": "Tecla de acceso rápido para agregar sitio: "
+    },
+    "lblToggleExt": {
+        "message": "Alternar extensión"
+    },
+    "lblAddRemoveSite": {
+        "message": "Agregar/Quitar sitio actual"
+    },
+    "descKeysInfo": {
+        "message": "Haga clic en un cuadro y presione las teclas para grabar accesos directos."
+    },
+    "lblFooter": {
+        "message": "Los cambios se guardan automáticamente"
+    },
+    "fontWeightNormal": {
+        "message": "Normal"
+    },
+    "fontWeightMedium": {
+        "message": "Medio"
+    },
+    "fontWeightBold": {
+        "message": "Negrita"
+    },
+    "shortcutNone": {
+        "message": "Ninguno"
+    },
+    "shortcutPressKeys": {
+        "message": "Presione las teclas..."
+    },
+    "lblSettings": {
+        "message": "Configuración"
+    },
+    "lblAboutUs": {
+        "message": "Sobre nosotros"
+    },
+    "lblLanguage": {
+        "message": "Idioma"
+    },
+    "lblClose": {
+        "message": "Cerrar"
+    },
+    "descAboutUs": {
+        "message": "KOYU OKUYUCU es una extensión de modo oscuro dinámica y con todas las funciones diseñada para una experiencia de navegación premium."
+    },
+    "optLangSystem": {
+        "message": "Predeterminado del sistema"
+    },
+    "optLangTr": {
+        "message": "Türkçe"
+    },
+    "optLangAz": {
+        "message": "Azərbaycan dili"
+    },
+    "optLangDe": {
+        "message": "Deutsch"
+    },
+    "optLangEn": {
+        "message": "English"
+    },
+    "optLangFr": {
+        "message": "Français"
+    },
+    "optLangJa": {
+        "message": "日本語"
+    },
+    "optLangRu": {
+        "message": "Русский"
+    },
+    "optLangAr": {
+        "message": "العربية"
+    },
+    "optLangPt": {
+        "message": "Português"
+    },
+    "optLangEs": {
+        "message": "Español"
+    },
+    "lblVersion": {
+        "message": "Versión"
+    },
+    "descLanguage": {
+        "message": "Elija su idioma preferido para la interfaz de la extensión."
+    },
+    "lblAppearance": {
+        "message": "Apariencia"
+    },
+    "descAppearance": {
+        "message": "Elija un tema visual para la ventana emergente de la extensión."
+    },
+    "themeDefault": {
+        "message": "Predeterminado"
+    },
+    "themeLight": {
+        "message": "Claro"
+    },
+    "themeDark": {
+        "message": "Oscuro"
+    },
+    "themeBlack": {
+        "message": "Negro"
+    },
+    "themeWhite": {
+        "message": "Blanco"
+    },
+    "themeSepia": {
+        "message": "Sepia"
+    },
+    "themeBlue": {
+        "message": "Noche azul"
+    },
+    "errShortcutExists": {
+        "message": "¡El acceso directo ya está en uso!"
+    },
+    "lblDonate": {
+        "message": "Apoyo y donaciones"
+    },
+    "btnDonateCoffee": {
+        "message": "Buy Me a Coffee"
+    },
+    "descDonate": {
+        "message": "Si te ha gustado Koyu Okuyucu, puedes apoyar su desarrollo de código abierto a través de una de las siguientes plataformas."
+    },
+    "donateGhSponsors": {
+        "message": "GitHub Sponsors"
+    },
+    "donateGhDesc": {
+        "message": "Conviértete en patrocinador directamente a través de GitHub."
+    },
+    "donatePatreon": {
+        "message": "Patreon"
+    },
+    "donatePatreonDesc": {
+        "message": "Apoya al desarrollador a través de Patreon."
+    },
+    "donateOpenCollective": {
+        "message": "Open Collective"
+    },
+    "donateOcDesc": {
+        "message": "Contribuye al fondo comunitario transparente."
+    },
+    "donateCoffeeDesc": {
+        "message": "Contribuye invitándole un café a alguien."
+    }
+}

@@ -286,5 +286,11 @@
     },
     "donateCoffeeDesc": {
         "message": "Bir qəhvə alaraq dəstək olun"
+    },
+    "optLangPt": {
+        "message": "Português"
+    },
+    "optLangEs": {
+        "message": "Español"
     }
 }
