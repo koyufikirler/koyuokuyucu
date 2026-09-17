@@ -221,6 +221,15 @@
     "optLangAr": {
         "message": "العربية"
     },
+    "optLangPt": {
+        "message": "Português"
+    },
+    "optLangEs": {
+        "message": "Español"
+    },
+    "optLangKo": {
+        "message": "한국어"
+    },
     "lblVersion": {
         "message": "Version"
     },
@@ -286,11 +295,5 @@
     },
     "donateCoffeeDesc": {
         "message": "Offrez un café unique ou mensuel"
-    },
-    "optLangPt": {
-        "message": "Português"
-    },
-    "optLangEs": {
-        "message": "Español"
     }
 }

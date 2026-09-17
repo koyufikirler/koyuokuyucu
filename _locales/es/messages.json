@@ -227,6 +227,9 @@
     "optLangEs": {
         "message": "Español"
     },
+    "optLangKo": {
+        "message": "한국어"
+    },
     "lblVersion": {
         "message": "Versión"
     },

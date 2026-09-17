@@ -1,0 +1,299 @@
+{
+    "extensionName": {
+        "message": "KOYU OKUYUCU"
+    },
+    "extensionDescription": {
+        "message": "어두운 색상은 어떤 웹사이트에도 잘 어울립니다. 낮과 밤 모두 어두운 색상을 사용해 보세요."
+    },
+    "darkModeTitle": {
+        "message": "KOYU OKUYUCU"
+    },
+    "statusOn": {
+        "message": "켜짐"
+    },
+    "statusOff": {
+        "message": "꺼짐"
+    },
+    "statusAuto": {
+        "message": "자동"
+    },
+    "disableForSite": {
+        "message": "이 사이트에서 비활성화"
+    },
+    "thisSite": {
+        "message": "이 사이트"
+    },
+    "thisPage": {
+        "message": "이 페이지"
+    },
+    "tabVisuals": {
+        "message": "시각 효과"
+    },
+    "tabMedia": {
+        "message": "미디어"
+    },
+    "tabType": {
+        "message": "유형"
+    },
+    "tabAuto": {
+        "message": "자동"
+    },
+    "tabSites": {
+        "message": "사이트"
+    },
+    "tabKeys": {
+        "message": "단축키"
+    },
+    "lblBrightness": {
+        "message": "밝기: "
+    },
+    "lblContrast": {
+        "message": "대비: "
+    },
+    "lblSepia": {
+        "message": "세피아 (따뜻함): "
+    },
+    "lblGrayscale": {
+        "message": "회색조: "
+    },
+    "lblVisProtect": {
+        "message": "🎨 시력 보호 모드"
+    },
+    "descVisProtect": {
+        "message": "이미지와 비디오의 원래 색상을 유지합니다. 색상 반전 대신 스마트한 어둡게 처리를 사용합니다. <b>사진이 많은 사이트에 권장됩니다.</b>"
+    },
+    "lblSmartImages": {
+        "message": "스마트 이미지 어둡게"
+    },
+    "descSmartImages": {
+        "message": "눈부심을 줄이기 위해 이미지를 어둡게 합니다. <b>이미지 위에 마우스를 올리면</b> 밝아집니다!"
+    },
+    "lblDynamic": {
+        "message": "🤖 동적 감지"
+    },
+    "descDynamic": {
+        "message": "CSS가 변경될 때 자동으로 조정됩니다. <b>SPA에 필수적입니다</b> (React, Vue, Angular). 실시간으로 스타일 업데이트를 모니터링합니다."
+    },
+    "lblPerformance": {
+        "message": "⚡ 성능 모드"
+    },
+    "descPerformance": {
+        "message": "전력 소비를 줄이고 배터리 수명을 늘립니다. 최소한의 DOM 변경을 위해 스마트 색상 보호를 비활성화합니다. <b>MacBook 사용자에게 권장됩니다.</b>"
+    },
+    "lblCustomFonts": {
+        "message": "사용자 지정 글꼴"
+    },
+    "lblFontFamily": {
+        "message": "글꼴 모음"
+    },
+    "optFontSystem": {
+        "message": "시스템 기본값"
+    },
+    "optFontSans": {
+        "message": "산세리프"
+    },
+    "optFontSerif": {
+        "message": "세리프"
+    },
+    "optFontMono": {
+        "message": "고정폭"
+    },
+    "optFontDyslexic": {
+        "message": "OpenDyslexic (난독증 친화적)"
+    },
+    "lblFontWeight": {
+        "message": "글꼴 두께: "
+    },
+    "lblActivationMode": {
+        "message": "활성화 모드"
+    },
+    "optModeManual": {
+        "message": "수동 (클릭하여 전환)"
+    },
+    "optModeSystem": {
+        "message": "시스템 모양 따르기"
+    },
+    "optModeTime": {
+        "message": "시간 지정"
+    },
+    "lblStartTime": {
+        "message": "시작 시간 (일몰)"
+    },
+    "lblEndTime": {
+        "message": "종료 시간 (일출)"
+    },
+    "descAutoInfoManual": {
+        "message": "다크 모드가 자동으로 켜지는 시점을 제어합니다."
+    },
+    "descAutoInfoSystem": {
+        "message": "다크 모드는 시스템 모양 설정에 의해 제어됩니다."
+    },
+    "descAutoInfoTime": {
+        "message": "다크 모드는 위의 일정에 따라 켜지거나 꺼집니다."
+    },
+    "subTabWhitelist": {
+        "message": "목록에 있는 항목만 반전"
+    },
+    "subTabBlacklist": {
+        "message": "목록에 있는 항목 반전 안 함"
+    },
+    "btnAdd": {
+        "message": "추가"
+    },
+    "lblCurrentSite": {
+        "message": "현재: "
+    },
+    "btnAddCurrent": {
+        "message": "현재 사이트 추가"
+    },
+    "lblEmptyList": {
+        "message": "빈 목록"
+    },
+    "lblHotkeySite": {
+        "message": "사이트 추가 단축키: "
+    },
+    "lblToggleExt": {
+        "message": "확장 프로그램 켜기/끄기"
+    },
+    "lblAddRemoveSite": {
+        "message": "현재 사이트 추가/제거"
+    },
+    "descKeysInfo": {
+        "message": "상자를 클릭하고 키를 눌러 단축키를 기록하세요."
+    },
+    "lblFooter": {
+        "message": "변경 사항이 자동 저장됩니다"
+    },
+    "fontWeightNormal": {
+        "message": "보통"
+    },
+    "fontWeightMedium": {
+        "message": "중간"
+    },
+    "fontWeightBold": {
+        "message": "굵게"
+    },
+    "shortcutNone": {
+        "message": "없음"
+    },
+    "shortcutPressKeys": {
+        "message": "키를 누르세요..."
+    },
+    "lblSettings": {
+        "message": "설정"
+    },
+    "lblAboutUs": {
+        "message": "정보"
+    },
+    "lblLanguage": {
+        "message": "언어"
+    },
+    "lblClose": {
+        "message": "닫기"
+    },
+    "descAboutUs": {
+        "message": "KOYU OKUYUCU는 프리미엄 브라우징 경험을 위해 설계된 완전한 기능을 갖춘 동적 다크 모드 확장 프로그램입니다."
+    },
+    "optLangSystem": {
+        "message": "시스템 기본값"
+    },
+    "optLangTr": {
+        "message": "Türkçe"
+    },
+    "optLangAz": {
+        "message": "Azərbaycan dili"
+    },
+    "optLangDe": {
+        "message": "Deutsch"
+    },
+    "optLangEn": {
+        "message": "English"
+    },
+    "optLangFr": {
+        "message": "Français"
+    },
+    "optLangJa": {
+        "message": "日本語"
+    },
+    "optLangRu": {
+        "message": "Русский"
+    },
+    "optLangAr": {
+        "message": "العربية"
+    },
+    "optLangPt": {
+        "message": "Português"
+    },
+    "optLangEs": {
+        "message": "Español"
+    },
+    "optLangKo": {
+        "message": "한국어"
+    },
+    "lblVersion": {
+        "message": "버전"
+    },
+    "descLanguage": {
+        "message": "확장 프로그램 인터페이스의 기본 언어를 선택하세요."
+    },
+    "lblAppearance": {
+        "message": "모양"
+    },
+    "descAppearance": {
+        "message": "확장 프로그램 팝업의 시각적 테마를 선택하세요."
+    },
+    "themeDefault": {
+        "message": "기본"
+    },
+    "themeLight": {
+        "message": "라이트"
+    },
+    "themeDark": {
+        "message": "다크"
+    },
+    "themeBlack": {
+        "message": "블랙"
+    },
+    "themeWhite": {
+        "message": "화이트"
+    },
+    "themeSepia": {
+        "message": "세피아"
+    },
+    "themeBlue": {
+        "message": "블루 나이트"
+    },
+    "errShortcutExists": {
+        "message": "해당 단축키는 이미 사용 중입니다!"
+    },
+    "lblDonate": {
+        "message": "지원 및 후원"
+    },
+    "btnDonateCoffee": {
+        "message": "Buy Me a Coffee"
+    },
+    "descDonate": {
+        "message": "Koyu Okuyucu 마음에 드신다면, 아래 플랫폼 중 하나를 통해 오픈 소스 개발을 후원하실 수 있습니다!"
+    },
+    "donateGhSponsors": {
+        "message": "GitHub Sponsors"
+    },
+    "donateGhDesc": {
+        "message": "GitHub을 통해 직접 후원하기"
+    },
+    "donatePatreon": {
+        "message": "Patreon"
+    },
+    "donatePatreonDesc": {
+        "message": "Patreon에서 개발자를 후원하세요."
+    },
+    "donateOpenCollective": {
+        "message": "Open Collective"
+    },
+    "donateOcDesc": {
+        "message": "투명한 커뮤니티 기금에 기여하십시오."
+    },
+    "donateCoffeeDesc": {
+        "message": "커피 한 잔을 구매하여 후원해 주세요."
+    }
+}
