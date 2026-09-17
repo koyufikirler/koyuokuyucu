@@ -1,1 +1,11 @@
 .DS_Store
+__MACOSX
+
+# Test ve Build Klasörleri
+build-chrome/
+build-firefox/
+release/
+release_test/
+
+# Test Betikleri
+test-build.sh

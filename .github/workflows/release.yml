@@ -20,20 +20,48 @@ jobs:
         id: version
         run: echo "VERSION=${GITHUB_REF_NAME#s}" >> "$GITHUB_OUTPUT"
 
-      - name: Create ZIP
+      # --- 1. CHROME & EDGE BUILD ---
+      - name: Build Chrome & Edge ZIP
         run: |
-          mkdir release
+          mkdir -p build-chrome release
 
-          zip -r "release/extension-${{ steps.version.outputs.VERSION }}.zip" \
-            _locales \
-            icons \
-            content.js \
-            manifest.json \
-            popup.html \
-            popup.js
+          # Proje dosyalarını geçici klasöre kopyala
+          cp -r _locales icons content.js popup.html popup.js build-chrome/
+          
+          # manifest.chrome.json dosyasını manifest.json adıyla yerleştir
+          cp manifest.chrome.json build-chrome/manifest.json
 
+          # Chrome için zip paketini oluştur
+          (cd build-chrome && zip -r "${GITHUB_WORKSPACE}/release/koyu-chrome-${{ steps.version.outputs.VERSION }}.zip" .)
+
+          # Edge için aynı paketi kopyala
+          cp "release/koyu-chrome-${{ steps.version.outputs.VERSION }}.zip" \
+             "release/koyu-edge-${{ steps.version.outputs.VERSION }}.zip"
+
+      # --- 2. FIREFOX BUILD (MERGE) ---
+      - name: Build Firefox ZIP
+        run: |
+          mkdir -p build-firefox
+
+          # Proje dosyalarını geçici klasöre kopyala
+          cp -r _locales icons content.js popup.html popup.js build-firefox/
+
+          # Chrome manifesti ile Firefox farklarını birleştirip manifest.json üret
+          jq -s '.[0] * .[1]' manifest.chrome.json manifest.firefox.json > build-firefox/manifest.json
+
+          # Firefox için zip paketini oluştur
+          (cd build-firefox && zip -r "${GITHUB_WORKSPACE}/release/koyu-firefox-${{ steps.version.outputs.VERSION }}.zip" .)
+
+      # --- 3. GITHUB RELEASE YÜKLEME ---
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: release/extension-${{ steps.version.outputs.VERSION }}.zip
-          generate_release_notes: true
+          name: "Sürüm ${{ steps.version.outputs.VERSION }}"
+          body: |
+            ## Yenilikler ve Güncellemeler
+            * Chrome, Firefox ve Edge paketleri güncellendi.
+          files: |
+            release/koyu-chrome-${{ steps.version.outputs.VERSION }}.zip
+            release/koyu-firefox-${{ steps.version.outputs.VERSION }}.zip
+            release/koyu-edge-${{ steps.version.outputs.VERSION }}.zip
+          generate_release_notes: false
