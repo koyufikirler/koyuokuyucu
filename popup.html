@@ -1159,7 +1159,11 @@
         <div class="settings-card">
             <!-- Sidebar -->
             <div id="settingsSidebar">
-                <div class="settings-tab active" data-stabs="about">
+                <div class="settings-tab active" data-stabs="general">
+                    <span>⚙️</span>
+                    <span data-i18n="lblGeneral">General</span>
+                </div>
+                <div class="settings-tab" data-stabs="about">
                     <span>ℹ️</span>
                     <span data-i18n="lblAboutUs">About</span>
                 </div>
@@ -1185,8 +1189,40 @@
                     <button id="closeSettingsBtn" class="close-overlay" aria-label="Close">&times;</button>
                 </div>
 
+                <!-- General Panel -->
+                <div id="panel-general" class="settings-panel active">
+                    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px; line-height: 1.4;"
+                        data-i18n="descGeneral">
+                        Configure general preferences and document features.
+                    </p>
+
+                    <div
+                        style="background: var(--surface-soft); border: 1px solid var(--border-color); border-radius: 14px; padding: 14px; margin-bottom: 14px;">
+                        <!-- flex-wrap: nowrap ekleyerek elemanların asla alt alta geçmemesini garanti ediyoruz -->
+                        <div class="row"
+                            style="margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap; gap: 10px;">
+
+                            <!-- white-space: nowrap ile metnin tek satırda kalmasını sağlıyoruz -->
+                            <span data-i18n="lblEnablePdf"
+                                style="font-weight: 600; font-size: 13px; white-space: nowrap;">PDF Files</span>
+
+                            <!-- flex-shrink: 0 ile switch butonunun metin tarafından sıkıştırılıp küçülmesini engelliyoruz -->
+                            <label class="switch" style="flex-shrink: 0;">
+                                <input type="checkbox" id="enablePdf">
+                                <span class="slider"></span>
+                            </label>
+
+                        </div>
+                        <p data-i18n="descEnablePdf"
+                            style="margin: 0; font-size: 12px; color: var(--text-muted); line-height: 1.4;">
+                            Enable dark mode for PDF documents opened in browser tabs.
+                        </p>
+                    </div>
+
+                </div>
+
                 <!-- About Us Panel -->
-                <div id="panel-about" class="settings-panel active">
+                <div id="panel-about" class="settings-panel">
                     <div style="text-align: center; margin-bottom: 20px;">
                         <div
                             style="background: linear-gradient(135deg, var(--accent-orange), #ffcc00); width: 64px; height: 64px; border-radius: 18px; margin: 0 auto 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 15px rgba(255, 149, 0, 0.25);">

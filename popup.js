@@ -96,6 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const languageSelect = document.getElementById('languageSelect');
     const appVersion = document.getElementById('appVersion');
     const themeSwatches = document.querySelectorAll('.theme-swatch');
+    const enablePdf = document.getElementById('enablePdf');
 
     const THEME_CLASSES = ['theme-light', 'theme-dark', 'theme-black', 'theme-white', 'theme-sepia', 'theme-blue'];
 
@@ -400,6 +401,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             language: languageSelect ? languageSelect.value : 'system',
             uiTheme: currentSettings.uiTheme || 'default',
+            enablePdf: enablePdf ? enablePdf.checked : false,
             shortcut: currentSettings.shortcut, // Preserve
             shortcutSite: currentSettings.shortcutSite, // Preserve
             siteList: {
@@ -469,6 +471,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 automation: { mode: 'manual', startTime: '19:00', endTime: '07:00' },
                 language: 'system',
                 uiTheme: 'default',
+                enablePdf: false,
                 shortcut: null,
                 shortcutSite: null,
                 siteList: { mode: 'blacklist', blacklist: [], whitelist: [] }
@@ -481,6 +484,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (s.performanceMode === undefined) s.performanceMode = false;
             if (s.visualProtection === undefined) s.visualProtection = false;
             if (s.dynamicDetection === undefined) s.dynamicDetection = true;
+            if (s.enablePdf === undefined) s.enablePdf = false;
             if (!s.language) s.language = 'system';
             if (!s.uiTheme) s.uiTheme = 'default';
 
@@ -511,6 +515,8 @@ document.addEventListener('DOMContentLoaded', () => {
             fontFamily.value = s.fontFamily || 'system';
             fontWeight.value = s.fontWeight || 0;
             valWeight.textContent = weightName(s.fontWeight);
+
+            if (enablePdf) enablePdf.checked = !!s.enablePdf;
 
             // Auto
             autoMode.value = s.automation.mode || 'manual';
@@ -548,7 +554,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Inputs
-    [globalToggle, brightness, contrast, sepia, grayscale, smartImages, visualProtection, dynamicDetection, performanceMode, enableFonts, fontFamily, fontWeight, autoMode, timeStart, timeEnd].forEach(el => {
+    [globalToggle, brightness, contrast, sepia, grayscale, smartImages, visualProtection, dynamicDetection, performanceMode, enableFonts, fontFamily, fontWeight, autoMode, timeStart, timeEnd, enablePdf].filter(Boolean).forEach(el => {
         el.addEventListener('input', () => {
             broadcastSettings();
         });

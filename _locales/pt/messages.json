@@ -295,5 +295,17 @@
     },
     "donateCoffeeDesc": {
         "message": "Contribua oferecendo um café a alguém."
+    },
+    "lblGeneral": {
+        "message": "Geral"
+    },
+    "descGeneral": {
+        "message": "Configure as preferências gerais e as opções de documentos."
+    },
+    "lblEnablePdf": {
+        "message": "Suporte PDF"
+    },
+    "descEnablePdf": {
+        "message": "Ative o modo escuro para documentos PDF abertos em abas do navegador."
     }
 }

@@ -21,7 +21,8 @@ globalThis.browser = globalThis.browser || globalThis.chrome;
         shortcut: null,
         shortcutSite: null,
         siteList: { mode: 'blacklist', blacklist: [], whitelist: [] },
-        performanceMode: false // Performance mode: minimal DOM changes, lower power consumption
+        performanceMode: false, // Performance mode: minimal DOM changes, lower power consumption
+        enablePdf: false
     };
 
     let timeCheckInterval = null;
@@ -142,7 +143,26 @@ globalThis.browser = globalThis.browser || globalThis.chrome;
         }
     }
 
+    function isPdfPage() {
+        try {
+            if (document.contentType === 'application/pdf') return true;
+            const path = window.location.pathname.toLowerCase();
+            if (path.endsWith('.pdf')) return true;
+            const cleanUrl = window.location.href.split('?')[0].split('#')[0].toLowerCase();
+            if (cleanUrl.endsWith('.pdf')) return true;
+            if (document.querySelector('embed[type="application/pdf"], embed[type*="pdf"], pdf-viewer, #viewerContainer.pdfViewer, #viewer.pdfViewer')) {
+                return true;
+            }
+        } catch (e) {}
+        return false;
+    }
+
     function shouldBeActive() {
+        // First check if PDF document and if PDF dark mode is disabled
+        if (isPdfPage() && !currentSettings.enablePdf) {
+            return false;
+        }
+
         // First check site lists
         if (!isSiteAllowed()) return false;
 
@@ -163,6 +183,7 @@ globalThis.browser = globalThis.browser || globalThis.chrome;
      * and marks them for counter-inversion to preserve original branding.
      */
     function applySmartProtection(root = document) {
+        if (isPdfPage()) return;
         if (!shouldBeActive() || isPageDark()) return;
 
         // Skip smart protection in performance mode to reduce DOM manipulation
@@ -341,7 +362,7 @@ globalThis.browser = globalThis.browser || globalThis.chrome;
             return;
         }
 
-        if (isPageDark()) {
+        if (isPageDark() && !isPdfPage()) {
             if (style) style.remove();
             if (typo) typo.remove();
             // Clean up any SVG logo adaptations when page is already dark
@@ -367,6 +388,10 @@ globalThis.browser = globalThis.browser || globalThis.chrome;
         // Instead, we counter-invert SVG because Docs uses SVG for toolbar icons.
         if (url.includes('docs.google.com')) {
             mediaSelector = 'img, video, svg, :not(object):not(body) > embed, object, img[role="img"], .emoji, img[src*="emoji"], [aria-label*="emoji"]';
+        } else if (isPdfPage()) {
+            // In PDF documents, canvas (PDF.js) and embeds (Chrome PDF viewer) render document pages.
+            // Do not counter-invert them so they remain dark.
+            mediaSelector = 'img:not(.pdfViewer img), video';
         }
 
         let exceptionsSelector = '';
@@ -401,6 +426,15 @@ globalThis.browser = globalThis.browser || globalThis.chrome;
             `;
         }
 
+        let pdfSpecificRules = '';
+        if (isPdfPage()) {
+            pdfSpecificRules = `
+                body, embed[type="application/pdf"], embed[type*="pdf"] {
+                    background-color: #ededed !important;
+                }
+            `;
+        }
+
         let imageRules = '';
         if (currentSettings.smartImages) {
             imageRules = `
@@ -426,6 +460,7 @@ globalThis.browser = globalThis.browser || globalThis.chrome;
                 filter: ${exceptionFilter} !important;
             }` : ''}
             ${mediaProtectionRules}
+            ${pdfSpecificRules}
             /* Optimized Protection for Icons and Vibrant Elements */
             [data-dm-protected="true"] {
                 filter: ${exceptionFilter} contrast(1.1) brightness(1.1) !important;
@@ -690,6 +725,7 @@ globalThis.browser = globalThis.browser || globalThis.chrome;
                 if (currentSettings.performanceMode === undefined) currentSettings.performanceMode = false;
                 if (currentSettings.visualProtection === undefined) currentSettings.visualProtection = false;
                 if (currentSettings.dynamicDetection === undefined) currentSettings.dynamicDetection = true;
+                if (currentSettings.enablePdf === undefined) currentSettings.enablePdf = false;
             }
 
             if (currentSettings.automation.mode === 'time') {
@@ -716,6 +752,7 @@ globalThis.browser = globalThis.browser || globalThis.chrome;
     browser.storage.onChanged.addListener((changes, areaName) => {
         if (areaName === 'local' && changes.settings) {
             currentSettings = changes.settings.newValue;
+            if (currentSettings && currentSettings.enablePdf === undefined) currentSettings.enablePdf = false;
             if (currentSettings && currentSettings.automation && currentSettings.automation.mode === 'time') {
                 if (!timeCheckInterval) timeCheckInterval = setInterval(updateStyles, 60000);
             } else {

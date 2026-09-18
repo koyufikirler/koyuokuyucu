@@ -295,5 +295,17 @@
     },
     "donateCoffeeDesc": {
         "message": "Buy a one-time or monthly coffee"
+    },
+    "lblGeneral": {
+        "message": "General"
+    },
+    "descGeneral": {
+        "message": "Configure general preferences and document settings."
+    },
+    "lblEnablePdf": {
+        "message": "PDF Support"
+    },
+    "descEnablePdf": {
+        "message": "Enable dark mode for PDF documents opened in browser tabs."
     }
 }

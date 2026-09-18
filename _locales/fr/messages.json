@@ -295,5 +295,17 @@
     },
     "donateCoffeeDesc": {
         "message": "Offrez un café unique ou mensuel"
+    },
+    "lblGeneral": {
+        "message": "Général"
+    },
+    "descGeneral": {
+        "message": "Configurez les préférences générales et les paramètres des documents."
+    },
+    "lblEnablePdf": {
+        "message": "Support PDF"
+    },
+    "descEnablePdf": {
+        "message": "Activez le mode sombre pour les documents PDF ouverts dans les onglets du navigateur."
     }
 }

@@ -295,5 +295,17 @@
     },
     "donateCoffeeDesc": {
         "message": "Bir kahve ısmarlayarak katkı sağlayın"
+    },
+    "lblGeneral": {
+        "message": "Genel"
+    },
+    "descGeneral": {
+        "message": "Genel tercihleri ve belge ayarlarını yapılandırın."
+    },
+    "lblEnablePdf": {
+        "message": "PDF Desteği"
+    },
+    "descEnablePdf": {
+        "message": "Tarayıcı sekmelerinde açılan PDF belgeleri için koyu modu etkinleştirin."
     }
 }

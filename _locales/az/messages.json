@@ -295,5 +295,17 @@
     },
     "donateCoffeeDesc": {
         "message": "Bir qəhvə alaraq dəstək olun"
+    },
+    "lblGeneral": {
+        "message": "Ümumi"
+    },
+    "descGeneral": {
+        "message": "Ümumi tənzimləmələri və sənəd seçimlərini konfiqurasiya edin."
+    },
+    "lblEnablePdf": {
+        "message": "PDF Dəstəyi"
+    },
+    "descEnablePdf": {
+        "message": "Brauzer tablarında açılan PDF sənədləri üçün qaranlıq rejimi aktivləşdirin."
     }
 }

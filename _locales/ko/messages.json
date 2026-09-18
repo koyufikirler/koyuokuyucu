@@ -295,5 +295,17 @@
     },
     "donateCoffeeDesc": {
         "message": "커피 한 잔을 구매하여 후원해 주세요."
+    },
+    "lblGeneral": {
+        "message": "일반"
+    },
+    "descGeneral": {
+        "message": "일반 기본 설정 및 문서 설정을 구성합니다."
+    },
+    "lblEnablePdf": {
+        "message": "PDF 지원"
+    },
+    "descEnablePdf": {
+        "message": "브라우저 탭에서 열린 PDF 문서에 다크 모드를 활성화합니다."
     }
 }

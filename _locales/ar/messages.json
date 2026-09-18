@@ -295,5 +295,17 @@
     },
     "donateCoffeeDesc": {
         "message": "ادعمنا بقهوة لمرة واحدة أو شهرياً"
+    },
+    "lblGeneral": {
+        "message": "عام"
+    },
+    "descGeneral": {
+        "message": "تكوين التفضيلات العامة وإعدادات المستندات."
+    },
+    "lblEnablePdf": {
+        "message": "دعم PDF"
+    },
+    "descEnablePdf": {
+        "message": "تمكين الوضع الداكن لمستندات PDF المفتوحة في علامات تبويب المتصفح."
     }
 }
