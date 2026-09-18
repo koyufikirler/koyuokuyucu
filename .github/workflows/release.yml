@@ -59,7 +59,7 @@ jobs:
           name: "Sürüm ${{ steps.version.outputs.VERSION }}"
           body: |
             ## Yenilikler ve Güncellemeler
-            * Chrome, Firefox ve Edge paketleri güncellendi.
+            * PDF Desteği eklendi.
           files: |
             release/koyu-chrome-${{ steps.version.outputs.VERSION }}.zip
             release/koyu-firefox-${{ steps.version.outputs.VERSION }}.zip
