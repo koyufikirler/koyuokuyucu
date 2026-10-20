@@ -27,16 +27,16 @@
         "message": "эта страница"
     },
     "tabVisuals": {
-        "message": "Визуал"
+        "message": "Появление"
     },
     "tabMedia": {
-        "message": "Медиа"
+        "message": "Визуальный"
     },
     "tabType": {
         "message": "Шрифт"
     },
     "tabAuto": {
-        "message": "Авто"
+        "message": "Умный"
     },
     "tabSites": {
         "message": "Сайты"
@@ -51,7 +51,7 @@
         "message": "Контраст: "
     },
     "lblSepia": {
-        "message": "Сепия: "
+        "message": "Теплота: "
     },
     "lblGrayscale": {
         "message": "Оттенки серого: "

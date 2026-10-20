@@ -15,7 +15,7 @@
         "message": "Kapalı"
     },
     "statusAuto": {
-        "message": "Otomatik"
+        "message": "Sistem"
     },
     "disableForSite": {
         "message": "Şu site için devre dışı bırak"
@@ -30,13 +30,13 @@
         "message": "Görünüm"
     },
     "tabMedia": {
-        "message": "Medya"
+        "message": "Görsel"
     },
     "tabType": {
         "message": "Yazı"
     },
     "tabAuto": {
-        "message": "Otomatik"
+        "message": "Akıllı"
     },
     "tabSites": {
         "message": "Siteler"
@@ -51,7 +51,7 @@
         "message": "Kontrast: "
     },
     "lblSepia": {
-        "message": "Sepya (Sıcaklık): "
+        "message": "Sıcaklık: "
     },
     "lblGrayscale": {
         "message": "Gri Ton: "
@@ -108,7 +108,7 @@
         "message": "Etkinleştirme Modu"
     },
     "optModeManual": {
-        "message": "Manuel (Tıklayarak)"
+        "message": "Elle"
     },
     "optModeSystem": {
         "message": "Sistem Görünümünü İzle"
@@ -258,7 +258,7 @@
         "message": "Beyaz"
     },
     "themeSepia": {
-        "message": "Sepya"
+        "message": "Kağıt"
     },
     "themeBlue": {
         "message": "Mavi Gece"

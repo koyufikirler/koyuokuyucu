@@ -27,16 +27,16 @@
         "message": "cette page"
     },
     "tabVisuals": {
-        "message": "Visuels"
+        "message": "Apparence"
     },
     "tabMedia": {
-        "message": "Média"
+        "message": "Visuel"
     },
     "tabType": {
         "message": "Police"
     },
     "tabAuto": {
-        "message": "Auto"
+        "message": "Intelligent"
     },
     "tabSites": {
         "message": "Sites"
@@ -51,7 +51,7 @@
         "message": "Contraste : "
     },
     "lblSepia": {
-        "message": "Sépia : "
+        "message": "Chaleur : "
     },
     "lblGrayscale": {
         "message": "Niveaux de gris : "

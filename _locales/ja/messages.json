@@ -30,13 +30,13 @@
         "message": "外観"
     },
     "tabMedia": {
-        "message": "メディア"
+        "message": "ビジュアル"
     },
     "tabType": {
         "message": "フォント"
     },
     "tabAuto": {
-        "message": "自動"
+        "message": "スマート"
     },
     "tabSites": {
         "message": "サイト"
@@ -51,7 +51,7 @@
         "message": "コントラスト: "
     },
     "lblSepia": {
-        "message": "セピア: "
+        "message": "暖かみ: "
     },
     "lblGrayscale": {
         "message": "グレースケール: "

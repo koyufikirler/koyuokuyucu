@@ -27,16 +27,16 @@
         "message": "diese Seite"
     },
     "tabVisuals": {
-        "message": "Optik"
+        "message": "Aussehen"
     },
     "tabMedia": {
-        "message": "Medien"
+        "message": "Visuell"
     },
     "tabType": {
         "message": "Schrift"
     },
     "tabAuto": {
-        "message": "Auto"
+        "message": "Intelligent"
     },
     "tabSites": {
         "message": "Seiten"
@@ -51,7 +51,7 @@
         "message": "Kontrast: "
     },
     "lblSepia": {
-        "message": "Sepia (Wärme): "
+        "message": "Wärme: "
     },
     "lblGrayscale": {
         "message": "Grauton: "
@@ -108,7 +108,7 @@
         "message": "Aktivierungsmodus"
     },
     "optModeManual": {
-        "message": "Manuell (Klick)"
+        "message": "Manuell"
     },
     "optModeSystem": {
         "message": "Systemdesign folgen"

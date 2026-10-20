@@ -30,13 +30,13 @@
         "message": "المرئيات"
     },
     "tabMedia": {
-        "message": "الوسائط"
+        "message": "مرئي"
     },
     "tabType": {
         "message": "النوع"
     },
     "tabAuto": {
-        "message": "تلقائي"
+        "message": "ماهر"
     },
     "tabSites": {
         "message": "المواقع"
@@ -51,7 +51,7 @@
         "message": "التباين: "
     },
     "lblSepia": {
-        "message": "داكن (دفء): "
+        "message": "الدفء: "
     },
     "lblGrayscale": {
         "message": "درجة الرمادي: "
@@ -108,7 +108,7 @@
         "message": "وضع التنشيط"
     },
     "optModeManual": {
-        "message": "يدوي (تبديل بالنقر)"
+        "message": "يدوي"
     },
     "optModeSystem": {
         "message": "اتباع مظهر النظام"

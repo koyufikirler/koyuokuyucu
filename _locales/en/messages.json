@@ -30,13 +30,13 @@
         "message": "Visuals"
     },
     "tabMedia": {
-        "message": "Media"
+        "message": "Image"
     },
     "tabType": {
         "message": "Type"
     },
     "tabAuto": {
-        "message": "Auto"
+        "message": "Smart"
     },
     "tabSites": {
         "message": "Sites"
@@ -51,7 +51,7 @@
         "message": "Contrast: "
     },
     "lblSepia": {
-        "message": "Sepia (Warmth): "
+        "message": "Warmth: "
     },
     "lblGrayscale": {
         "message": "Grey Tone: "
@@ -108,7 +108,7 @@
         "message": "Activation Mode"
     },
     "optModeManual": {
-        "message": "Manual (Click Toggle)"
+        "message": "Manual"
     },
     "optModeSystem": {
         "message": "Follow System Appearance"

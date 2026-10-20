@@ -27,16 +27,16 @@
         "message": "esta página"
     },
     "tabVisuals": {
-        "message": "Visuais"
+        "message": "Aparência"
     },
     "tabMedia": {
-        "message": "Mídia"
+        "message": "Visual"
     },
     "tabType": {
         "message": "Tipo"
     },
     "tabAuto": {
-        "message": "Automático"
+        "message": "Inteligente"
     },
     "tabSites": {
         "message": "Sites"
@@ -51,7 +51,7 @@
         "message": "Contraste: "
     },
     "lblSepia": {
-        "message": "Sépia (Calor): "
+        "message": "Calor: "
     },
     "lblGrayscale": {
         "message": "Escala de Cinza: "
@@ -108,7 +108,7 @@
         "message": "Modo de Ativação"
     },
     "optModeManual": {
-        "message": "Manual (Alternar ao Clicar)"
+        "message": "Manual"
     },
     "optModeSystem": {
         "message": "Seguir a Aparência do Sistema"

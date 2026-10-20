@@ -27,16 +27,16 @@
         "message": "이 페이지"
     },
     "tabVisuals": {
-        "message": "시각 효과"
+        "message": "모습"
     },
     "tabMedia": {
-        "message": "미디어"
+        "message": "시각"
     },
     "tabType": {
         "message": "유형"
     },
     "tabAuto": {
-        "message": "자동"
+        "message": "스마트"
     },
     "tabSites": {
         "message": "사이트"
@@ -51,7 +51,7 @@
         "message": "대비: "
     },
     "lblSepia": {
-        "message": "세피아 (따뜻함): "
+        "message": "따뜻함: "
     },
     "lblGrayscale": {
         "message": "회색조: "
@@ -108,7 +108,7 @@
         "message": "활성화 모드"
     },
     "optModeManual": {
-        "message": "수동 (클릭하여 전환)"
+        "message": "수동"
     },
     "optModeSystem": {
         "message": "시스템 모양 따르기"

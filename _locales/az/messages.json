@@ -30,13 +30,13 @@
         "message": "Görünüş"
     },
     "tabMedia": {
-        "message": "Media"
+        "message": "Vizual"
     },
     "tabType": {
         "message": "Şrift"
     },
     "tabAuto": {
-        "message": "Avtomatik"
+        "message": "Ağıllı"
     },
     "tabSites": {
         "message": "Saytlar"
@@ -51,7 +51,7 @@
         "message": "Kontrast: "
     },
     "lblSepia": {
-        "message": "Sepiya (İstilik): "
+        "message": "İstilik: "
     },
     "lblGrayscale": {
         "message": "Boz Ton: "
@@ -108,7 +108,7 @@
         "message": "Aktivləşdirmə Rejimi"
     },
     "optModeManual": {
-        "message": "Mexaniki (Klikləyərək)"
+        "message": "Əl ilə"
     },
     "optModeSystem": {
         "message": "Sistem Görünüşünü İzlə"
