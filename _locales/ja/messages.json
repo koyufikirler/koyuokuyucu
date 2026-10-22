@@ -27,10 +27,10 @@
         "message": "このページ"
     },
     "tabVisuals": {
-        "message": "外観"
+        "message": "表示"
     },
     "tabMedia": {
-        "message": "ビジュアル"
+        "message": "画像"
     },
     "tabType": {
         "message": "フォント"

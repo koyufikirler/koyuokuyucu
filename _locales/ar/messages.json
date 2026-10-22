@@ -27,22 +27,22 @@
         "message": "هذه الصفحة"
     },
     "tabVisuals": {
-        "message": "المرئيات"
+        "message": "العرض"
     },
     "tabMedia": {
-        "message": "مرئي"
+        "message": "الصور"
     },
     "tabType": {
-        "message": "النوع"
+        "message": "النص"
     },
     "tabAuto": {
-        "message": "ماهر"
+        "message": "ذكي"
     },
     "tabSites": {
         "message": "المواقع"
     },
     "tabKeys": {
-        "message": "المفاتيح"
+        "message": "اختصارات"
     },
     "lblBrightness": {
         "message": "السطوع: "

@@ -27,16 +27,16 @@
         "message": "эта страница"
     },
     "tabVisuals": {
-        "message": "Появление"
+        "message": "Вид"
     },
     "tabMedia": {
-        "message": "Визуальный"
+        "message": "Фото"
     },
     "tabType": {
-        "message": "Шрифт"
+        "message": "Текст"
     },
     "tabAuto": {
-        "message": "Умный"
+        "message": "Смарт"
     },
     "tabSites": {
         "message": "Сайты"

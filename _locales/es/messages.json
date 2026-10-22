@@ -27,16 +27,16 @@
         "message": "esta página"
     },
     "tabVisuals": {
-        "message": "Apariencia"
+        "message": "Aspecto"
     },
     "tabMedia": {
-        "message": "Visual"
+        "message": "Imágenes"
     },
     "tabType": {
-        "message": "Tipo"
+        "message": "Texto"
     },
     "tabAuto": {
-        "message": "Inteligente"
+        "message": "Auto"
     },
     "tabSites": {
         "message": "Sitios"

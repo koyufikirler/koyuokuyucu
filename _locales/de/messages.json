@@ -30,13 +30,13 @@
         "message": "Aussehen"
     },
     "tabMedia": {
-        "message": "Visuell"
+        "message": "Bilder"
     },
     "tabType": {
-        "message": "Schrift"
+        "message": "Text"
     },
     "tabAuto": {
-        "message": "Intelligent"
+        "message": "Klug"
     },
     "tabSites": {
         "message": "Seiten"

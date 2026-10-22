@@ -27,22 +27,22 @@
         "message": "cette page"
     },
     "tabVisuals": {
-        "message": "Apparence"
+        "message": "Affichage"
     },
     "tabMedia": {
         "message": "Visuel"
     },
     "tabType": {
-        "message": "Police"
+        "message": "Texte"
     },
     "tabAuto": {
-        "message": "Intelligent"
+        "message": "Futé"
     },
     "tabSites": {
         "message": "Sites"
     },
     "tabKeys": {
-        "message": "Touches"
+        "message": "Raccourci"
     },
     "lblBrightness": {
         "message": "Luminosité : "

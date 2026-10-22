@@ -27,16 +27,16 @@
         "message": "esta página"
     },
     "tabVisuals": {
-        "message": "Aparência"
+        "message": "Exibição"
     },
     "tabMedia": {
-        "message": "Visual"
+        "message": "Imagens"
     },
     "tabType": {
-        "message": "Tipo"
+        "message": "Texto"
     },
     "tabAuto": {
-        "message": "Inteligente"
+        "message": "Esperto"
     },
     "tabSites": {
         "message": "Sites"
