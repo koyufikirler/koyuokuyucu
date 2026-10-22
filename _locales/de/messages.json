@@ -60,25 +60,25 @@
         "message": "🎨 Visueller Schutz"
     },
     "descVisProtect": {
-        "message": "Bewahrt Originalfarben in Bildern und Videos durch intelligentes Abdunkeln. <b>Empfohlen für fotolastige Websites.</b>"
+        "message": "Mildert Bilder und Videos ab und bewahrt dabei ihre natürlichen Farben. <b>Empfohlen für fotolastige Websites.</b>"
     },
     "lblSmartImages": {
         "message": "Bilder abdunkeln"
     },
     "descSmartImages": {
-        "message": "Dunkelt Bilder ab, um Blendung zu reduzieren. <b>Mit der Maus darüberfahren</b>, um sie aufzuhellen!"
+        "message": "Dunkelt Bilder ab, um Augenbelastung zu vermeiden. <b>Mit der Maus darüberfahren</b>, um das Bild aufzuhellen!"
     },
     "lblDynamic": {
         "message": "🤖 Dynamische Erkennung"
     },
     "descDynamic": {
-        "message": "Passt sich bei CSS-Änderungen automatisch an. <b>Wichtig für SPAs</b> (React, Vue). Überwacht Stiländerungen in Echtzeit."
+        "message": "Erkennt Inhaltsänderungen auf dynamischen Websites sofort und passt sich an."
     },
     "lblPerformance": {
         "message": "⚡ Leistungsmodus"
     },
     "descPerformance": {
-        "message": "Reduziert den Stromverbrauch. Deaktiviert den intelligenten Farbschutz für minimale DOM-Änderungen. <b>Empfohlen für Laptops.</b>"
+        "message": "Optimiert Hintergrundprozesse und Farbverarbeitung für eine längere Akkulaufzeit."
     },
     "lblCustomFonts": {
         "message": "Eigene Schriftarten"

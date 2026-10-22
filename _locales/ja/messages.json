@@ -60,25 +60,25 @@
         "message": "🎨 視覚保護モード"
     },
     "descVisProtect": {
-        "message": "画像本来の色を維持します。<b>写真が多いサイトにおすすめです。</b>"
+        "message": "画像や動画の自然な色を保ちながら、やわらかく表示します。<b>写真が多いサイトにおすすめです。</b>"
     },
     "lblSmartImages": {
         "message": "画像のスマート暗化"
     },
     "descSmartImages": {
-        "message": "画像のまぶしさを抑えます。<b>ホバーすると</b>明るくなります！"
+        "message": "目の疲れを防ぐために画像を暗くします。<b>ホバーすると</b>明るくなります！"
     },
     "lblDynamic": {
         "message": "🤖 ダイナミック検出"
     },
     "descDynamic": {
-        "message": "CSSの変更に自動適応。<b>SPA（React等）に必須です。</b>リアルタイムで監視。"
+        "message": "動的なウェブサイトのコンテンツ変更を即座に検出して適応します。"
     },
     "lblPerformance": {
         "message": "⚡ パフォーマンス"
     },
     "descPerformance": {
-        "message": "消費電力を抑え、バッテリー寿命を延ばします。<b>ノートPCユーザーにおすすめです。</b>"
+        "message": "バッテリー寿命を延ばすために、バックグラウンド処理と色処理を最適化します。"
     },
     "lblCustomFonts": {
         "message": "カスタムフォント"

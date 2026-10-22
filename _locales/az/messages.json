@@ -60,25 +60,25 @@
         "message": "🎨 Vizual Qoruma Rejimi"
     },
     "descVisProtect": {
-        "message": "Şəkillərdəki və videolardakı orijinal rəngləri qoruyur. Rəngləri tərs çevirmək əvəzinə ağıllı şəkildə qaraldır. <b>Çox şəkil olan saytlar üçün tövsiyə olunur.</b>"
+        "message": "Şəkillərin və videoların təbii rənglərini qoruyaraq yumşaldır. <b>Çox şəkil olan saytlar üçün tövsiyə olunur.</b>"
     },
     "lblSmartImages": {
         "message": "Ağıllı Şəkil Qaraltma"
     },
     "descSmartImages": {
-        "message": "Göz qamaşmasını azaltmaq üçün şəkilləri solğunlaşdırır. <b>Üzərinə gələrək</b> şəkli işıqlandıra bilərsiniz!"
+        "message": "Göz yorğunluğunun qarşısını almaq üçün şəkilləri solğunlaşdırır. <b>Üzərinə gələrək</b> şəkli işıqlandıra bilərsiniz!"
     },
     "lblDynamic": {
         "message": "🤖 Dinamik Aşkarlama"
     },
     "descDynamic": {
-        "message": "CSS dəyişdikdə avtomatik olaraq uyğunlaşır. <b>SPA-lar (React, Vue və s.) üçün vacibdir.</b> Canlı üslub yeniləmələrini izləyir."
+        "message": "Dinamik veb-saytlardakı məzmun dəyişikliklərini anında aşkarlayır və uyğunlaşdırır."
     },
     "lblPerformance": {
         "message": "⚡ Performans Rejimi"
     },
     "descPerformance": {
-        "message": "Enerji istehlakını azaldır və batareya ömrünü uzadır. Ən az DOM dəyişikliyi üçün ağıllı rəng qorumasını deaktiv edir. <b>Noutbuk istifadəçiləri üçün tövsiyə olunur.</b>"
+        "message": "Batareya ömrünü uzatmaq üçün arxa plan proseslərini və rəng emalını optimallaşdırır."
     },
     "lblCustomFonts": {
         "message": "Özəl Şrift"

@@ -60,25 +60,25 @@
         "message": "🎨 Visual Protection Mode"
     },
     "descVisProtect": {
-        "message": "Preserves original colors in images and videos. Uses smart darkening instead of color inversion. <b>Recommended for photo-heavy sites.</b>"
+        "message": "Softens images and videos while preserving their natural colors. <b>Recommended for photo-heavy sites.</b>"
     },
     "lblSmartImages": {
         "message": "Smart Image Darkening"
     },
     "descSmartImages": {
-        "message": "Dims images to reduce glare. <b>Hover over an image</b> to brighten it!"
+        "message": "Dims images to prevent eye strain. <b>Hover over an image</b> to brighten it!"
     },
     "lblDynamic": {
         "message": "🤖 Dynamic Detection"
     },
     "descDynamic": {
-        "message": "Automatically adapts when CSS changes. <b>Essential for SPAs</b> (React, Vue, Angular). Monitors style updates in real-time."
+        "message": "Instantly detects and adapts to content changes on dynamic websites."
     },
     "lblPerformance": {
         "message": "⚡ Performance Mode"
     },
     "descPerformance": {
-        "message": "Reduces power consumption and improves battery life. Disables smart color protection for minimal DOM changes. <b>Recommended for MacBook users.</b>"
+        "message": "Optimizes background processes and color processing to extend battery life."
     },
     "lblCustomFonts": {
         "message": "Custom Fonts"

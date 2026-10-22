@@ -60,25 +60,25 @@
         "message": "🎨 시력 보호 모드"
     },
     "descVisProtect": {
-        "message": "이미지와 비디오의 원래 색상을 유지합니다. 색상 반전 대신 스마트한 어둡게 처리를 사용합니다. <b>사진이 많은 사이트에 권장됩니다.</b>"
+        "message": "이미지와 동영상의 자연스러운 색상을 유지하면서 부드럽게 처리합니다. <b>사진이 많은 사이트에 권장됩니다.</b>"
     },
     "lblSmartImages": {
         "message": "스마트 이미지 어둡게"
     },
     "descSmartImages": {
-        "message": "눈부심을 줄이기 위해 이미지를 어둡게 합니다. <b>이미지 위에 마우스를 올리면</b> 밝아집니다!"
+        "message": "눈의 피로를 방지하기 위해 이미지를 어둡게 합니다. <b>이미지 위에 마우스를 올리면</b> 밝아집니다!"
     },
     "lblDynamic": {
         "message": "🤖 동적 감지"
     },
     "descDynamic": {
-        "message": "CSS가 변경될 때 자동으로 조정됩니다. <b>SPA에 필수적입니다</b> (React, Vue, Angular). 실시간으로 스타일 업데이트를 모니터링합니다."
+        "message": "동적 웹사이트의 콘텐츠 변경을 즉시 감지하고 적응합니다."
     },
     "lblPerformance": {
         "message": "⚡ 성능 모드"
     },
     "descPerformance": {
-        "message": "전력 소비를 줄이고 배터리 수명을 늘립니다. 최소한의 DOM 변경을 위해 스마트 색상 보호를 비활성화합니다. <b>MacBook 사용자에게 권장됩니다.</b>"
+        "message": "배터리 수명을 연장하기 위해 백그라운드 프로세스와 색상 처리를 최적화합니다."
     },
     "lblCustomFonts": {
         "message": "사용자 지정 글꼴"

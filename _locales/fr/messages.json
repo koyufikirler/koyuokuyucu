@@ -60,25 +60,25 @@
         "message": "🎨 Protection visuelle"
     },
     "descVisProtect": {
-        "message": "Préserve les couleurs d'origine des images. <b>Recommandé pour les sites avec beaucoup de photos.</b>"
+        "message": "Atténue les images et les vidéos tout en préservant leurs couleurs naturelles. <b>Recommandé pour les sites avec beaucoup de photos.</b>"
     },
     "lblSmartImages": {
         "message": "Images Inteligentes"
     },
     "descSmartImages": {
-        "message": "Assombrit les images pour réduire l'éblouissement. <b>Survolez une image</b> pour l'éclaircir !"
+        "message": "Assombrit les images pour éviter la fatigue oculaire. <b>Survolez une image</b> pour l'éclaircir !"
     },
     "lblDynamic": {
         "message": "🤖 Détection dynamique"
     },
     "descDynamic": {
-        "message": "S'adapte automatiquement. <b>Essentiel pour les SPA</b> (React, Vue). Surveille les mises à jour en temps réel."
+        "message": "Détecte et adapte instantanément les changements de contenu sur les sites web dynamiques."
     },
     "lblPerformance": {
         "message": "⚡ Mode Performance"
     },
     "descPerformance": {
-        "message": "Réduit la consommation d'énergie. <b>Recommandé pour les ordinateurs portables.</b>"
+        "message": "Optimise les processus en arrière-plan et le traitement des couleurs pour prolonger l'autonomie de la batterie."
     },
     "lblCustomFonts": {
         "message": "Polices personnalisées"

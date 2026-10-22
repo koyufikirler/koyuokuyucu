@@ -60,25 +60,25 @@
         "message": "🎨 Modo de Proteção Visual"
     },
     "descVisProtect": {
-        "message": "Preserva as cores originais em imagens e vídeos. Usa escurecimento inteligente em vez de inversão de cores. <b>Recomendado para sites com muitas fotos.</b>"
+        "message": "Suaviza imagens e vídeos preservando suas cores naturais. <b>Recomendado para sites com muitas fotos.</b>"
     },
     "lblSmartImages": {
         "message": "Escurecimento Inteligente de Imagem"
     },
     "descSmartImages": {
-        "message": "Escurece as imagens para reduzir o brilho. <b>Passe o mouse sobre uma imagem</b> para clareá-la!"
+        "message": "Escurece as imagens para evitar a fadiga ocular. <b>Passe o mouse sobre uma imagem</b> para clareá-la!"
     },
     "lblDynamic": {
         "message": "🤖 Detecção Dinâmica"
     },
     "descDynamic": {
-        "message": "Adapta-se automaticamente quando o CSS muda. <b>Essencial para SPAs</b> (React, Vue, Angular). Monitora atualizações de estilo em tempo real."
+        "message": "Detecta e adapta instantaneamente as mudanças de conteúdo em sites dinâmicos."
     },
     "lblPerformance": {
         "message": "⚡ Modo de Desempenho"
     },
     "descPerformance": {
-        "message": "Reduz o consumo de energia e melhora a vida útil da bateria. Desativa a proteção de cores inteligente para alterações mínimas no DOM. <b>Recomendado para usuários de MacBook.</b>"
+        "message": "Otimiza os processos em segundo plano e o processamento de cores para prolongar a vida útil da bateria."
     },
     "lblCustomFonts": {
         "message": "Fontes Personalizadas"

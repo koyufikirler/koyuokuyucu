@@ -60,25 +60,25 @@
         "message": "🎨 Görsel Koruma Modu"
     },
     "descVisProtect": {
-        "message": "Resim ve videolardaki orijinal renkleri korur. Renkleri tersine çevirmek yerine akıllıca karartır. <b>Fotoğraf ağırlıklı siteler için önerilir.</b>"
+        "message": "Resim ve videoların doğal renklerini koruyarak yumuşatır. <b>Fotoğraf ağırlıklı siteler için önerilir.</b>"
     },
     "lblSmartImages": {
         "message": "Akıllı Görüntü Karartma"
     },
     "descSmartImages": {
-        "message": "Göz almasını azaltmak için resimleri soluklaştırır. <b>Üzerine gelerek</b> resmi aydınlatabilirsiniz!"
+        "message": "Göz yorulmasını önlemek için resimleri soluklaştırır. <b>Üzerine gelerek</b> resmi aydınlatabilirsiniz!"
     },
     "lblDynamic": {
         "message": "🤖 Dinamik Algılama"
     },
     "descDynamic": {
-        "message": "CSS değiştiğinde otomatik olarak uyum sağlar. <b>SPA'lar için (React, Vue, vb.) gereklidir.</b> Canlı stil güncellemelerini izler."
+        "message": "Dinamik web sitelerindeki içerik değişikliklerini anlık olarak algılar ve uyarlar."
     },
     "lblPerformance": {
         "message": "⚡ Performans Modu"
     },
     "descPerformance": {
-        "message": "Güç tüketimini azaltır ve pil ömrünü uzatır. En az DOM değişikliği için akıllı renk korumasını devre dışı bırakır. <b>Dizüstü bilgisayar kullanıcıları için önerilir.</b>"
+        "message": "Pil ömrünü uzatmak için arka plan işlemlerini ve renk işlemeyi optimize eder."
     },
     "lblCustomFonts": {
         "message": "Özel Yazı Tipi"
