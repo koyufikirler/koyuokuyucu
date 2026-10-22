@@ -30,10 +30,10 @@
         "message": "모습"
     },
     "tabMedia": {
-        "message": "시각"
+        "message": "이미지"
     },
     "tabType": {
-        "message": "유형"
+        "message": "텍스트"
     },
     "tabAuto": {
         "message": "스마트"
