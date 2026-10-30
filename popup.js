@@ -75,11 +75,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const contents = document.querySelectorAll('.content');
 
     // Detect mobile devices and local iframe tester to hide Keys tab
-    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || (window.self !== window.top);
+    const isMobileUA = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    const isMobile = isMobileUA || (window.self !== window.top);
     if (isMobile) {
         const keysTabBtn = document.querySelector('.tab[data-tab="keys"]');
         if (keysTabBtn) keysTabBtn.style.display = 'none';
     }
+
+    // Firefox for Android and Edge for Android render the popup as a full-width page
+    if (isMobileUA) document.body.classList.add('full-page');
 
     let currentHostname = '';
     let currentSettings = null;
@@ -97,6 +101,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const appVersion = document.getElementById('appVersion');
     const themeSwatches = document.querySelectorAll('.theme-swatch');
     const enablePdf = document.getElementById('enablePdf');
+
+    // Firefox cannot render browser PDFs in dark mode, so the General panel is meaningless there
+    const isFirefox = /Firefox\//.test(navigator.userAgent) ||
+        !!(browser.runtime.getManifest && browser.runtime.getManifest().browser_specific_settings?.gecko);
+    if (isFirefox) {
+        const generalTab = document.querySelector('.settings-tab[data-stabs="general"]');
+        const generalPanel = document.getElementById('panel-general');
+        if (generalTab) generalTab.style.display = 'none';
+        if (generalPanel) generalPanel.style.display = 'none';
+        if (generalTab && generalTab.classList.contains('active')) switchSettingsTab('about');
+    }
 
     const THEME_CLASSES = ['theme-light', 'theme-dark', 'theme-black', 'theme-white', 'theme-sepia', 'theme-blue'];
 
