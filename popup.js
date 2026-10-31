@@ -302,15 +302,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Mac keyboards use modifier symbols, Windows/Linux users expect key names
+    const isMacPlatform = /Mac|iPhone|iPad|iPod/i.test(navigator.platform || navigator.userAgent);
+
     function formatShortcut(shortcut) {
         if (!shortcut || !shortcut.key) return getMessage("shortcutNone");
         const parts = [];
 
-        // Mac symbols
-        if (shortcut.metaKey) parts.push('⌘');
-        if (shortcut.ctrlKey) parts.push('⌃');
-        if (shortcut.altKey) parts.push('⌥');
-        if (shortcut.shiftKey) parts.push('⇧');
+        if (isMacPlatform) {
+            if (shortcut.metaKey) parts.push('⌘');
+            if (shortcut.ctrlKey) parts.push('⌃');
+            if (shortcut.altKey) parts.push('⌥');
+            if (shortcut.shiftKey) parts.push('⇧');
+        } else {
+            if (shortcut.ctrlKey) parts.push('Ctrl');
+            if (shortcut.shiftKey) parts.push('Shift');
+            if (shortcut.altKey) parts.push('Alt');
+            if (shortcut.metaKey) parts.push('Win');
+        }
 
         let key = shortcut.key.toUpperCase();
 
@@ -327,7 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         parts.push(key);
-        return parts.join('');
+        return parts.join(isMacPlatform ? '' : '+');
     }
 
     function renderSiteList() {
