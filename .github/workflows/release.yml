@@ -59,7 +59,9 @@ jobs:
           name: "Sürüm ${{ steps.version.outputs.VERSION }}"
           body: |
             ## Yenilikler ve Güncellemeler
-            * PDF Desteği eklendi.
+            * Windows'ta tuş atamada macos tuşları gözükmesi düzeltildi.
+            * Firefox, Microsoft Edge Android için görünüm düzeltildi.
+            * Firefox için PDF desteği sekmesi ayarlardan gizlendi. 
           files: |
             release/koyu-chrome-${{ steps.version.outputs.VERSION }}.zip
             release/koyu-firefox-${{ steps.version.outputs.VERSION }}.zip
