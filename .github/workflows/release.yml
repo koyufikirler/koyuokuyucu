@@ -56,12 +56,10 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          name: "Sürüm ${{ steps.version.outputs.VERSION }}"
+          name: "s${{ steps.version.outputs.VERSION }}"
           body: |
             ## Yenilikler ve Güncellemeler
-            * Windows'ta tuş atamada macos tuşları gözükmesi düzeltildi.
-            * Firefox, Microsoft Edge Android için görünüm düzeltildi.
-            * Firefox için PDF desteği sekmesi ayarlardan gizlendi. 
+            * Mağaza açıklaması eklendi. 
           files: |
             release/koyu-chrome-${{ steps.version.outputs.VERSION }}.zip
             release/koyu-firefox-${{ steps.version.outputs.VERSION }}.zip
