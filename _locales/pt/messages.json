@@ -307,5 +307,8 @@
     },
     "descEnablePdf": {
         "message": "Ative o modo escuro para documentos PDF abertos em abas do navegador."
+    },
+    "store_listing": {
+        "message": "Esta extensão de proteção ocular ativa o modo escuro em todos os sites que você visita. O Koyu Okuyucu inverte as cores brilhantes para proporcionar uma experiência de leitura confortável durante a noite. Você pode ajustar o brilho, o contraste, os filtros de temperatura de cor, o modo escuro, as fontes personalizadas e seus tamanhos de acordo com suas preferências. Sua interface intuitiva permite personalizar as configurações e tornar cada site mais confortável para seus olhos. Para evitar conflitos, desative extensões semelhantes. Boa navegação!"
     }
 }

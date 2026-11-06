@@ -3,7 +3,7 @@
         "message": "KOYU OKUYUCU"
     },
     "extensionDescription": {
-        "message": "Her siteye uygun koyu okuyucu. Gece ve gündüz için koyu renk kullanın."
+        "message": "Her siteye uygun koyu durum. Gözlerinize iyi bakın. Gece ve gündüz için koyu renk kullanın."
     },
     "darkModeTitle": {
         "message": "KOYU OKUYUCU"
@@ -307,5 +307,8 @@
     },
     "descEnablePdf": {
         "message": "Tarayıcı sekmelerinde açılan PDF belgeleri için koyu modu etkinleştirin."
+    },
+    "store_listing": {
+        "message": "Bu göz koruyucu eklentisi ziyaret ettiğiniz her site için koyu modu etkinleştir.  Koyu Okuyucu parlak renkleri ters çevirir ve geceleri rahat bir okuma deneyimi sağlar. Parlaklığı, kontrastı, sıcaklık filtresini, koyu modu, özel yazı türlerini ve boyutlarını, istediğiniz zamana göre etkinleştirmeyi ayarlayabilirsiniz.  Kullanıcı dostu arayüzü sayesinde ayarlarınızı kişiselleştirebilir ve her web sitesini gözleriniz için daha dinlendirici bir hale getirebilirsiniz.   Çakışmaları önlemek için benzer eklentileri kapatın. Keyifli gezinmeler!"
     }
 }

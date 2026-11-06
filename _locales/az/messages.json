@@ -307,5 +307,8 @@
     },
     "descEnablePdf": {
         "message": "Brauzer tablarında açılan PDF sənədləri üçün qaranlıq rejimi aktivləşdirin."
+    },
+    "store_listing": {
+        "message": "Bu göz qoruyucu əlavəsi ziyarət etdiyiniz bütün saytlar üçün qaranlıq rejimi aktivləşdirir. Qaranlıq Oxuyucu parlaq rəngləri tərsinə çevirərək gecələr rahat oxu təcrübəsi yaradır. Parlaqlığı, kontrastı, rəng temperaturu filtrini, qaranlıq rejimi, xüsusi şriftləri və şrift ölçülərini ehtiyaclarınıza uyğun tənzimləyə bilərsiniz. İstifadəçi dostu interfeysi sayəsində parametrlərinizi fərdiləşdirə və hər bir veb-saytı gözləriniz üçün daha rahat edə bilərsiniz. Uyğunsuzluqların qarşısını almaq üçün oxşar əlavələri deaktiv edin. Xoş gəzişlər!"
     }
 }

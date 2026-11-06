@@ -307,5 +307,8 @@
     },
     "descEnablePdf": {
         "message": "Activez le mode sombre pour les documents PDF ouverts dans les onglets du navigateur."
+    },
+    "store_listing": {
+        "message": "Cette extension de protection des yeux active le mode sombre sur tous les sites web que vous visitez. Koyu Okuyucu inverse les couleurs vives pour offrir une expérience de lecture agréable pendant la nuit. Vous pouvez personnaliser la luminosité, le contraste, les filtres de température des couleurs, le mode sombre, les polices personnalisées et leur taille selon vos préférences. Son interface conviviale vous permet de personnaliser vos paramètres et de rendre chaque site web plus confortable pour vos yeux. Pour éviter les conflits, désactivez les extensions similaires. Bonne navigation !"
     }
 }
