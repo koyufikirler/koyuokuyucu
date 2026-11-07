@@ -1,0 +1,314 @@
+{
+    "extensionName": {
+        "message": "KOYU OKUYUCU"
+    },
+    "extensionDescription": {
+        "message": "Cor escura é adequada para qualquer site. Use cores escuras tanto de dia quanto de noite."
+    },
+    "darkModeTitle": {
+        "message": "KOYU OKUYUCU"
+    },
+    "statusOn": {
+        "message": "Ligado"
+    },
+    "statusOff": {
+        "message": "Desligado"
+    },
+    "statusAuto": {
+        "message": "Automático"
+    },
+    "disableForSite": {
+        "message": "Desativar para este site"
+    },
+    "thisSite": {
+        "message": "este site"
+    },
+    "thisPage": {
+        "message": "esta página"
+    },
+    "tabVisuals": {
+        "message": "Exibição"
+    },
+    "tabMedia": {
+        "message": "Imagens"
+    },
+    "tabType": {
+        "message": "Texto"
+    },
+    "tabAuto": {
+        "message": "Esperto"
+    },
+    "tabSites": {
+        "message": "Sites"
+    },
+    "tabKeys": {
+        "message": "Teclas"
+    },
+    "lblBrightness": {
+        "message": "Brilho: "
+    },
+    "lblContrast": {
+        "message": "Contraste: "
+    },
+    "lblSepia": {
+        "message": "Calor: "
+    },
+    "lblGrayscale": {
+        "message": "Escala de Cinza: "
+    },
+    "lblVisProtect": {
+        "message": "🎨 Modo de Proteção Visual"
+    },
+    "descVisProtect": {
+        "message": "Suaviza imagens e vídeos preservando suas cores naturais. <b>Recomendado para sites com muitas fotos.</b>"
+    },
+    "lblSmartImages": {
+        "message": "Escurecimento Inteligente de Imagem"
+    },
+    "descSmartImages": {
+        "message": "Escurece as imagens para evitar a fadiga ocular. <b>Passe o mouse sobre uma imagem</b> para clareá-la!"
+    },
+    "lblDynamic": {
+        "message": "🤖 Detecção Dinâmica"
+    },
+    "descDynamic": {
+        "message": "Detecta e adapta instantaneamente as mudanças de conteúdo em sites dinâmicos."
+    },
+    "lblPerformance": {
+        "message": "⚡ Modo de Desempenho"
+    },
+    "descPerformance": {
+        "message": "Otimiza os processos em segundo plano e o processamento de cores para prolongar a vida útil da bateria."
+    },
+    "lblCustomFonts": {
+        "message": "Fontes Personalizadas"
+    },
+    "lblFontFamily": {
+        "message": "Família da Fonte"
+    },
+    "optFontSystem": {
+        "message": "Padrão do Sistema"
+    },
+    "optFontSans": {
+        "message": "Sans Serif"
+    },
+    "optFontSerif": {
+        "message": "Serif"
+    },
+    "optFontMono": {
+        "message": "Monospace"
+    },
+    "optFontDyslexic": {
+        "message": "OpenDyslexic (Adequado para Dislexia)"
+    },
+    "lblFontWeight": {
+        "message": "Peso da Fonte: "
+    },
+    "lblActivationMode": {
+        "message": "Modo de Ativação"
+    },
+    "optModeManual": {
+        "message": "Manual"
+    },
+    "optModeSystem": {
+        "message": "Seguir a Aparência do Sistema"
+    },
+    "optModeTime": {
+        "message": "Agendamento"
+    },
+    "lblStartTime": {
+        "message": "Hora de Início (Pôr do Sol)"
+    },
+    "lblEndTime": {
+        "message": "Hora de Término (Nascer do Sol)"
+    },
+    "descAutoInfoManual": {
+        "message": "Controla quando o Modo Escuro é ativado automaticamente."
+    },
+    "descAutoInfoSystem": {
+        "message": "O Modo Escuro é controlado pelas configurações de Aparência do Sistema."
+    },
+    "descAutoInfoTime": {
+        "message": "O Modo Escuro liga/desliga com base no agendamento acima."
+    },
+    "subTabWhitelist": {
+        "message": "Inverter Apenas os Listados"
+    },
+    "subTabBlacklist": {
+        "message": "Não Inverter os Listados"
+    },
+    "btnAdd": {
+        "message": "Adicionar"
+    },
+    "lblCurrentSite": {
+        "message": "Atual: "
+    },
+    "btnAddCurrent": {
+        "message": "Adicionar Atual"
+    },
+    "lblEmptyList": {
+        "message": "Lista vazia"
+    },
+    "lblHotkeySite": {
+        "message": "Tecla de atalho para adicionar site: "
+    },
+    "lblToggleExt": {
+        "message": "Alternar Extensão"
+    },
+    "lblAddRemoveSite": {
+        "message": "Adicionar/Remover Site Atual"
+    },
+    "descKeysInfo": {
+        "message": "Clique em uma caixa e pressione as teclas para gravar os atalhos."
+    },
+    "lblFooter": {
+        "message": "As alterações são salvas automaticamente"
+    },
+    "fontWeightNormal": {
+        "message": "Normal"
+    },
+    "fontWeightMedium": {
+        "message": "Médio"
+    },
+    "fontWeightBold": {
+        "message": "Negrito"
+    },
+    "shortcutNone": {
+        "message": "Nenhum"
+    },
+    "shortcutPressKeys": {
+        "message": "Pressione as teclas..."
+    },
+    "lblSettings": {
+        "message": "Configurações"
+    },
+    "lblAboutUs": {
+        "message": "Sobre Nós"
+    },
+    "lblLanguage": {
+        "message": "Idioma"
+    },
+    "lblClose": {
+        "message": "Fechar"
+    },
+    "descAboutUs": {
+        "message": "KOYU OKUYUCU é uma extensão de modo escuro dinâmica e repleta de recursos, projetada para uma experiência de navegação premium."
+    },
+    "optLangSystem": {
+        "message": "Padrão do Sistema"
+    },
+    "optLangTr": {
+        "message": "Türkçe"
+    },
+    "optLangAz": {
+        "message": "Azərbaycan dili"
+    },
+    "optLangDe": {
+        "message": "Deutsch"
+    },
+    "optLangEn": {
+        "message": "English"
+    },
+    "optLangFr": {
+        "message": "Français"
+    },
+    "optLangJa": {
+        "message": "日本語"
+    },
+    "optLangRu": {
+        "message": "Русский"
+    },
+    "optLangAr": {
+        "message": "العربية"
+    },
+    "optLangPt": {
+        "message": "Português"
+    },
+    "optLangEs": {
+        "message": "Español"
+    },
+    "optLangKo": {
+        "message": "한국어"
+    },
+    "lblVersion": {
+        "message": "Versão"
+    },
+    "descLanguage": {
+        "message": "Escolha seu idioma preferido para a interface da extensão."
+    },
+    "lblAppearance": {
+        "message": "Aparência"
+    },
+    "descAppearance": {
+        "message": "Escolha um tema visual para o pop-up da extensão."
+    },
+    "themeDefault": {
+        "message": "Padrão"
+    },
+    "themeLight": {
+        "message": "Claro"
+    },
+    "themeDark": {
+        "message": "Escuro"
+    },
+    "themeBlack": {
+        "message": "Preto"
+    },
+    "themeWhite": {
+        "message": "Branco"
+    },
+    "themeSepia": {
+        "message": "Sépia"
+    },
+    "themeBlue": {
+        "message": "Noite Azul"
+    },
+    "errShortcutExists": {
+        "message": "O atalho já está em uso!"
+    },
+    "lblDonate": {
+        "message": "Apoio e Donativos"
+    },
+    "btnDonateCoffee": {
+        "message": "Buy Me a Coffee"
+    },
+    "descDonate": {
+        "message": "Se gostou do Koyu Okuyucu, pode apoiar o seu desenvolvimento de código aberto através de uma das seguintes plataformas!"
+    },
+    "donateGhSponsors": {
+        "message": "GitHub Sponsors"
+    },
+    "donateGhDesc": {
+        "message": "Torne-se um patrocinador diretamente através do GitHub."
+    },
+    "donatePatreon": {
+        "message": "Patreon"
+    },
+    "donatePatreonDesc": {
+        "message": "Apoie o programador através do Patreon."
+    },
+    "donateOpenCollective": {
+        "message": "Open Collective"
+    },
+    "donateOcDesc": {
+        "message": "Contribua para o fundo comunitário transparente."
+    },
+    "donateCoffeeDesc": {
+        "message": "Contribua oferecendo um café a alguém."
+    },
+    "lblGeneral": {
+        "message": "Geral"
+    },
+    "descGeneral": {
+        "message": "Configure as preferências gerais e as opções de documentos."
+    },
+    "lblEnablePdf": {
+        "message": "Suporte PDF"
+    },
+    "descEnablePdf": {
+        "message": "Ative o modo escuro para documentos PDF abertos em abas do navegador."
+    },
+    "store_listing": {
+        "message": "Esta extensão de proteção ocular ativa o modo escuro em todos os sites que você visita. O Koyu Okuyucu inverte as cores brilhantes para proporcionar uma experiência de leitura confortável durante a noite. Você pode ajustar o brilho, o contraste, os filtros de temperatura de cor, o modo escuro, as fontes personalizadas e seus tamanhos de acordo com suas preferências. Sua interface intuitiva permite personalizar as configurações e tornar cada site mais confortável para seus olhos. Para evitar conflitos, desative extensões semelhantes. Boa navegação!"
+    }
+}
