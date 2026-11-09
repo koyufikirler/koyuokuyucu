@@ -123,13 +123,13 @@
         "message": "Endzeit"
     },
     "descAutoInfoManual": {
-        "message": "Steuert, wann der Dark Mode automatisch aktiviert wird."
+        "message": "Steuert, wann der Dunkelmodus automatisch aktiviert wird."
     },
     "descAutoInfoSystem": {
-        "message": "Dark Mode wird von Ihren Systemdesign-Einstellungen gesteuert."
+        "message": "Der Dunkelmodus wird über Ihre Systemeinstellungen gesteuert."
     },
     "descAutoInfoTime": {
-        "message": "Dark Mode schaltet sich anhand des obigen Zeitplans ein/aus."
+        "message": "Der Dunkelmodus wird gemäß dem oben genannten Programm ein- bzw. ausgeschaltet."
     },
     "subTabWhitelist": {
         "message": "Nur Liste umkehren"
@@ -309,6 +309,6 @@
         "message": "Dunkelmodus für in Browser-Tabs geöffnete PDF-Dokumente aktivieren."
     },
     "store_listing": {
-        "message": "Diese Augenschutz-Erweiterung aktiviert den Dunkelmodus auf allen Websites, die Sie besuchen. Koyu Okuyucu kehrt helle Farben um und sorgt nachts für ein angenehmes Leseerlebnis. Sie können Helligkeit, Kontrast, Farbtemperaturfilter, Dunkelmodus, benutzerdefinierte Schriftarten und Schriftgrößen ganz nach Ihren Wünschen anpassen. Dank der benutzerfreundlichen Oberfläche können Sie Ihre Einstellungen personalisieren und jede Website augenschonender gestalten. Um Konflikte zu vermeiden, deaktivieren Sie bitte ähnliche Erweiterungen. Viel Spaß beim Surfen!"
+        "message": "Diese Erweiterung zum Schutz der Augen aktiviert den Dunkelmodus für jede Website, die Sie besuchen.\n\n„Koyu Okuyucu“ kehrt helle Farben um und sorgt nachts für ein angenehmes Leseerlebnis.\n\nSie können Helligkeit, Kontrast, einen Temperaturfilter, den Dunkelmodus sowie individuelle Schriftarten und -größen anpassen und festlegen, wann diese aktiviert werden sollen.\n\nDank der benutzerfreundlichen Oberfläche können Sie Ihre Einstellungen personalisieren und jede Website für Ihre Augen entspannter gestalten.\n\nDeaktivieren Sie ähnliche Erweiterungen, um Konflikte zu vermeiden. Viel Spaß beim Surfen!\n\nÜbersetzen Sie diesen Text ins Japanische und formatieren Sie ihn so, dass nach jedem Punkt ein Zeilenumbruch erfolgt.\n\nhttps://github.com/koyufikirler/koyuokuyucu"
     }
 }

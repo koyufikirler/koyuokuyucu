@@ -309,6 +309,6 @@
         "message": "Enable dark mode for PDF documents opened in browser tabs."
     },
     "store_listing": {
-        "message": "This eye-protection extension enables dark mode on every website you visit. Koyu Okuyucu inverts bright colors to provide a comfortable reading experience at night. You can customize brightness, contrast, color temperature filters, dark mode, custom fonts, and font sizes according to your preferences. Its user-friendly interface allows you to personalize your settings and make every website more comfortable for your eyes. To avoid conflicts, disable similar extensions. Happy browsing!"
+        "message": "This eye-protection extension enables dark mode for every site you visit.\n\nKoyu Okuyucu inverts bright colors, providing a comfortable reading experience at night.\n\nYou can adjust brightness, contrast, the warmth filter, dark mode, as well as custom fonts and font sizes, and set them to activate according to your preferences.\n\nWith its user-friendly interface, you can personalize your settings and make every website more restful for your eyes.\n\nPlease disable similar extensions to avoid conflicts. Happy browsing!\n\nhttps://github.com/koyufikirler/koyuokuyucu"
     }
 }
