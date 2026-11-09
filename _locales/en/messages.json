@@ -224,6 +224,9 @@
     "optLangPt": {
         "message": "Português"
     },
+    "optLangPtBr": {
+        "message": "Português do Brasil"
+    },
     "optLangEs": {
         "message": "Español"
     },
