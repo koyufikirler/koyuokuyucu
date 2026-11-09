@@ -1,0 +1,317 @@
+{
+    "extensionName": {
+        "message": "MÖR LÄSARE"
+    },
+    "extensionDescription": {
+        "message": "Mörkt läge anpassat för varje webbplats. Var rädd om dina ögon. Använd mörka färger för natt och dag."
+    },
+    "darkModeTitle": {
+        "message": "MÖR LÄSARE"
+    },
+    "statusOn": {
+        "message": "På"
+    },
+    "statusOff": {
+        "message": "Av"
+    },
+    "statusAuto": {
+        "message": "System"
+    },
+    "disableForSite": {
+        "message": "Inaktivera för den här webbplatsen"
+    },
+    "thisSite": {
+        "message": "den här webbplatsen"
+    },
+    "thisPage": {
+        "message": "den här sidan"
+    },
+    "tabVisuals": {
+        "message": "Utseende"
+    },
+    "tabMedia": {
+        "message": "Bild"
+    },
+    "tabType": {
+        "message": "Text"
+    },
+    "tabAuto": {
+        "message": "Smart"
+    },
+    "tabSites": {
+        "message": "Webbplatser"
+    },
+    "tabKeys": {
+        "message": "Kortkommandon"
+    },
+    "lblBrightness": {
+        "message": "Ljusstyrka: "
+    },
+    "lblContrast": {
+        "message": "Kontrast: "
+    },
+    "lblSepia": {
+        "message": "Temperatur: "
+    },
+    "lblGrayscale": {
+        "message": "Gråskala: "
+    },
+    "lblVisProtect": {
+        "message": "🎨 Visuellt skyddsläge"
+    },
+    "descVisProtect": {
+        "message": "Mjukar upp bilder och videor samtidigt som deras naturliga färger bibehålls. <b>Rekommenderas för bildtunga webbplatser.</b>"
+    },
+    "lblSmartImages": {
+        "message": "Smart bildnedtoning"
+    },
+    "descSmartImages": {
+        "message": "Tonar ned bilder för att förhindra ögontrötthet. Du kan lysa upp en bild genom att <b>föra muspekaren över den</b>!"
+    },
+    "lblDynamic": {
+        "message": "🤖 Dynamisk identifiering"
+    },
+    "descDynamic": {
+        "message": "Identifierar och anpassar innehållsändringar på dynamiska webbplatser i realtid."
+    },
+    "lblPerformance": {
+        "message": "⚡ Prestandaläge"
+    },
+    "descPerformance": {
+        "message": "Optimerar bakgrundsprocesser och färgbehandling för att spara batteritid."
+    },
+    "lblCustomFonts": {
+        "message": "Anpassat typsnitt"
+    },
+    "lblFontFamily": {
+        "message": "Typsnittstyp"
+    },
+    "optFontSystem": {
+        "message": "Systemets standard"
+    },
+    "optFontSans": {
+        "message": "Sans Serif"
+    },
+    "optFontSerif": {
+        "message": "Serif"
+    },
+    "optFontMono": {
+        "message": "Monospace"
+    },
+    "optFontDyslexic": {
+        "message": "OpenDyslexic (Dyslexianpassat)"
+    },
+    "lblFontWeight": {
+        "message": "Teckensnittsvikt: "
+    },
+    "lblActivationMode": {
+        "message": "Aktiveringsläge"
+    },
+    "optModeManual": {
+        "message": "Manuell"
+    },
+    "optModeSystem": {
+        "message": "Följ systemets utseende"
+    },
+    "optModeTime": {
+        "message": "Schema"
+    },
+    "lblStartTime": {
+        "message": "Starttid (Solnedgång)"
+    },
+    "lblEndTime": {
+        "message": "Sluttid (Soluppgång)"
+    },
+    "descAutoInfoManual": {
+        "message": "Styr när det mörka läget ska aktiveras automatiskt."
+    },
+    "descAutoInfoSystem": {
+        "message": "Det mörka läget fungerar baserat på systemets övergripande utseendeinställningar (ljust/mörkt)."
+    },
+    "descAutoInfoTime": {
+        "message": "Det mörka läget slås på/av under det angivna tidsintervallet."
+    },
+    "subTabWhitelist": {
+        "message": "Endast tillåtna"
+    },
+    "subTabBlacklist": {
+        "message": "Uteslutna"
+    },
+    "btnAdd": {
+        "message": "Lägg till"
+    },
+    "lblCurrentSite": {
+        "message": "Aktuell: "
+    },
+    "btnAddCurrent": {
+        "message": "Lägg till aktuell webbplats"
+    },
+    "lblEmptyList": {
+        "message": "Listan är tom"
+    },
+    "lblHotkeySite": {
+        "message": "Kortkommando för att lägga till webbplats: "
+    },
+    "lblToggleExt": {
+        "message": "Slå till/från tillägg"
+    },
+    "lblAddRemoveSite": {
+        "message": "Lägg till/ta bort aktuell webbplats"
+    },
+    "descKeysInfo": {
+        "message": "Klicka i en ruta och tryck på tangenterna för att spara."
+    },
+    "lblFooter": {
+        "message": "Ändringar sparas automatiskt"
+    },
+    "fontWeightNormal": {
+        "message": "Normal"
+    },
+    "fontWeightMedium": {
+        "message": "Medium"
+    },
+    "fontWeightBold": {
+        "message": "Fet"
+    },
+    "shortcutNone": {
+        "message": "Ingen"
+    },
+    "shortcutPressKeys": {
+        "message": "Tryck på tangenter..."
+    },
+    "lblSettings": {
+        "message": "Inställningar"
+    },
+    "lblAboutUs": {
+        "message": "Om oss"
+    },
+    "lblLanguage": {
+        "message": "Språk"
+    },
+    "lblClose": {
+        "message": "Stäng"
+    },
+    "descAboutUs": {
+        "message": "MÖR LÄSARE är ett dynamiskt och fullt utrustat tillägg för mörkt läge som är utformat för en fantastisk läsupplevelse."
+    },
+    "optLangSystem": {
+        "message": "Systemets standard"
+    },
+    "optLangTr": {
+        "message": "Türkçe"
+    },
+    "optLangAz": {
+        "message": "Azərbaycan dili"
+    },
+    "optLangDe": {
+        "message": "Deutsch"
+    },
+    "optLangEn": {
+        "message": "English"
+    },
+    "optLangFr": {
+        "message": "Français"
+    },
+    "optLangJa": {
+        "message": "日本語"
+    },
+    "optLangRu": {
+        "message": "Русский"
+    },
+    "optLangAr": {
+        "message": "العربية"
+    },
+    "optLangPt": {
+        "message": "Português"
+    },
+    "optLangSv": {
+        "message": "Svenska"
+    },
+    "optLangEs": {
+        "message": "Español"
+    },
+    "optLangKo": {
+        "message": "한국어"
+    },
+    "lblVersion": {
+        "message": "Version"
+    },
+    "descLanguage": {
+        "message": "Välj önskat språk för tilläggets gränssnitt."
+    },
+    "lblAppearance": {
+        "message": "Utseende"
+    },
+    "descAppearance": {
+        "message": "Välj ett visuellt tema för tilläggets popup-fönster."
+    },
+    "themeDefault": {
+        "message": "Standard"
+    },
+    "themeLight": {
+        "message": "Ljust"
+    },
+    "themeDark": {
+        "message": "Mörkt"
+    },
+    "themeBlack": {
+        "message": "Svart"
+    },
+    "themeWhite": {
+        "message": "Vitt"
+    },
+    "themeSepia": {
+        "message": "Papper"
+    },
+    "themeBlue": {
+        "message": "Blå natt"
+    },
+    "errShortcutExists": {
+        "message": "Kortkommandot används redan!"
+    },
+    "lblDonate": {
+        "message": "Stöd & Donation"
+    },
+    "btnDonateCoffee": {
+        "message": "Köp en kaffe"
+    },
+    "descDonate": {
+        "message": "Om du gillar Mör Läsare kan du stödja dess open source-utveckling via någon av plattformarna nedan!"
+    },
+    "donateGhSponsors": {
+        "message": "GitHub Sponsors"
+    },
+    "donateGhDesc": {
+        "message": "Bli sponsor direkt via GitHub"
+    },
+    "donatePatreon": {
+        "message": "Patreon"
+    },
+    "donatePatreonDesc": {
+        "message": "Stöd utvecklaren via Patreon"
+    },
+    "donateOpenCollective": {
+        "message": "Open Collective"
+    },
+    "donateOcDesc": {
+        "message": "Bidra till den transparenta gemenskapsfonden"
+    },
+    "donateCoffeeDesc": {
+        "message": "Bidra genom att bjuda på en kaffe"
+    },
+    "lblGeneral": {
+        "message": "Allmänt"
+    },
+    "descGeneral": {
+        "message": "Konfigurera allmänna inställningar och dokumentalternativ."
+    },
+    "lblEnablePdf": {
+        "message": "PDF-stöd"
+    },
+    "descEnablePdf": {
+        "message": "Aktivera mörkt läge för PDF-dokument som öppnas i webbläsarflikar."
+    },
+    "store_listing": {
+        "message": "Detta tillägg för ögonskydd aktiverar ett mörkt läge på alla webbplatser du besöker.\n\nGenom att erbjuda ett fullt anpassningsbart mörkt tema för webbplatser minskar det ansträngningen för ögonen och förbättrar läsbarheten avsevärt.\n\n\"Koyu Okuyucu\" inverterar ljusa färger, vilket ger en behaglig läsupplevelse även nattetid.\n\nVerktyget är en utmärkt lösning för användning på kvällen eller vid långa stunder framför skärmen, då det hjälper dig att slippa det skarpa ljuset.\n\nDu kan justera ljusstyrka, kontrast, färgtemperatur, inställningar för det mörka läget samt välja egna typsnitt och storlekar – allt kan dessutom schemaläggas så att det aktiveras precis när du vill.\n\nTack vare det användarvänliga gränssnittet kan du anpassa inställningarna och göra varje webbplats mer vilsam för dina ögon.\n\nInaktivera gärna liknande tillägg för att undvika konflikter. Trevlig surfning!\n\nhttps://github.com/koyufikirler/koyuokuyucu"
+    }
+}
