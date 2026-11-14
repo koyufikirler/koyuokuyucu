@@ -1,0 +1,344 @@
+{
+    "extensionName": {
+        "message": "KOYU OKUYUCU"
+    },
+    "extensionDescription": {
+        "message": "Il tema scuro è adatto a qualsiasi sito web. Usa colori scuri sia di giorno che di notte."
+    },
+    "darkModeTitle": {
+        "message": "KOYU OKUYUCU"
+    },
+    "statusOn": {
+        "message": "Attivo"
+    },
+    "statusOff": {
+        "message": "Disattivato"
+    },
+    "statusAuto": {
+        "message": "Automatico"
+    },
+    "disableForSite": {
+        "message": "Disattiva per questo sito"
+    },
+    "thisSite": {
+        "message": "questo sito"
+    },
+    "thisPage": {
+        "message": "questa pagina"
+    },
+    "tabVisuals": {
+        "message": "Aspetto"
+    },
+    "tabMedia": {
+        "message": "Immagini"
+    },
+    "tabType": {
+        "message": "Testo"
+    },
+    "tabAuto": {
+        "message": "Smart"
+    },
+    "tabSites": {
+        "message": "Siti"
+    },
+    "tabKeys": {
+        "message": "Scorciatoie"
+    },
+    "lblBrightness": {
+        "message": "Luminosità: "
+    },
+    "lblContrast": {
+        "message": "Contrasto: "
+    },
+    "lblSepia": {
+        "message": "Calore: "
+    },
+    "lblGrayscale": {
+        "message": "Tonalità di grigio: "
+    },
+    "lblVisProtect": {
+        "message": "🎨 Modalità protezione visiva"
+    },
+    "descVisProtect": {
+        "message": "Attenua immagini e video preservandone i colori naturali. <b>Consigliato per siti ricchi di immagini.</b>"
+    },
+    "lblSmartImages": {
+        "message": "Oscuramento intelligente immagini"
+    },
+    "descSmartImages": {
+        "message": "Scurisce le immagini per evitare l'affaticamento visivo. <b>Passa il mouse su un'immagine</b> per illuminarla!"
+    },
+    "lblDynamic": {
+        "message": "🤖 Rilevamento dinamico"
+    },
+    "descDynamic": {
+        "message": "Rileva e si adatta istantaneamente ai cambiamenti di contenuto sui siti web dinamici."
+    },
+    "lblPerformance": {
+        "message": "⚡ Modalità prestazioni"
+    },
+    "descPerformance": {
+        "message": "Ottimizza i processi in background e l'elaborazione dei colori per prolungare la durata della batteria."
+    },
+    "lblCustomFonts": {
+        "message": "Caratteri personalizzati"
+    },
+    "lblFontFamily": {
+        "message": "Famiglia di caratteri"
+    },
+    "optFontSystem": {
+        "message": "Predefinito di sistema"
+    },
+    "optFontSans": {
+        "message": "Sans Serif"
+    },
+    "optFontSerif": {
+        "message": "Serif"
+    },
+    "optFontMono": {
+        "message": "Monospace"
+    },
+    "optFontDyslexic": {
+        "message": "OpenDyslexic (A misura di dislessia)"
+    },
+    "lblFontWeight": {
+        "message": "Spessore carattere: "
+    },
+    "lblActivationMode": {
+        "message": "Modalità di attivazione"
+    },
+    "optModeManual": {
+        "message": "Manuale"
+    },
+    "optModeSystem": {
+        "message": "Segui l'aspetto del sistema"
+    },
+    "optModeTime": {
+        "message": "Programmazione oraria"
+    },
+    "lblStartTime": {
+        "message": "Ora di inizio (Tramonto)"
+    },
+    "lblEndTime": {
+        "message": "Ora di fine (Alba)"
+    },
+    "descAutoInfoManual": {
+        "message": "Controlla quando la modalità scura si attiva automaticamente."
+    },
+    "descAutoInfoSystem": {
+        "message": "La modalità scura è controllata dalle impostazioni dell'aspetto del tuo sistema."
+    },
+    "descAutoInfoTime": {
+        "message": "La modalità scura si attiva/disattiva in base alla programmazione sopra."
+    },
+    "subTabWhitelist": {
+        "message": "Inverti solo elenco"
+    },
+    "subTabBlacklist": {
+        "message": "Non invertire elenco"
+    },
+    "btnAdd": {
+        "message": "Aggiungi"
+    },
+    "lblCurrentSite": {
+        "message": "Corrente: "
+    },
+    "btnAddCurrent": {
+        "message": "Aggiungi corrente"
+    },
+    "lblEmptyList": {
+        "message": "Elenco vuoto"
+    },
+    "lblHotkeySite": {
+        "message": "Scorciatoia per aggiungere il sito: "
+    },
+    "lblToggleExt": {
+        "message": "Attiva/Disattiva estensione"
+    },
+    "lblAddRemoveSite": {
+        "message": "Aggiungi/Rimuovi sito corrente"
+    },
+    "descKeysInfo": {
+        "message": "Fai clic su una casella e premi i tasti per registrare le scorciatoie."
+    },
+    "lblFooter": {
+        "message": "Le modifiche vengono salvate automaticamente"
+    },
+    "fontWeightNormal": {
+        "message": "Normale"
+    },
+    "fontWeightMedium": {
+        "message": "Medio"
+    },
+    "fontWeightBold": {
+        "message": "Grassetto"
+    },
+    "shortcutNone": {
+        "message": "Nessuna"
+    },
+    "shortcutPressKeys": {
+        "message": "Premi i tasti..."
+    },
+    "lblSettings": {
+        "message": "Impostazioni"
+    },
+    "lblAboutUs": {
+        "message": "Chi siamo"
+    },
+    "lblLanguage": {
+        "message": "Lingua"
+    },
+    "lblClose": {
+        "message": "Chiudi"
+    },
+    "descAboutUs": {
+        "message": "Koyu OKUYUCU è un'estensione dinamica e completa per la modalità scura, progettata per un'esperienza di navigazione eccellente."
+    },
+    "optLangSystem": {
+        "message": "Predefinito di sistema"
+    },
+    "optLangTr": {
+        "message": "Türkçe"
+    },
+    "optLangAz": {
+        "message": "Azərbaycan dili"
+    },
+    "optLangDe": {
+        "message": "Deutsch"
+    },
+    "optLangEn": {
+        "message": "English"
+    },
+    "optLangFr": {
+        "message": "Français"
+    },
+    "optLangJa": {
+        "message": "日本語"
+    },
+    "optLangRu": {
+        "message": "Русский"
+    },
+    "optLangAr": {
+        "message": "العربية"
+    },
+    "optLangPt": {
+        "message": "Português"
+    },
+    "optLangPtBr": {
+        "message": "Português do Brasil"
+    },
+    "optLangSv": {
+        "message": "Svenska"
+    },
+    "optLangNo": {
+        "message": "Norsk"
+    },
+    "optLangFi": {
+        "message": "Suomi"
+    },
+    "optLangIt": {
+        "message": "Italiano"
+    },
+    "optLangEs": {
+        "message": "Español"
+    },
+    "optLangKo": {
+        "message": "한국어"
+    },
+    "lblVersion": {
+        "message": "Versione"
+    },
+    "descLanguage": {
+        "message": "Scegli la tua lingua preferita per l'interfaccia dell'estensione."
+    },
+    "lblAppearance": {
+        "message": "Aspetto"
+    },
+    "descAppearance": {
+        "message": "Scegli un tema visivo per il popup dell'estensione."
+    },
+    "themeDefault": {
+        "message": "Predefinito"
+    },
+    "themeLight": {
+        "message": "Chiaro"
+    },
+    "themeDark": {
+        "message": "Scuro"
+    },
+    "themeBlack": {
+        "message": "Nero"
+    },
+    "themeWhite": {
+        "message": "Bianco"
+    },
+    "themeSepia": {
+        "message": "Seppia"
+    },
+    "themeBlue": {
+        "message": "Notte blu"
+    },
+    "errShortcutExists": {
+        "message": "Scorciatoia già in uso!"
+    },
+    "lblDonate": {
+        "message": "Supporto e donazioni"
+    },
+    "btnDonateCoffee": {
+        "message": "Offrimi un caffè"
+    },
+    "descDonate": {
+        "message": "Se ti piace Koyu Okuyucu, prendi in considerazione l'idea di supportare il suo sviluppo open-source tramite una delle piattaforme sottostanti!"
+    },
+    "donateGhSponsors": {
+        "message": "GitHub Sponsors"
+    },
+    "donateGhDesc": {
+        "message": "Sponsorizza direttamente su GitHub"
+    },
+    "donatePatreon": {
+        "message": "Patreon"
+    },
+    "donatePatreonDesc": {
+        "message": "Diventa un sostenitore e finanzia lo sviluppo"
+    },
+    "donateOpenCollective": {
+        "message": "Open Collective"
+    },
+    "donateOcDesc": {
+        "message": "Supporta il finanziamento trasparente della community"
+    },
+    "donateCoffeeDesc": {
+        "message": "Offri un caffè una tantum o mensile"
+    },
+    "lblGeneral": {
+        "message": "Generale"
+    },
+    "descGeneral": {
+        "message": "Configura le preferenze generali e le impostazioni dei documenti."
+    },
+    "lblEnablePdf": {
+        "message": "Supporto PDF"
+    },
+    "descEnablePdf": {
+        "message": "Abilita la modalità scura per i documenti PDF aperti nelle schede del browser."
+    },
+    "store_listing": {
+        "message": "Questa estensione di protezione visiva attiva la modalità scura per ogni sito che visiti.\n\nKoyu Okuyucu inverte i colori vivaci, offrendo un'esperienza di lettura confortevole di notte.\n\nPuoi regolare luminosità, contrasto, filtro calore, modalità scura, nonché caratteri e dimensioni personalizzate, e impostarli in modo che si attivino in base alle tue preferenze.\n\nGrazie alla sua interfaccia intuitiva, puoi personalizzare le tue impostazioni e rendere ogni sito web più rilassante per i tuoi occhi.\n\nDisattiva estensioni simili per evitare conflitti. Buona navigazione!\n\nhttps://github.com/koyufikirler/koyuokuyucu"
+    },
+    "lblHour": {
+        "message": "Ora"
+    },
+    "lblMinute": {
+        "message": "Minuto"
+    },
+    "btnDone": {
+        "message": "Fatto"
+    },
+    "btnCancel": {
+        "message": "Annulla"
+    },
+    "hintClockDrag": {
+        "message": "Trascina, tocca o digita l'ora."
+    }
+}

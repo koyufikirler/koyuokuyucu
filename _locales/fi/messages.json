@@ -1,0 +1,341 @@
+{
+    "extensionName": {
+        "message": "KOYU OKUYUCU"
+    },
+    "extensionDescription": {
+        "message": "Tumma väri sopii mille tahansa verkkosivustolle. Käytä tummia värejä sekä päivällä että yöllä."
+    },
+    "darkModeTitle": {
+        "message": "KOYU OKUYUCU"
+    },
+    "statusOn": {
+        "message": "Päällä"
+    },
+    "statusOff": {
+        "message": "Pois"
+    },
+    "statusAuto": {
+        "message": "Automaattinen"
+    },
+    "disableForSite": {
+        "message": "Poista käytöstä tällä sivustolla"
+    },
+    "thisSite": {
+        "message": "tämä sivusto"
+    },
+    "thisPage": {
+        "message": "tämä sivu"
+    },
+    "tabVisuals": {
+        "message": "Ulkoasu"
+    },
+    "tabMedia": {
+        "message": "Kuva"
+    },
+    "tabType": {
+        "message": "Teksti"
+    },
+    "tabAuto": {
+        "message": "Älykäs"
+    },
+    "tabSites": {
+        "message": "Sivustot"
+    },
+    "tabKeys": {
+        "message": "Pikanäppäimet"
+    },
+    "lblBrightness": {
+        "message": "Kirkkaus: "
+    },
+    "lblContrast": {
+        "message": "Kontrasti: "
+    },
+    "lblSepia": {
+        "message": "Lämpö: "
+    },
+    "lblGrayscale": {
+        "message": "Harmaasävy: "
+    },
+    "lblVisProtect": {
+        "message": "🎨 Visuaalinen suojaustila"
+    },
+    "descVisProtect": {
+        "message": "Pehmentää kuvia ja videoita säilyttäen niiden luonnolliset värit. <b>Suositellaan kuvapainotteisille sivustoille.</b>"
+    },
+    "lblSmartImages": {
+        "message": "Älykäs kuvien tummennus"
+    },
+    "descSmartImages": {
+        "message": "Himmennät kuvat silmien rasituksen estämiseksi. <b>Vie hiiri kuvan päälle</b> kirkastaaksesi sen!"
+    },
+    "lblDynamic": {
+        "message": "🤖 Dynaaminen tunnistus"
+    },
+    "descDynamic": {
+        "message": "Tunnistaa ja mukautuu välittömästi dynaamisten verkkosivustojen sisällön muutoksiin."
+    },
+    "lblPerformance": {
+        "message": "⚡ Suorituskykytila"
+    },
+    "descPerformance": {
+        "message": "Optimizoi taustaprosessit ja värien käsittelyn akun säästämiseksi."
+    },
+    "lblCustomFonts": {
+        "message": "Mukautetut fontit"
+    },
+    "lblFontFamily": {
+        "message": "Fonttiperhe"
+    },
+    "optFontSystem": {
+        "message": "Järjestelmän oletus"
+    },
+    "optFontSans": {
+        "message": "Sans Serif"
+    },
+    "optFontSerif": {
+        "message": "Serif"
+    },
+    "optFontMono": {
+        "message": "Monospace"
+    },
+    "optFontDyslexic": {
+        "message": "OpenDyslexic (Dysleksiaystävällinen)"
+    },
+    "lblFontWeight": {
+        "message": "Fontin paksuus: "
+    },
+    "lblActivationMode": {
+        "message": "Aktiointitila"
+    },
+    "optModeManual": {
+        "message": "Manuaalinen"
+    },
+    "optModeSystem": {
+        "message": "Seuraa järjestelmän ulkoasua"
+    },
+    "optModeTime": {
+        "message": "Aikataulu"
+    },
+    "lblStartTime": {
+        "message": "Aloitusaika (Auringonlasku)"
+    },
+    "lblEndTime": {
+        "message": "Lopetusaika (Auringonnousu)"
+    },
+    "descAutoInfoManual": {
+        "message": "Ohjaa, milloin tumma tila kytkeytyy automaattisesti päälle."
+    },
+    "descAutoInfoSystem": {
+        "message": "Tummaa tilaa ohjataan järjestelmäsi ulkoasuasetuksilla."
+    },
+    "descAutoInfoTime": {
+        "message": "Tumma tila kytkeytyy päälle/pois yllä olevan aikataulun mukaisesti."
+    },
+    "subTabWhitelist": {
+        "message": "Käännä vain luetteloidut"
+    },
+    "subTabBlacklist": {
+        "message": "Älä käännä luetteloituja"
+    },
+    "btnAdd": {
+        "message": "Lisää"
+    },
+    "lblCurrentSite": {
+        "message": "Nykyinen: "
+    },
+    "btnAddCurrent": {
+        "message": "Lisää nykyinen"
+    },
+    "lblEmptyList": {
+        "message": "Tyhjä luettelo"
+    },
+    "lblHotkeySite": {
+        "message": "Pikanäppäin sivuston lisäämiseen: "
+    },
+    "lblToggleExt": {
+        "message": "Ota laajennus käyttöön/pois käytöstä"
+    },
+    "lblAddRemoveSite": {
+        "message": "Lisää/poista nykyinen sivusto"
+    },
+    "descKeysInfo": {
+        "message": "Napsauta laatikkoa ja paina näppäimiä tallentaaksesi oikopolut."
+    },
+    "lblFooter": {
+        "message": "Muutokset tallentuvat automaattisesti"
+    },
+    "fontWeightNormal": {
+        "message": "Normaali"
+    },
+    "fontWeightMedium": {
+        "message": "Keskipaino"
+    },
+    "fontWeightBold": {
+        "message": "Lihavoitu"
+    },
+    "shortcutNone": {
+        "message": "Ei mitään"
+    },
+    "shortcutPressKeys": {
+        "message": "Paina näppäimiä..."
+    },
+    "lblSettings": {
+        "message": "Asetukset"
+    },
+    "lblAboutUs": {
+        "message": "Tietoa meistä"
+    },
+    "lblLanguage": {
+        "message": "Kieli"
+    },
+    "lblClose": {
+        "message": "Sulje"
+    },
+    "descAboutUs": {
+        "message": "Koyu OKUYUCU on dynaaminen, täysominaisuuksinen tumman tilan laajennus, joka on suunniteltu ensiluokkaiseen selailukokemukseen."
+    },
+    "optLangSystem": {
+        "message": "Järjestelmän oletus"
+    },
+    "optLangTr": {
+        "message": "Türkçe"
+    },
+    "optLangAz": {
+        "message": "Azərbaycan dili"
+    },
+    "optLangDe": {
+        "message": "Deutsch"
+    },
+    "optLangEn": {
+        "message": "English"
+    },
+    "optLangFr": {
+        "message": "Français"
+    },
+    "optLangJa": {
+        "message": "日本語"
+    },
+    "optLangRu": {
+        "message": "Русский"
+    },
+    "optLangAr": {
+        "message": "العربية"
+    },
+    "optLangPt": {
+        "message": "Português"
+    },
+    "optLangPtBr": {
+        "message": "Português do Brasil"
+    },
+    "optLangSv": {
+        "message": "Svenska"
+    },
+    "optLangNo": {
+        "message": "Norsk"
+    },
+    "optLangFi": {
+        "message": "Suomi"
+    },
+    "optLangEs": {
+        "message": "Español"
+    },
+    "optLangKo": {
+        "message": "한국어"
+    },
+    "lblVersion": {
+        "message": "Versio"
+    },
+    "descLanguage": {
+        "message": "Valitse laajennuksen käyttöliittymän ensisijainen kieli."
+    },
+    "lblAppearance": {
+        "message": "Ulkoasu"
+    },
+    "descAppearance": {
+        "message": "Valitse visuaalinen teema laajennuksen ponnahdusikkunalle."
+    },
+    "themeDefault": {
+        "message": "Oletus"
+    },
+    "themeLight": {
+        "message": "Vaalea"
+    },
+    "themeDark": {
+        "message": "Tumma"
+    },
+    "themeBlack": {
+        "message": "Musta"
+    },
+    "themeWhite": {
+        "message": "Valkoinen"
+    },
+    "themeSepia": {
+        "message": "Seepia"
+    },
+    "themeBlue": {
+        "message": "Sininen yö"
+    },
+    "errShortcutExists": {
+        "message": "Pikanäppäin on jo käytössä!"
+    },
+    "lblDonate": {
+        "message": "Tuki ja lahjoitukset"
+    },
+    "btnDonateCoffee": {
+        "message": "Osta minulle kahvi"
+    },
+    "descDonate": {
+        "message": "Jos pidät Koyu Okuyucusta, harkitse sen avoimen lähdekoodin kehityksen tukemista jollakin alla olevista alustoista!"
+    },
+    "donateGhSponsors": {
+        "message": "GitHub Sponsors"
+    },
+    "donateGhDesc": {
+        "message": "Sponsoroi suoraan GitHubissa"
+    },
+    "donatePatreon": {
+        "message": "Patreon"
+    },
+    "donatePatreonDesc": {
+        "message": "Ryhdy mesenaatiksi ja tue kehitystä"
+    },
+    "donateOpenCollective": {
+        "message": "Open Collective"
+    },
+    "donateOcDesc": {
+        "message": "Tue avointa yhteisörahoitusta"
+    },
+    "donateCoffeeDesc": {
+        "message": "Osta kerta- tai kuukausikahvi"
+    },
+    "lblGeneral": {
+        "message": "Yleiset"
+    },
+    "descGeneral": {
+        "message": "Määritä yleiset asetukset ja asiakirja-asetukset."
+    },
+    "lblEnablePdf": {
+        "message": "PDF-tuki"
+    },
+    "descEnablePdf": {
+        "message": "Ota tumma tila käyttöön selaimen välilehdissä avattaville PDF-dokumenteille."
+    },
+    "store_listing": {
+        "message": "Tämä silmiä suojaava laajennus ottaa käyttöön tumman tilan jokaisella vierailemallasi sivustolla.\n\nKoyu Okuyucu kääntää kirkkaat värit päälaelleen, mikä tekee yökatselusta mukavaa.\n\nVoit säätää kirkkautta, kontrastia, lämpösuodatetta, tummaa tilaa sekä mukautettuja fontteja ja fonttikokoja ja asettaa ne aktivoitumaan omien mieltymystesi mukaan.\n\nKäyttäjäystävällisen käyttöliittymän ansiosta voit mukauttaa asetuksiasi ja tehdä jokaisesta verkkosivustosta silmillesi levollisemman.\n\nPoista samankaltaiset laajennukset käytöstä ristiriitojen välttämiseksi. Mukavia selailuhetkiä!\n\nhttps://github.com/koyufikirler/koyuokuyucu"
+    },
+    "lblHour": {
+        "message": "Tunti"
+    },
+    "lblMinute": {
+        "message": "Minuutti"
+    },
+    "btnDone": {
+        "message": "Valmis"
+    },
+    "btnCancel": {
+        "message": "Peruuta"
+    },
+    "hintClockDrag": {
+        "message": "Vedä, napauta tai kirjoita kellonaika."
+    }
+}

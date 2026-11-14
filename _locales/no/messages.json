@@ -1,0 +1,338 @@
+{
+    "extensionName": {
+        "message": "KOYU OKUYUCU"
+    },
+    "extensionDescription": {
+        "message": "Mørk farge passer for alle nettsider. Bruk mørke farger både til dag og natt."
+    },
+    "darkModeTitle": {
+        "message": "KOYU OKUYUCU"
+    },
+    "statusOn": {
+        "message": "På"
+    },
+    "statusOff": {
+        "message": "Av"
+    },
+    "statusAuto": {
+        "message": "Auto"
+    },
+    "disableForSite": {
+        "message": "Deaktiver for denne nettsiden"
+    },
+    "thisSite": {
+        "message": "denne nettsiden"
+    },
+    "thisPage": {
+        "message": "denne siden"
+    },
+    "tabVisuals": {
+        "message": "Utseende"
+    },
+    "tabMedia": {
+        "message": "Bilde"
+    },
+    "tabType": {
+        "message": "Tekst"
+    },
+    "tabAuto": {
+        "message": "Smart"
+    },
+    "tabSites": {
+        "message": "Nettsider"
+    },
+    "tabKeys": {
+        "message": "Taster"
+    },
+    "lblBrightness": {
+        "message": "Lysstyrke: "
+    },
+    "lblContrast": {
+        "message": "Kontrast: "
+    },
+    "lblSepia": {
+        "message": "Varme: "
+    },
+    "lblGrayscale": {
+        "message": "Gråtone: "
+    },
+    "lblVisProtect": {
+        "message": "🎨 Visuell beskyttelsesmodus"
+    },
+    "descVisProtect": {
+        "message": "Gjør bilder og videoer mykere samtidig som de naturlige fargene bevares. <b>Anbefales for bildetunge nettsteder.</b>"
+    },
+    "lblSmartImages": {
+        "message": "Smart bildenedtoning"
+    },
+    "descSmartImages": {
+        "message": "Demper bilder for å forhindre anstrengte øyne. <b>Før markøren over et bilde</b> for å lysne det!"
+    },
+    "lblDynamic": {
+        "message": "🤖 Dynamisk gjenkjenning"
+    },
+    "descDynamic": {
+        "message": "Oppdager og tilpasser seg innholdsendringer på dynamiske nettsider umiddelbart."
+    },
+    "lblPerformance": {
+        "message": "⚡ Ytelsesmodus"
+    },
+    "descPerformance": {
+        "message": "Optimaliserer bakgrunnsprosesser og fargebehandling for å forlenge batterilevetiden."
+    },
+    "lblCustomFonts": {
+        "message": "Egendefinerte skrifttyper"
+    },
+    "lblFontFamily": {
+        "message": "Skriftfamilie"
+    },
+    "optFontSystem": {
+        "message": "Systemstandard"
+    },
+    "optFontSans": {
+        "message": "Sans Serif"
+    },
+    "optFontSerif": {
+        "message": "Serif"
+    },
+    "optFontMono": {
+        "message": "Monospace"
+    },
+    "optFontDyslexic": {
+        "message": "OpenDyslexic (Dysleksivennlig)"
+    },
+    "lblFontWeight": {
+        "message": "Skriftvekt: "
+    },
+    "lblActivationMode": {
+        "message": "Aktiveringsmodus"
+    },
+    "optModeManual": {
+        "message": "Manuell"
+    },
+    "optModeSystem": {
+        "message": "Følg systemets utseende"
+    },
+    "optModeTime": {
+        "message": "Tidsskjema"
+    },
+    "lblStartTime": {
+        "message": "Starttid (Solnedgang)"
+    },
+    "lblEndTime": {
+        "message": "Sluttid (Soloppgang)"
+    },
+    "descAutoInfoManual": {
+        "message": "Styrer når mørk modus slås på automatisk."
+    },
+    "descAutoInfoSystem": {
+        "message": "Mørk modus styres av systemets utseendeinnstillinger."
+    },
+    "descAutoInfoTime": {
+        "message": "Mørk modus slås på/av basert på tidsskjemaet ovenfor."
+    },
+    "subTabWhitelist": {
+        "message": "Inverter kun oppførte"
+    },
+    "subTabBlacklist": {
+        "message": "Ikke inverter oppførte"
+    },
+    "btnAdd": {
+        "message": "Legg til"
+    },
+    "lblCurrentSite": {
+        "message": "Gjeldende: "
+    },
+    "btnAddCurrent": {
+        "message": "Legg til gjeldende"
+    },
+    "lblEmptyList": {
+        "message": "Tom liste"
+    },
+    "lblHotkeySite": {
+        "message": "Hurtigtast for å legge til nettsted: "
+    },
+    "lblToggleExt": {
+        "message": "Slå utvidelsen av/på"
+    },
+    "lblAddRemoveSite": {
+        "message": "Legg til / fjern gjeldende nettsted"
+    },
+    "descKeysInfo": {
+        "message": "Klikk i en boks og trykk taster for å registrere hurtigtaster."
+    },
+    "lblFooter": {
+        "message": "Endringer lagres automatisk"
+    },
+    "fontWeightNormal": {
+        "message": "Normal"
+    },
+    "fontWeightMedium": {
+        "message": "Middels"
+    },
+    "fontWeightBold": {
+        "message": "Uthevet"
+    },
+    "shortcutNone": {
+        "message": "Ingen"
+    },
+    "shortcutPressKeys": {
+        "message": "Trykk taster..."
+    },
+    "lblSettings": {
+        "message": "Innstillinger"
+    },
+    "lblAboutUs": {
+        "message": "Om oss"
+    },
+    "lblLanguage": {
+        "message": "Språk"
+    },
+    "lblClose": {
+        "message": "Lukk"
+    },
+    "descAboutUs": {
+        "message": "Koyu OKUYUCU er en dynamisk, fullfunksjons utvidelse for mørk modus designet for en førsteklasses nettleseropplevelse."
+    },
+    "optLangSystem": {
+        "message": "Systemstandard"
+    },
+    "optLangTr": {
+        "message": "Türkçe"
+    },
+    "optLangAz": {
+        "message": "Azərbaycan dili"
+    },
+    "optLangDe": {
+        "message": "Deutsch"
+    },
+    "optLangEn": {
+        "message": "English"
+    },
+    "optLangFr": {
+        "message": "Français"
+    },
+    "optLangJa": {
+        "message": "日本語"
+    },
+    "optLangRu": {
+        "message": "Русский"
+    },
+    "optLangAr": {
+        "message": "العربية"
+    },
+    "optLangPt": {
+        "message": "Português"
+    },
+    "optLangPtBr": {
+        "message": "Português do Brasil"
+    },
+    "optLangSv": {
+        "message": "Svenska"
+    },
+    "optLangEs": {
+        "message": "Español"
+    },
+    "optLangKo": {
+        "message": "한국어"
+    },
+    "optLangNo": {
+        "message": "Norsk"
+    },
+    "lblVersion": {
+        "message": "Versjon"
+    },
+    "descLanguage": {
+        "message": "Velg ditt foretrukne språk for utvidelsesgrensesnittet."
+    },
+    "lblAppearance": {
+        "message": "Utseende"
+    },
+    "descAppearance": {
+        "message": "Velg et visuelt tema for utvidelsens sprettoppvindu."
+    },
+    "themeDefault": {
+        "message": "Standard"
+    },
+    "themeLight": {
+        "message": "Lyst"
+    },
+    "themeDark": {
+        "message": "Mørkt"
+    },
+    "themeBlack": {
+        "message": "Svart"
+    },
+    "themeWhite": {
+        "message": "Hvit"
+    },
+    "themeSepia": {
+        "message": "Sepia"
+    },
+    "themeBlue": {
+        "message": "Blå natt"
+    },
+    "errShortcutExists": {
+        "message": "Hurtigtasten er allerede i bruk!"
+    },
+    "lblDonate": {
+        "message": "Støtt og doner"
+    },
+    "btnDonateCoffee": {
+        "message": "Kjøp en kaffe til meg"
+    },
+    "descDonate": {
+        "message": "Hvis du liker Koyu Okuyucu, kan du vurdere å støtte dens open source-utvikling gjennom en av plattformene nedenfor!"
+    },
+    "donateGhSponsors": {
+        "message": "GitHub Sponsors"
+    },
+    "donateGhDesc": {
+        "message": "Sponsor direkte på GitHub"
+    },
+    "donatePatreon": {
+        "message": "Patreon"
+    },
+    "donatePatreonDesc": {
+        "message": "Bli en mesén og støtt utviklingen"
+    },
+    "donateOpenCollective": {
+        "message": "Open Collective"
+    },
+    "donateOcDesc": {
+        "message": "Støtt transparent fellesskapsfinansiering"
+    },
+    "donateCoffeeDesc": {
+        "message": "Kjøp en engangs- eller månedlig kaffe"
+    },
+    "lblGeneral": {
+        "message": "Generelt"
+    },
+    "descGeneral": {
+        "message": "Konfigurer generelle preferanser og dokumentinnstillinger."
+    },
+    "lblEnablePdf": {
+        "message": "PDF-støtte"
+    },
+    "descEnablePdf": {
+        "message": "Aktiver mørk modus for PDF-dokumenter som åpnes i nettleserfaner."
+    },
+    "store_listing": {
+        "message": "Denne øyebeskyttelsesutvidelsen aktiverer mørk modus for alle nettsteder du besøker.\n\nKoyu Okuyucu inverterer lyse farger, noe som gir en behagelig leseopplevelse om natten.\n\nDu kan justere lysstyrke, kontrast, varmefilter, mørk modus samt egendefinerte skrifttyper og skriftstørrelser, og stille dem inn slik at de aktiveres i henhold til dine preferanser.\n\nTakket være det brukervennlige grensesnittet kan du personliggjøre innstillingene og gjøre enhver nettside mer behagelig for øynene dine.\n\nVennligst deaktiver lignende utvidelser for å unngå konflikter. God surfing!\n\nhttps://github.com/koyufikirler/koyuokuyucu"
+    },
+    "lblHour": {
+        "message": "Time"
+    },
+    "lblMinute": {
+        "message": "Minutt"
+    },
+    "btnDone": {
+        "message": "Ferdig"
+    },
+    "btnCancel": {
+        "message": "Avbryt"
+    },
+    "hintClockDrag": {
+        "message": "Dra, trykk eller skriv inn klokkeslettet."
+    }
+}
