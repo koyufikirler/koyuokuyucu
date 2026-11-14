@@ -1,12 +1,12 @@
 {
     "extensionName": {
-        "message": "MÖR LÄSARE"
+        "message": "Koyu Okuyucu"
     },
     "extensionDescription": {
-        "message": "Mörkt läge anpassat för varje webbplats. Var rädd om dina ögon. Använd mörka färger för natt och dag."
+        "message": "Ett mörkt läge som passar alla webbplatser. Var rädd om dina ögon. Använd ett mörkt färgschema, både dag och natt."
     },
     "darkModeTitle": {
-        "message": "MÖR LÄSARE"
+        "message": "Koyu Okuyucu"
     },
     "statusOn": {
         "message": "På"
@@ -192,7 +192,7 @@
         "message": "Stäng"
     },
     "descAboutUs": {
-        "message": "MÖR LÄSARE är ett dynamiskt och fullt utrustat tillägg för mörkt läge som är utformat för en fantastisk läsupplevelse."
+        "message": "Koyu Okuyucu är ett dynamiskt och fullt utrustat tillägg för mörkt läge som är utformat för en fantastisk läsupplevelse."
     },
     "optLangSystem": {
         "message": "Systemets standard"
@@ -279,7 +279,7 @@
         "message": "Köp en kaffe"
     },
     "descDonate": {
-        "message": "Om du gillar Mör Läsare kan du stödja dess open source-utveckling via någon av plattformarna nedan!"
+        "message": "Om du gillar Koyu Okuyucu kan du stödja dess open source-utveckling via någon av plattformarna nedan!"
     },
     "donateGhSponsors": {
         "message": "GitHub Sponsors"
