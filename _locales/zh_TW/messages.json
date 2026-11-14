@@ -1,0 +1,350 @@
+{
+    "extensionName": {
+        "message": "KOYU OKUYUCU"
+    },
+    "extensionDescription": {
+        "message": "深色模式適用於任何網站。無論是白天還是夜晚，都可以使用深色。"
+    },
+    "darkModeTitle": {
+        "message": "KOYU OKUYUCU"
+    },
+    "statusOn": {
+        "message": "開啟"
+    },
+    "statusOff": {
+        "message": "關閉"
+    },
+    "statusAuto": {
+        "message": "自動"
+    },
+    "disableForSite": {
+        "message": "在此網站上停用"
+    },
+    "thisSite": {
+        "message": "本網站"
+    },
+    "thisPage": {
+        "message": "本頁面"
+    },
+    "tabVisuals": {
+        "message": "外觀"
+    },
+    "tabMedia": {
+        "message": "圖片"
+    },
+    "tabType": {
+        "message": "文字"
+    },
+    "tabAuto": {
+        "message": "智慧"
+    },
+    "tabSites": {
+        "message": "網站"
+    },
+    "tabKeys": {
+        "message": "快捷鍵"
+    },
+    "lblBrightness": {
+        "message": "亮度: "
+    },
+    "lblContrast": {
+        "message": "對比度: "
+    },
+    "lblSepia": {
+        "message": "色溫: "
+    },
+    "lblGrayscale": {
+        "message": "灰度: "
+    },
+    "lblVisProtect": {
+        "message": "🎨 視覺保護模式"
+    },
+    "descVisProtect": {
+        "message": "柔化圖片和影片，同時保持其自然色彩。<b>建議用於多圖網站。</b>"
+    },
+    "lblSmartImages": {
+        "message": "智慧圖片變暗"
+    },
+    "descSmartImages": {
+        "message": "調暗圖片以防止眼睛疲勞。<b>將滑鼠懸停在圖片上</b>即可將其變亮！"
+    },
+    "lblDynamic": {
+        "message": "🤖 動態偵測"
+    },
+    "descDynamic": {
+        "message": "即時偵測動態網站上的內容變更並進行調整。"
+    },
+    "lblPerformance": {
+        "message": "⚡ 效能模式"
+    },
+    "descPerformance": {
+        "message": "最佳化背景行程和色彩處理以延長電池續航力。"
+    },
+    "lblCustomFonts": {
+        "message": "自訂字型"
+    },
+    "lblFontFamily": {
+        "message": "字型系列"
+    },
+    "optFontSystem": {
+        "message": "系統預設"
+    },
+    "optFontSans": {
+        "message": "無襯線體 (Sans Serif)"
+    },
+    "optFontSerif": {
+        "message": "襯線體 (Serif)"
+    },
+    "optFontMono": {
+        "message": "等寬字型 (Monospace)"
+    },
+    "optFontDyslexic": {
+        "message": "OpenDyslexic (閱讀障礙友善字型)"
+    },
+    "lblFontWeight": {
+        "message": "字體粗細: "
+    },
+    "lblActivationMode": {
+        "message": "啟用模式"
+    },
+    "optModeManual": {
+        "message": "手動"
+    },
+    "optModeSystem": {
+        "message": "跟隨系統外觀"
+    },
+    "optModeTime": {
+        "message": "時間排程"
+    },
+    "lblStartTime": {
+        "message": "開始時間 (日落)"
+    },
+    "lblEndTime": {
+        "message": "結束時間 (日出)"
+    },
+    "descAutoInfoManual": {
+        "message": "控制深色模式何時自動開啟。"
+    },
+    "descAutoInfoSystem": {
+        "message": "深色模式由您的系統外觀設定控制。"
+    },
+    "descAutoInfoTime": {
+        "message": "深色模式根據上述時間安排自動開啟/關閉。"
+    },
+    "subTabWhitelist": {
+        "message": "僅反轉列表項"
+    },
+    "subTabBlacklist": {
+        "message": "不反轉列表項"
+    },
+    "btnAdd": {
+        "message": "新增"
+    },
+    "lblCurrentSite": {
+        "message": "目前: "
+    },
+    "btnAddCurrent": {
+        "message": "新增目前網站"
+    },
+    "lblEmptyList": {
+        "message": "清單為空"
+    },
+    "lblHotkeySite": {
+        "message": "新增網站快捷鍵: "
+    },
+    "lblToggleExt": {
+        "message": "切換擴充功能開關"
+    },
+    "lblAddRemoveSite": {
+        "message": "新增/移除目前網站"
+    },
+    "descKeysInfo": {
+        "message": "點擊方框並按下按鍵以錄製快捷鍵。"
+    },
+    "lblFooter": {
+        "message": "變更會自動儲存"
+    },
+    "fontWeightNormal": {
+        "message": "標準"
+    },
+    "fontWeightMedium": {
+        "message": "中等"
+    },
+    "fontWeightBold": {
+        "message": "粗體"
+    },
+    "shortcutNone": {
+        "message": "無"
+    },
+    "shortcutPressKeys": {
+        "message": "按下按鍵..."
+    },
+    "lblSettings": {
+        "message": "設定"
+    },
+    "lblAboutUs": {
+        "message": "關於我們"
+    },
+    "lblLanguage": {
+        "message": "語言"
+    },
+    "lblClose": {
+        "message": "關閉"
+    },
+    "descAboutUs": {
+        "message": "Koyu OKUYUCU 是一款動態、功能齊全的深色模式擴充功能，專為提供優質的瀏覽體驗而設計。"
+    },
+    "optLangSystem": {
+        "message": "系統預設"
+    },
+    "optLangTr": {
+        "message": "Türkçe"
+    },
+    "optLangAz": {
+        "message": "Azərbaycan dili"
+    },
+    "optLangDe": {
+        "message": "Deutsch"
+    },
+    "optLangEn": {
+        "message": "English"
+    },
+    "optLangFr": {
+        "message": "Français"
+    },
+    "optLangJa": {
+        "message": "日本語"
+    },
+    "optLangRu": {
+        "message": "Русский"
+    },
+    "optLangAr": {
+        "message": "العربية"
+    },
+    "optLangPt": {
+        "message": "Português"
+    },
+    "optLangPtBr": {
+        "message": "Português do Brasil"
+    },
+    "optLangSv": {
+        "message": "Svenska"
+    },
+    "optLangNo": {
+        "message": "Norsk"
+    },
+    "optLangFi": {
+        "message": "Suomi"
+    },
+    "optLangIt": {
+        "message": "Italiano"
+    },
+    "optLangZh": {
+        "message": "中文 (简体)"
+    },
+    "optLangZhTw": {
+        "message": "中文 (繁體)"
+    },
+    "optLangEs": {
+        "message": "Español"
+    },
+    "optLangKo": {
+        "message": "한국어"
+    },
+    "lblVersion": {
+        "message": "版本"
+    },
+    "descLanguage": {
+        "message": "選擇擴充功能介面偏好語言。"
+    },
+    "lblAppearance": {
+        "message": "外觀"
+    },
+    "descAppearance": {
+        "message": "為擴充功能彈出視窗選擇一個視覺主題。"
+    },
+    "themeDefault": {
+        "message": "預設"
+    },
+    "themeLight": {
+        "message": "淺色"
+    },
+    "themeDark": {
+        "message": "深色"
+    },
+    "themeBlack": {
+        "message": "黑色"
+    },
+    "themeWhite": {
+        "message": "白色"
+    },
+    "themeSepia": {
+        "message": "紙張"
+    },
+    "themeBlue": {
+        "message": "午夜藍"
+    },
+    "errShortcutExists": {
+        "message": "快捷鍵已被使用！"
+    },
+    "lblDonate": {
+        "message": "支援與捐款"
+    },
+    "btnDonateCoffee": {
+        "message": "請我喝杯咖啡"
+    },
+    "descDonate": {
+        "message": "如果您喜歡 Koyu Okuyucu，歡迎透過以下任一平臺支援其開源開發！"
+    },
+    "donateGhSponsors": {
+        "message": "GitHub Sponsors"
+    },
+    "donateGhDesc": {
+        "message": "在 GitHub 上直接贊助"
+    },
+    "donatePatreon": {
+        "message": "Patreon"
+    },
+    "donatePatreonDesc": {
+        "message": "成為贊助者以支援開發"
+    },
+    "donateOpenCollective": {
+        "message": "Open Collective"
+    },
+    "donateOcDesc": {
+        "message": "支援透明的社群資金籌集"
+    },
+    "donateCoffeeDesc": {
+        "message": "單次或按月請喝咖啡"
+    },
+    "lblGeneral": {
+        "message": "一般"
+    },
+    "descGeneral": {
+        "message": "設定一般偏好與文件設定。"
+    },
+    "lblEnablePdf": {
+        "message": "PDF 支援"
+    },
+    "descEnablePdf": {
+        "message": "為瀏覽器分頁中開啟的 PDF 文件啟用深色模式。"
+    },
+    "store_listing": {
+        "message": "此護眼擴充功能可為您造訪的每個網站啟用深色模式。\n\nKoyu Okuyucu 可反轉亮色，為您在夜間提供舒適的閱讀體驗。\n\n您可以調整亮度、對比度、色溫濾鏡、深色模式以及自訂字型和字號，並根據您的偏好設定其自動啟用時間。\n\n憑藉其使用者友善的介面，您可以個人化設定，讓每個網站對您的眼睛更加放鬆。\n\n請停用類似的擴充功能以避免衝突。祝您瀏覽愉快！\n\nhttps://github.com/koyufikirler/koyuokuyucu"
+    },
+    "lblHour": {
+        "message": "小時"
+    },
+    "lblMinute": {
+        "message": "分鐘"
+    },
+    "btnDone": {
+        "message": "完成"
+    },
+    "btnCancel": {
+        "message": "取消"
+    },
+    "hintClockDrag": {
+        "message": "拖曳、點擊或輸入時間。"
+    }
+}
