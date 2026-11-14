@@ -316,5 +316,20 @@
     },
     "store_listing": {
         "message": "Esta extensión de protección ocular activa el modo oscuro en todos los sitios web que visitas. \n\nKoyu Okuyucu invierte los colores brillantes para ofrecer una experiencia de lectura cómoda por la noche. \n\nPuedes ajustar el brillo, el contraste, los filtros de temperatura de color, el modo oscuro, las fuentes personalizadas y el tamaño de la letra según tus preferencias. \n\nSu interfaz intuitiva te permite personalizar la configuración y hacer que cada sitio web sea más agradable para tus ojos. \n\nPara evitar conflictos, desactiva las extensiones similares. ¡Disfruta de la navegación!\n\nhttps://github.com/koyufikirler/koyuokuyucu"
+    },
+    "lblHour": {
+        "message": "Hora"
+    },
+    "lblMinute": {
+        "message": "Minuto"
+    },
+    "btnDone": {
+        "message": "Listo"
+    },
+    "btnCancel": {
+        "message": "Cancelar"
+    },
+    "hintClockDrag": {
+        "message": "Arrastra, toca o escribe la hora."
     }
 }

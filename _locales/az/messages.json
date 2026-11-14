@@ -316,5 +316,20 @@
     },
     "store_listing": {
         "message": "Göz qoruyucu bu genişləndirmə, daxil olduğunuz hər bir saytda qaranlıq rejimi aktivləşdirir.\n\nKoyu Okuyucu parlaq rəngləri tərsinə çevirərək gecələr rahat oxu təcrübəsi yaradır. \n\nParlaqlığı, kontrastı, rəng temperaturu filtrini, qaranlıq rejimi, xüsusi şriftləri və şrift ölçülərini ehtiyaclarınıza uyğun tənzimləyə bilərsiniz. \n\nİstifadəçi dostu interfeysi sayəsində parametrlərinizi fərdiləşdirə və hər bir veb-saytı gözləriniz üçün daha rahat edə bilərsiniz. \n\nUyğunsuzluqların qarşısını almaq üçün oxşar əlavələri deaktiv edin. Xoş gəzişlər!\n\nhttps://github.com/koyufikirler/koyuokuyucu"
+    },
+    "lblHour": {
+        "message": "Saat"
+    },
+    "lblMinute": {
+        "message": "Dəqiqə"
+    },
+    "btnDone": {
+        "message": "Hazır"
+    },
+    "btnCancel": {
+        "message": "Ləğv et"
+    },
+    "hintClockDrag": {
+        "message": "Sürüşdürün, toxunun və ya yazın."
     }
 }

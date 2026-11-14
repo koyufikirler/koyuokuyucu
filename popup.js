@@ -55,6 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const timeSettings = document.getElementById('timeSettings');
     const timeStart = document.getElementById('timeStart');
     const timeEnd = document.getElementById('timeEnd');
+    const timeStartField = document.getElementById('timeStartField');
+    const timeEndField = document.getElementById('timeEndField');
+    const timeStartDisplay = document.getElementById('timeStartDisplay');
+    const timeEndDisplay = document.getElementById('timeEndDisplay');
     const autoInfo = document.getElementById('autoInfo');
 
     // Sites
@@ -253,6 +257,9 @@ document.addEventListener('DOMContentLoaded', () => {
             shortcutInputSite.value = formatShortcut(currentSettings.shortcutSite);
             addSiteHotkeyDisplay.textContent = formatShortcut(currentSettings.shortcutSite);
         }
+
+        syncTimeDisplays();
+        localizeClockPicker();
     }
 
 
@@ -404,6 +411,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // === Core Logic ===
+    function readTimeState(el, fallback) {
+        return el && el.dataset && el.dataset.timeValue ? el.dataset.timeValue : fallback;
+    }
+
+    function writeTimeState(el, value) {
+        if (el && el.dataset) el.dataset.timeValue = value;
+    }
+
     function collectSettingsFromUI() {
         return {
             enabled: globalToggle.checked,
@@ -420,8 +435,8 @@ document.addEventListener('DOMContentLoaded', () => {
             fontWeight: parseInt(fontWeight.value),
             automation: {
                 mode: autoMode.value,
-                startTime: timeStart.value,
-                endTime: timeEnd.value
+                startTime: readTimeState(timeStart, '19:00'),
+                endTime: readTimeState(timeEnd, '07:00')
             },
             language: languageSelect ? languageSelect.value : 'system',
             uiTheme: currentSettings.uiTheme || 'default',
@@ -544,8 +559,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Auto
             autoMode.value = s.automation.mode || 'manual';
-            timeStart.value = s.automation.startTime || '19:00';
-            timeEnd.value = s.automation.endTime || '07:00';
+            writeTimeState(timeStart, s.automation.startTime || '19:00');
+            writeTimeState(timeEnd, s.automation.endTime || '07:00');
+            syncTimeDisplays();
             updateAutoUI(s.automation.mode);
 
             if (s.automation.mode === 'manual') {
@@ -565,6 +581,637 @@ document.addEventListener('DOMContentLoaded', () => {
             updateSiteToggleState();
         });
     }
+
+    // === Apple-style Time Picker ===
+    const clockOverlay = document.getElementById('appleClockOverlay');
+    const clockEyebrow = document.getElementById('appleClockEyebrow');
+    const clockTitle = document.getElementById('appleClockTitle');
+    const clockSubtitle = document.getElementById('appleClockSubtitle');
+    const clockFace = document.getElementById('appleClockFace');
+    const clockNumerals = document.getElementById('appleClockNumerals');
+    const hourHand = document.getElementById('appleHourHand');
+    const minuteHand = document.getElementById('appleMinuteHand');
+    const hourBtn = document.getElementById('appleHourBtn');
+    const minuteBtn = document.getElementById('appleMinuteBtn');
+    const periodControl = document.getElementById('applePeriod');
+    const clockHint = document.getElementById('appleClockHint');
+    const clockCancel = document.getElementById('appleClockCancel');
+    const clockDone = document.getElementById('appleClockDone');
+
+    const clockState = {
+        target: null,
+        titleKey: 'lblStartTime',
+        hours: 19,
+        minutes: 0,
+        mode: 'hour',
+        is24: false,
+        dragging: false,
+        dragRing: null
+    };
+
+    // 24-hour dial layouts:
+    // 'classic12' → 1–12 face, hour hand passes twice a day (24h readout stays).
+    // 'double'    → 0–11 on the outer ring, 12–23 on the inner ring.
+    const DIAL24_STYLE = 'classic12';
+
+    function get24DialStyle() {
+        return document.body.dataset.clockDial24 === 'double' ? 'double' : DIAL24_STYLE;
+    }
+
+    function uses12HourDial() {
+        return !clockState.is24 || get24DialStyle() === 'classic12';
+    }
+    const lastHandAngles = { hour: null, minute: null };
+    const clockTyping = { part: null, buffer: '', resetTimer: null };
+    let clockCloseTimer = null;
+    let clockFocusTimer = null;
+    let clockFocusBeforeOpen = null;
+
+    function pad2(value) {
+        return String(value).padStart(2, '0');
+    }
+
+    function parseTimeValue(value) {
+        const match = /^(\d{1,2}):(\d{2})/.exec(value || '');
+        if (!match) return { hours: 19, minutes: 0 };
+        return {
+            hours: Math.min(23, Math.max(0, parseInt(match[1], 10) || 0)),
+            minutes: Math.min(59, Math.max(0, parseInt(match[2], 10) || 0))
+        };
+    }
+
+    function to12Hour(hours) {
+        return ((hours + 11) % 12) + 1;
+    }
+
+    function isPm(hours) {
+        return hours >= 12;
+    }
+
+    function clockTitleFor(key) {
+        const msg = getMessage(key);
+        if (msg) return msg;
+        if (clockState.target) {
+            const group = clockState.target.closest('.control-group');
+            const label = group ? group.querySelector('label') : null;
+            if (label && label.textContent.trim()) return label.textContent.trim();
+        }
+        return key === 'lblEndTime' ? 'End Time (Sunrise)' : 'Start Time (Sunset)';
+    }
+
+    function applyClockTitle() {
+        if (!clockTitle) return;
+        const raw = clockTitleFor(clockState.titleKey);
+        const match = /^(.+?)\s*\((.+)\)\s*$/.exec(raw);
+        const title = match ? match[1] : raw;
+        const subtitle = match ? match[2] : '';
+
+        clockTitle.textContent = title;
+        if (clockSubtitle) {
+            clockSubtitle.textContent = subtitle;
+            clockSubtitle.hidden = !subtitle;
+        }
+    }
+
+    function detect24HourClock() {
+        try {
+            const lang = (document.documentElement.lang || '').replace(/_/g, '-') || undefined;
+            const fmt = new Intl.DateTimeFormat(lang, { hour: 'numeric' });
+            const cycle = fmt.resolvedOptions().hourCycle;
+            if (cycle) return cycle === 'h23' || cycle === 'h24';
+            return !fmt.formatToParts(new Date(2024, 0, 1, 13)).some(part => part.type === 'dayPeriod');
+        } catch (e) {
+            return true;
+        }
+    }
+
+    function formatDisplayTimeValue(value) {
+        const { hours, minutes } = parseTimeValue(value);
+        try {
+            const lang = (document.documentElement.lang || '').replace(/_/g, '-') || undefined;
+            const fmt = new Intl.DateTimeFormat(lang, { hour: '2-digit', minute: '2-digit' });
+            return fmt.format(new Date(2024, 0, 1, hours, minutes));
+        } catch (e) {
+            return pad2(hours) + ':' + pad2(minutes);
+        }
+    }
+
+    function syncTimeDisplays() {
+        if (timeStart && timeStartDisplay) {
+            timeStartDisplay.textContent = formatDisplayTimeValue(readTimeState(timeStart, '19:00'));
+        }
+        if (timeEnd && timeEndDisplay) {
+            timeEndDisplay.textContent = formatDisplayTimeValue(readTimeState(timeEnd, '07:00'));
+        }
+    }
+
+    function localizeClockPicker() {
+        if (!clockOverlay) return;
+        if (clockEyebrow) clockEyebrow.textContent = getMessage('optModeTime') || 'Time Schedule';
+        if (clockHint) clockHint.textContent = getMessage('hintClockDrag') || 'Drag, tap, or type the time.';
+        if (hourBtn) hourBtn.setAttribute('aria-label', getMessage('lblHour') || 'Hour');
+        if (minuteBtn) minuteBtn.setAttribute('aria-label', getMessage('lblMinute') || 'Minute');
+        if (clockCancel) clockCancel.textContent = getMessage('btnCancel') || 'Cancel';
+        if (clockDone) clockDone.textContent = getMessage('btnDone') || 'Done';
+        if (clockState.target && clockTitle) {
+            applyClockTitle();
+        }
+    }
+
+    function buildClockNumerals() {
+        if (!clockNumerals) return;
+        clockNumerals.innerHTML = '';
+        const isDouble = clockState.is24 && clockState.mode === 'hour' && get24DialStyle() === 'double';
+        const isCompactHour = isDouble;
+        const values = [];
+
+        if (clockState.mode === 'minute') {
+            for (let m = 0; m < 60; m += 5) values.push({ value: m, label: pad2(m), radius: 74 });
+        } else if (isDouble) {
+            for (let h = 0; h < 12; h += 1) values.push({ value: h, label: String(h), radius: 78 });
+            for (let h = 12; h < 24; h += 1) values.push({ value: h, label: String(h), radius: 56 });
+        } else {
+            for (let h = 1; h <= 12; h += 1) values.push({ value: h, label: String(h), radius: 74 });
+        }
+
+        clockNumerals.classList.toggle('is-compact', isCompactHour);
+        const unit = clockState.mode === 'minute' ? 6 : 30;
+        const fragment = document.createDocumentFragment();
+
+        values.forEach(item => {
+            const angleValue = isDouble && item.value >= 12 ? item.value - 12 : item.value;
+            const rad = (angleValue * unit - 90) * Math.PI / 180;
+            const radius = item.radius || 74;
+            const el = document.createElement('span');
+            el.className = 'apple-clock-numeral';
+            el.textContent = item.label;
+            el.dataset.clockValue = String(item.value);
+            el.style.left = 'calc(50% + ' + (Math.cos(rad) * radius).toFixed(2) + 'px)';
+            el.style.top = 'calc(50% + ' + (Math.sin(rad) * radius).toFixed(2) + 'px)';
+            fragment.appendChild(el);
+        });
+
+        clockNumerals.appendChild(fragment);
+        highlightClockNumerals();
+    }
+
+    function activeClockValue() {
+        if (clockState.mode === 'minute') return clockState.minutes;
+        return uses12HourDial() ? to12Hour(clockState.hours) : clockState.hours;
+    }
+
+    function highlightClockNumerals() {
+        if (!clockNumerals) return;
+        const active = String(activeClockValue());
+        clockNumerals.querySelectorAll('.apple-clock-numeral').forEach(el => {
+            el.classList.toggle('is-active', el.dataset.clockValue === active);
+        });
+    }
+
+    function updateClockReadout() {
+        if (!hourBtn || !minuteBtn) return;
+
+        const hourText = clockState.is24 ? pad2(clockState.hours) : String(to12Hour(clockState.hours));
+        const currentPeriod = isPm(clockState.hours) ? 'PM' : 'AM';
+        hourBtn.textContent = hourText;
+        minuteBtn.textContent = pad2(clockState.minutes);
+        hourBtn.classList.toggle('active', clockState.mode === 'hour');
+        minuteBtn.classList.toggle('active', clockState.mode === 'minute');
+
+        if (periodControl) {
+            periodControl.hidden = clockState.is24;
+            periodControl.querySelectorAll('[data-clock-period]').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.clockPeriod === currentPeriod);
+            });
+        }
+
+        highlightClockNumerals();
+
+        if (clockFace) {
+            if (clockState.mode === 'hour') {
+                clockFace.setAttribute('aria-label', getMessage('lblHour') || 'Hour');
+                clockFace.setAttribute('aria-valuemin', clockState.is24 ? '0' : '1');
+                clockFace.setAttribute('aria-valuemax', clockState.is24 ? '23' : '12');
+                clockFace.setAttribute('aria-valuenow', clockState.is24 ? clockState.hours : activeClockValue());
+                clockFace.setAttribute('aria-valuetext',
+                    clockState.is24 ? pad2(clockState.hours) : hourText + ' ' + currentPeriod);
+            } else {
+                clockFace.setAttribute('aria-label', getMessage('lblMinute') || 'Minute');
+                clockFace.setAttribute('aria-valuemin', '0');
+                clockFace.setAttribute('aria-valuemax', '59');
+                clockFace.setAttribute('aria-valuenow', clockState.minutes);
+                clockFace.setAttribute('aria-valuetext', pad2(clockState.minutes));
+            }
+        }
+    }
+
+    function setHandRotation(hand, angle, animate, key) {
+        if (!hand) return;
+        const previous = lastHandAngles[key];
+        const crossedTop = previous !== null && Math.abs(angle - previous) > 180;
+
+        if (!animate || crossedTop) {
+            clockFace.classList.add('no-hand-anim');
+            hand.style.transform = 'rotate(' + angle + 'deg)';
+            void hand.offsetWidth;
+            clockFace.classList.remove('no-hand-anim');
+        } else {
+            hand.style.transform = 'rotate(' + angle + 'deg)';
+        }
+        lastHandAngles[key] = angle;
+    }
+
+    function applyClockDial(animate) {
+        const doubleRing = clockState.is24 && get24DialStyle() === 'double';
+        const hourAngle = (uses12HourDial() || doubleRing)
+            ? (clockState.hours % 12) * 30
+            : clockState.hours * 15;
+        const minuteAngle = clockState.minutes * 6;
+
+        setHandRotation(hourHand, hourAngle, animate, 'hour');
+        setHandRotation(minuteHand, minuteAngle, animate, 'minute');
+
+        if (hourHand) {
+            hourHand.classList.toggle('active', clockState.mode === 'hour');
+            hourHand.classList.toggle('is-inner', doubleRing && clockState.hours >= 12);
+        }
+        if (minuteHand) minuteHand.classList.toggle('active', clockState.mode === 'minute');
+    }
+
+    function setClockMode(mode) {
+        if (!clockState.target || clockState.mode === mode) return;
+        clockState.mode = mode;
+        buildClockNumerals();
+        updateClockReadout();
+        applyClockDial(true);
+    }
+
+    function setClockFromAngle(angle, ring) {
+        if (clockState.mode === 'minute') {
+            clockState.minutes = Math.round(angle / 6) % 60;
+        } else if (clockState.is24 && get24DialStyle() === 'double') {
+            const base = Math.round(angle / 30) % 12;
+            clockState.hours = ring === 'inner' ? base + 12 : base;
+        } else if (uses12HourDial()) {
+            let hour12 = Math.round(angle / 30) % 12;
+            if (hour12 === 0) hour12 = 12;
+            clockState.hours = (isPm(clockState.hours) ? 12 : 0) + (hour12 % 12);
+        } else {
+            clockState.hours = Math.round(angle / 15) % 24;
+        }
+
+        updateClockReadout();
+        applyClockDial(true);
+    }
+
+    function adjustClockValue(delta) {
+        if (!clockState.target) return;
+
+        if (clockState.mode === 'minute') {
+            clockState.minutes = ((clockState.minutes + delta) % 60 + 60) % 60;
+        } else if (clockState.is24) {
+            clockState.hours = ((clockState.hours + delta) % 24 + 24) % 24;
+        } else {
+            let hour12 = to12Hour(clockState.hours);
+            hour12 = ((hour12 - 1 + delta) % 12 + 12) % 12 + 1;
+            clockState.hours = (isPm(clockState.hours) ? 12 : 0) + (hour12 % 12);
+        }
+
+        updateClockReadout();
+        applyClockDial(true);
+    }
+
+    function stopClockTyping() {
+        if (clockTyping.resetTimer) {
+            clearTimeout(clockTyping.resetTimer);
+            clockTyping.resetTimer = null;
+        }
+        clockTyping.part = null;
+        clockTyping.buffer = '';
+        if (hourBtn) hourBtn.classList.remove('is-typing');
+        if (minuteBtn) minuteBtn.classList.remove('is-typing');
+    }
+
+    function startClockTyping(part) {
+        if (clockTyping.resetTimer) {
+            clearTimeout(clockTyping.resetTimer);
+            clockTyping.resetTimer = null;
+        }
+        clockTyping.part = part;
+        clockTyping.buffer = '';
+        if (hourBtn) hourBtn.classList.toggle('is-typing', part === 'hour');
+        if (minuteBtn) minuteBtn.classList.toggle('is-typing', part === 'minute');
+    }
+
+    function applyTypedValue(part, value) {
+        if (part === 'hour') {
+            if (clockState.is24 || value > 12) {
+                clockState.hours = Math.min(23, Math.max(0, value));
+            } else if (value === 0) {
+                clockState.hours = 0;
+            } else {
+                clockState.hours = (isPm(clockState.hours) ? 12 : 0) + (value % 12);
+            }
+        } else {
+            clockState.minutes = Math.min(59, Math.max(0, value));
+        }
+
+        updateClockReadout();
+        applyClockDial(true);
+    }
+
+    function applyTypedDigit(part, digit) {
+        if (!clockState.target) return;
+        if (clockTyping.part !== part) startClockTyping(part);
+        if (clockTyping.resetTimer) {
+            clearTimeout(clockTyping.resetTimer);
+            clockTyping.resetTimer = null;
+        }
+
+        const max = part === 'hour' ? 23 : 59;
+        const maxFirstDigit = part === 'hour' ? 2 : 5;
+        let buffer = clockTyping.buffer + digit;
+        let value = parseInt(buffer, 10);
+
+        if (buffer.length > 1 && value > max) {
+            buffer = digit;
+            value = parseInt(digit, 10);
+        }
+        if (buffer.length === 1 && value > maxFirstDigit) {
+            buffer = '';
+        }
+        if (buffer.length >= 2) {
+            buffer = '';
+        }
+
+        clockTyping.buffer = buffer;
+        clockTyping.resetTimer = setTimeout(() => {
+            clockTyping.buffer = '';
+            clockTyping.resetTimer = null;
+        }, 900);
+
+        applyTypedValue(part, value);
+    }
+
+    function handleReadoutKeydown(event, part) {
+        if (event.key.length === 1 && event.key >= '0' && event.key <= '9') {
+            event.preventDefault();
+            applyTypedDigit(part, event.key);
+            return;
+        }
+
+        if (event.key === 'Backspace' || event.key === 'Delete') {
+            event.preventDefault();
+            clockTyping.buffer = '';
+            return;
+        }
+
+        if (event.key === 'ArrowUp' || event.key === 'ArrowDown') {
+            event.preventDefault();
+            clockTyping.buffer = '';
+            if (clockState.mode !== part) setClockMode(part);
+            adjustClockValue(event.key === 'ArrowUp' ? 1 : -1);
+            return;
+        }
+
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            stopClockTyping();
+            closeClockPicker(true);
+            return;
+        }
+
+        if ((event.key === ':' || event.key === ';') && part === 'hour') {
+            event.preventDefault();
+            if (minuteBtn) minuteBtn.focus({ preventScroll: true });
+        }
+    }
+
+    function getClockPointer(event) {
+        const rect = clockFace.getBoundingClientRect();
+        const dx = event.clientX - (rect.left + rect.width / 2);
+        const dy = event.clientY - (rect.top + rect.height / 2);
+        const radius = Math.hypot(dx, dy);
+        if (radius < 14) return null;
+        let angle = Math.atan2(dx, -dy) * 180 / Math.PI;
+        if (angle < 0) angle += 360;
+        return { angle, radius };
+    }
+
+    function openClockPicker(stateEl, titleKey) {
+        if (!clockOverlay || !stateEl) return;
+
+        if (clockCloseTimer) {
+            clearTimeout(clockCloseTimer);
+            clockCloseTimer = null;
+        }
+        if (clockFocusTimer) {
+            clearTimeout(clockFocusTimer);
+            clockFocusTimer = null;
+        }
+
+        clockState.target = stateEl;
+        clockState.titleKey = titleKey;
+        clockState.is24 = detect24HourClock();
+
+        const parsed = parseTimeValue(readTimeState(stateEl, '19:00'));
+        clockState.hours = parsed.hours;
+        clockState.minutes = parsed.minutes;
+        clockState.mode = 'hour';
+        clockState.dragging = false;
+        lastHandAngles.hour = null;
+        lastHandAngles.minute = null;
+        clockFocusBeforeOpen = document.activeElement;
+
+        stopClockTyping();
+        localizeClockPicker();
+        if (clockTitle) applyClockTitle();
+
+        clockOverlay.classList.remove('closing');
+        clockOverlay.classList.add('open');
+        clockOverlay.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('clock-open');
+
+        buildClockNumerals();
+        updateClockReadout();
+        applyClockDial(false);
+
+        requestAnimationFrame(() => {
+            if (clockState.target) clockFace.focus({ preventScroll: true, focusVisible: false });
+        });
+    }
+
+    function closeClockPicker(commit) {
+        if (!clockState.target) return;
+        const target = clockState.target;
+
+        if (commit) {
+            writeTimeState(target, pad2(clockState.hours) + ':' + pad2(clockState.minutes));
+            syncTimeDisplays();
+            target.dispatchEvent(new Event('input', { bubbles: true }));
+            target.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+
+        clockState.target = null;
+        clockState.dragging = false;
+        stopClockTyping();
+        clockOverlay.classList.remove('open');
+        clockOverlay.classList.add('closing');
+        clockOverlay.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('clock-open');
+
+        if (clockCloseTimer) clearTimeout(clockCloseTimer);
+        clockCloseTimer = setTimeout(() => {
+            clockOverlay.classList.remove('closing');
+            clockCloseTimer = null;
+        }, 210);
+
+        const focusTarget = clockFocusBeforeOpen;
+        clockFocusBeforeOpen = null;
+        if (focusTarget && typeof focusTarget.focus === 'function') {
+            if (clockFocusTimer) clearTimeout(clockFocusTimer);
+            clockFocusTimer = setTimeout(() => {
+                clockFocusTimer = null;
+                try {
+                    focusTarget.focus({ preventScroll: true });
+                } catch (e) { /* ignore */ }
+            }, 210);
+        }
+    }
+
+    if (timeStartField) {
+        timeStartField.addEventListener('click', () => openClockPicker(timeStart, 'lblStartTime'));
+    }
+    if (timeEndField) {
+        timeEndField.addEventListener('click', () => openClockPicker(timeEnd, 'lblEndTime'));
+    }
+    if (hourBtn) {
+        hourBtn.addEventListener('focus', () => {
+            if (!clockState.target) return;
+            setClockMode('hour');
+            startClockTyping('hour');
+        });
+        hourBtn.addEventListener('blur', stopClockTyping);
+        hourBtn.addEventListener('click', () => {
+            if (!clockState.target) return;
+            setClockMode('hour');
+            if (document.activeElement !== hourBtn) hourBtn.focus({ preventScroll: true });
+        });
+        hourBtn.addEventListener('keydown', (e) => handleReadoutKeydown(e, 'hour'));
+    }
+    if (minuteBtn) {
+        minuteBtn.addEventListener('focus', () => {
+            if (!clockState.target) return;
+            setClockMode('minute');
+            startClockTyping('minute');
+        });
+        minuteBtn.addEventListener('blur', stopClockTyping);
+        minuteBtn.addEventListener('click', () => {
+            if (!clockState.target) return;
+            setClockMode('minute');
+            if (document.activeElement !== minuteBtn) minuteBtn.focus({ preventScroll: true });
+        });
+        minuteBtn.addEventListener('keydown', (e) => handleReadoutKeydown(e, 'minute'));
+    }
+
+    if (periodControl) {
+        periodControl.addEventListener('click', (e) => {
+            const btn = e.target.closest('[data-clock-period]');
+            if (!btn || !clockState.target) return;
+            const pm = btn.dataset.clockPeriod === 'PM';
+            clockState.hours = (pm ? 12 : 0) + (to12Hour(clockState.hours) % 12);
+            updateClockReadout();
+            applyClockDial(true);
+        });
+    }
+
+    if (clockFace) {
+        clockFace.addEventListener('pointerdown', (e) => {
+            if (e.button !== undefined && e.button !== 0) return;
+            const pointer = getClockPointer(e);
+            if (!pointer) return;
+            clockState.dragging = true;
+            clockState.dragRing = null;
+            if (clockState.is24 && get24DialStyle() === 'double') {
+                clockState.dragRing = pointer.radius < 67 ? 'inner' : 'outer';
+            }
+            clockFace.classList.add('dragging');
+            if (clockFace.setPointerCapture) {
+                try {
+                    clockFace.setPointerCapture(e.pointerId);
+                } catch (err) { /* synthetic or inactive pointer */ }
+            }
+            setClockFromAngle(pointer.angle, clockState.dragRing);
+            e.preventDefault();
+        });
+
+        clockFace.addEventListener('pointermove', (e) => {
+            if (!clockState.dragging) return;
+            const pointer = getClockPointer(e);
+            if (pointer) setClockFromAngle(pointer.angle, clockState.dragRing);
+            e.preventDefault();
+        });
+
+        const endClockDrag = (e) => {
+            if (!clockState.dragging) return;
+            clockState.dragging = false;
+            clockState.dragRing = null;
+            clockFace.classList.remove('dragging');
+            if (clockFace.hasPointerCapture && clockFace.hasPointerCapture(e.pointerId)) {
+                try {
+                    clockFace.releasePointerCapture(e.pointerId);
+                } catch (err) { /* ignore */ }
+            }
+        };
+        clockFace.addEventListener('pointerup', endClockDrag);
+        clockFace.addEventListener('pointercancel', endClockDrag);
+
+        clockFace.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowUp' || e.key === 'ArrowRight') {
+                adjustClockValue(e.shiftKey ? 5 : 1);
+                e.preventDefault();
+            } else if (e.key === 'ArrowDown' || e.key === 'ArrowLeft') {
+                adjustClockValue(e.shiftKey ? -5 : -1);
+                e.preventDefault();
+            }
+        });
+    }
+
+    if (clockDone) {
+        clockDone.addEventListener('click', () => closeClockPicker(true));
+    }
+    if (clockCancel) {
+        clockCancel.addEventListener('click', () => closeClockPicker(false));
+    }
+    if (clockOverlay) {
+        clockOverlay.addEventListener('click', (e) => {
+            if (e.target === clockOverlay) closeClockPicker(false);
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (!clockState.target) return;
+
+        if (e.key === 'Escape') {
+            e.preventDefault();
+            closeClockPicker(false);
+            return;
+        }
+
+        if (e.key === 'Tab') {
+            const focusables = clockOverlay.querySelectorAll('button, [tabindex]:not([tabindex="-1"])');
+            if (!focusables.length) return;
+            const first = focusables[0];
+            const last = focusables[focusables.length - 1];
+            if (e.shiftKey && document.activeElement === first) {
+                e.preventDefault();
+                last.focus();
+            } else if (!e.shiftKey && document.activeElement === last) {
+                e.preventDefault();
+                first.focus();
+            }
+        }
+    });
 
     // === Listeners ===
     tabs.forEach(tab => {
@@ -784,6 +1431,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Init
+    syncTimeDisplays();
     browser.tabs.query({ active: true, currentWindow: true }, (tabs) => {
         if (tabs[0] && tabs[0].url) {
             try {

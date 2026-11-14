@@ -316,5 +316,20 @@
     },
     "store_listing": {
         "message": "Cette extension de protection oculaire active le mode sombre sur tous les sites que vous visitez.\n\nKoyu Okuyucu inverse les couleurs vives pour offrir une expérience de lecture agréable pendant la nuit. \n\nVous pouvez personnaliser la luminosité, le contraste, les filtres de température des couleurs, le mode sombre, les polices personnalisées et leur taille selon vos préférences. \n\nSon interface conviviale vous permet de personnaliser vos paramètres et de rendre chaque site web plus confortable pour vos yeux. Pour éviter les conflits, désactivez les extensions similaires. Bonne navigation !\n\nhttps://github.com/koyufikirler/koyuokuyucu"
+    },
+    "lblHour": {
+        "message": "Heure"
+    },
+    "lblMinute": {
+        "message": "Minute"
+    },
+    "btnDone": {
+        "message": "Terminé"
+    },
+    "btnCancel": {
+        "message": "Annuler"
+    },
+    "hintClockDrag": {
+        "message": "Glissez, touchez ou saisissez l’heure."
     }
 }

@@ -316,5 +316,20 @@
     },
     "store_listing": {
         "message": "이 눈 보호 확장 프로그램은 방문하는 모든 웹사이트에 다크 모드를 적용해 줍니다.\n\n'Koyu Okuyucu'는 밝은 색상을 반전시켜 야간에도 편안하게 웹을 탐색할 수 있도록 돕습니다.\n\n밝기, 대비, 색온도(따뜻한 느낌) 필터, 다크 모드 설정은 물론, 사용자 지정 글꼴과 글꼴 크기까지 자유롭게 조절하여 원하는 대로 구성할 수 있습니다.\n\n사용하기 쉬운 인터페이스를 통해 설정을 개인화하고, 모든 웹사이트를 눈이 훨씬 편안한 환경으로 만들어 보세요.\n\n기능 충돌을 방지하기 위해 유사한 확장 프로그램은 비활성화해 주시기 바랍니다. 즐거운 웹 서핑 되세요!\n\nhttps://github.com/koyufikirler/koyuokuyucu"
+    },
+    "lblHour": {
+        "message": "시"
+    },
+    "lblMinute": {
+        "message": "분"
+    },
+    "btnDone": {
+        "message": "완료"
+    },
+    "btnCancel": {
+        "message": "취소"
+    },
+    "hintClockDrag": {
+        "message": "끌기, 탭 또는 입력으로 설정"
     }
 }

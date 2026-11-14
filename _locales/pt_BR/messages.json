@@ -316,5 +316,20 @@
     },
     "store_listing": {
         "message": "Este plugin de proteção ocular ativa o modo escuro em todos os sites que você visita.\n\nEle reduz o cansaço visual e melhora significativamente a legibilidade do texto, oferecendo um tema escuro totalmente personalizável para sites.\n\nO Koyu Okuyucu inverte as cores brilhantes, proporcionando uma experiência de leitura confortável à noite.\n\nEspecialmente indicado para uso noturno e longas sessões na internet, esta ferramenta permite que você se livre da luz intensa da tela.\n\nVocê pode ajustar o brilho, o contraste, o filtro de temperatura, o modo escuro, fontes e tamanhos personalizados e ativá-los de acordo com suas necessidades.\n\nGraças à sua interface amigável, você pode personalizar suas configurações e tornar cada site mais agradável para seus olhos.\n\nDesative plugins semelhantes para evitar conflitos. Boa navegação!\n\nhttps://github.com/koyufikirler/koyuokuyucu"
+    },
+    "lblHour": {
+        "message": "Hora"
+    },
+    "lblMinute": {
+        "message": "Minuto"
+    },
+    "btnDone": {
+        "message": "Concluído"
+    },
+    "btnCancel": {
+        "message": "Cancelar"
+    },
+    "hintClockDrag": {
+        "message": "Arraste, toque ou digite a hora."
     }
 }

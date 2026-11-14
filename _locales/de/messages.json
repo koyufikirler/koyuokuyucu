@@ -316,5 +316,20 @@
     },
     "store_listing": {
         "message": "Diese Erweiterung zum Schutz der Augen aktiviert den Dunkelmodus für jede Website, die Sie besuchen.\n\n„Koyu Okuyucu“ kehrt helle Farben um und sorgt nachts für ein angenehmes Leseerlebnis.\n\nSie können Helligkeit, Kontrast, einen Temperaturfilter, den Dunkelmodus sowie individuelle Schriftarten und -größen anpassen und festlegen, wann diese aktiviert werden sollen.\n\nDank der benutzerfreundlichen Oberfläche können Sie Ihre Einstellungen personalisieren und jede Website für Ihre Augen entspannter gestalten.\n\nDeaktivieren Sie ähnliche Erweiterungen, um Konflikte zu vermeiden. Viel Spaß beim Surfen!\n\nÜbersetzen Sie diesen Text ins Japanische und formatieren Sie ihn so, dass nach jedem Punkt ein Zeilenumbruch erfolgt.\n\nhttps://github.com/koyufikirler/koyuokuyucu"
+    },
+    "lblHour": {
+        "message": "Stunde"
+    },
+    "lblMinute": {
+        "message": "Minute"
+    },
+    "btnDone": {
+        "message": "Fertig"
+    },
+    "btnCancel": {
+        "message": "Abbrechen"
+    },
+    "hintClockDrag": {
+        "message": "Ziehen, tippen oder Zeit eingeben."
     }
 }

@@ -316,5 +316,20 @@
     },
     "store_listing": {
         "message": "This eye-protection extension enables dark mode for every site you visit.\n\nKoyu Okuyucu inverts bright colors, providing a comfortable reading experience at night.\n\nYou can adjust brightness, contrast, the warmth filter, dark mode, as well as custom fonts and font sizes, and set them to activate according to your preferences.\n\nWith its user-friendly interface, you can personalize your settings and make every website more restful for your eyes.\n\nPlease disable similar extensions to avoid conflicts. Happy browsing!\n\nhttps://github.com/koyufikirler/koyuokuyucu"
+    },
+    "lblHour": {
+        "message": "Hour"
+    },
+    "lblMinute": {
+        "message": "Minute"
+    },
+    "btnDone": {
+        "message": "Done"
+    },
+    "btnCancel": {
+        "message": "Cancel"
+    },
+    "hintClockDrag": {
+        "message": "Drag, tap, or type the time."
     }
 }

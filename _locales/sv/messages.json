@@ -316,5 +316,20 @@
     },
     "store_listing": {
         "message": "Detta tillägg för ögonskydd aktiverar ett mörkt läge på alla webbplatser du besöker.\n\nGenom att erbjuda ett fullt anpassningsbart mörkt tema för webbplatser minskar det ansträngningen för ögonen och förbättrar läsbarheten avsevärt.\n\n\"Koyu Okuyucu\" inverterar ljusa färger, vilket ger en behaglig läsupplevelse även nattetid.\n\nVerktyget är en utmärkt lösning för användning på kvällen eller vid långa stunder framför skärmen, då det hjälper dig att slippa det skarpa ljuset.\n\nDu kan justera ljusstyrka, kontrast, färgtemperatur, inställningar för det mörka läget samt välja egna typsnitt och storlekar – allt kan dessutom schemaläggas så att det aktiveras precis när du vill.\n\nTack vare det användarvänliga gränssnittet kan du anpassa inställningarna och göra varje webbplats mer vilsam för dina ögon.\n\nInaktivera gärna liknande tillägg för att undvika konflikter. Trevlig surfning!\n\nhttps://github.com/koyufikirler/koyuokuyucu"
+    },
+    "lblHour": {
+        "message": "Timme"
+    },
+    "lblMinute": {
+        "message": "Minut"
+    },
+    "btnDone": {
+        "message": "Klar"
+    },
+    "btnCancel": {
+        "message": "Avbryt"
+    },
+    "hintClockDrag": {
+        "message": "Dra, tryck eller skriv tiden."
     }
 }
