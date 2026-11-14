@@ -618,6 +618,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hourBtn = document.getElementById('appleHourBtn');
     const minuteBtn = document.getElementById('appleMinuteBtn');
     const periodControl = document.getElementById('applePeriod');
+    const clockTypeProxy = document.getElementById('appleTypeProxy');
     const clockHint = document.getElementById('appleClockHint');
     const clockCancel = document.getElementById('appleClockCancel');
     const clockDone = document.getElementById('appleClockDone');
@@ -876,12 +877,19 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (clockState.is24 && get24DialStyle() === 'double') {
             const base = Math.round(angle / 30) % 12;
             clockState.hours = ring === 'inner' ? base + 12 : base;
-        } else if (uses12HourDial()) {
+        } else if (clockState.is24) {
+            // Classic 12-number face in 24h mode: keep the time continuous while
+            // dragging (…22, 23, 00, 01…) instead of jumping back to 12.
+            const pos = Math.round(angle / 30) % 12;
+            const currentPos = clockState.hours % 12;
+            let delta = pos - currentPos;
+            if (delta > 6) delta -= 12;
+            if (delta < -6) delta += 12;
+            clockState.hours = (clockState.hours + delta + 24) % 24;
+        } else {
             let hour12 = Math.round(angle / 30) % 12;
             if (hour12 === 0) hour12 = 12;
             clockState.hours = (isPm(clockState.hours) ? 12 : 0) + (hour12 % 12);
-        } else {
-            clockState.hours = Math.round(angle / 15) % 24;
         }
 
         updateClockReadout();
@@ -912,6 +920,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         clockTyping.part = null;
         clockTyping.buffer = '';
+        if (clockTypeProxy) clockTypeProxy.textContent = '';
         if (hourBtn) hourBtn.classList.remove('is-typing');
         if (minuteBtn) minuteBtn.classList.remove('is-typing');
     }
@@ -953,9 +962,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const max = part === 'hour' ? 23 : 59;
-        const maxFirstDigit = part === 'hour' ? 2 : 5;
+        const maxFirstDigit = part === 'hour' ? (clockState.is24 ? 2 : 1) : 5;
         let buffer = clockTyping.buffer + digit;
         let value = parseInt(buffer, 10);
+        let complete = false;
 
         if (buffer.length > 1 && value > max) {
             buffer = digit;
@@ -963,22 +973,48 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         if (buffer.length === 1 && value > maxFirstDigit) {
             buffer = '';
+            complete = true;
         }
         if (buffer.length >= 2) {
             buffer = '';
+            complete = true;
         }
 
         clockTyping.buffer = buffer;
+        if (clockTyping.resetTimer) {
+            clearTimeout(clockTyping.resetTimer);
+        }
         clockTyping.resetTimer = setTimeout(() => {
             clockTyping.buffer = '';
             clockTyping.resetTimer = null;
         }, 900);
 
         applyTypedValue(part, value);
+
+        if (part === 'hour' && complete) {
+            // Two-digit hour finished: jump straight to minutes so mobile users
+            // can type e.g. 1 9 4 5 without tapping between the fields.
+            if (clockState.mode === 'hour') setClockMode('minute');
+            startClockTyping('minute');
+        }
     }
 
-    function handleReadoutKeydown(event, part) {
-        if (event.key.length === 1 && event.key >= '0' && event.key <= '9') {
+    function activateClockPart(part, focusProxy) {
+        if (!clockState.target) return;
+        setClockMode(part);
+        startClockTyping(part);
+        if (focusProxy && clockTypeProxy) {
+            clockTypeProxy.textContent = '';
+            try {
+                clockTypeProxy.focus({ preventScroll: true });
+            } catch (e) {
+                try { clockTypeProxy.focus(); } catch (err) { /* ignore */ }
+            }
+        }
+    }
+
+    function handleReadoutKeydown(event, part, skipText) {
+        if (!skipText && event.key.length === 1 && event.key >= '0' && event.key <= '9') {
             event.preventDefault();
             applyTypedDigit(part, event.key);
             return;
@@ -1005,9 +1041,9 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        if ((event.key === ':' || event.key === ';') && part === 'hour') {
+        if (!skipText && (event.key === ':' || event.key === ';') && part === 'hour') {
             event.preventDefault();
-            if (minuteBtn) minuteBtn.focus({ preventScroll: true });
+            activateClockPart('minute', false);
         }
     }
 
@@ -1116,12 +1152,7 @@ document.addEventListener('DOMContentLoaded', () => {
             startClockTyping('hour');
         });
         hourBtn.addEventListener('blur', stopClockTyping);
-        hourBtn.addEventListener('click', () => {
-            if (!clockState.target) return;
-            setClockMode('hour');
-            if (document.activeElement !== hourBtn) hourBtn.focus({ preventScroll: true });
-        });
-        hourBtn.addEventListener('keydown', (e) => handleReadoutKeydown(e, 'hour'));
+        hourBtn.addEventListener('click', () => activateClockPart('hour', true));
     }
     if (minuteBtn) {
         minuteBtn.addEventListener('focus', () => {
@@ -1130,12 +1161,45 @@ document.addEventListener('DOMContentLoaded', () => {
             startClockTyping('minute');
         });
         minuteBtn.addEventListener('blur', stopClockTyping);
-        minuteBtn.addEventListener('click', () => {
+        minuteBtn.addEventListener('click', () => activateClockPart('minute', true));
+    }
+
+    if (clockTypeProxy) {
+        clockTypeProxy.addEventListener('focus', () => {
             if (!clockState.target) return;
-            setClockMode('minute');
-            if (document.activeElement !== minuteBtn) minuteBtn.focus({ preventScroll: true });
+            startClockTyping(clockState.mode);
         });
-        minuteBtn.addEventListener('keydown', (e) => handleReadoutKeydown(e, 'minute'));
+        clockTypeProxy.addEventListener('blur', stopClockTyping);
+        clockTypeProxy.addEventListener('keydown', (e) => {
+            if (!clockState.target) return;
+            handleReadoutKeydown(e, clockState.mode, true);
+        });
+        clockTypeProxy.addEventListener('beforeinput', (e) => {
+            if (!clockState.target) return;
+            const type = e.inputType || '';
+            if (type === 'insertText' && typeof e.data === 'string' && e.data) {
+                const chars = Array.from(e.data).filter(ch => /[0-9:]/.test(ch));
+                e.preventDefault();
+                chars.forEach(ch => {
+                    if (ch === ':') {
+                        if (clockState.mode === 'hour') activateClockPart('minute', false);
+                    } else {
+                        applyTypedDigit(clockState.mode, ch);
+                    }
+                });
+                clockTypeProxy.textContent = '';
+                return;
+            }
+            if (type === 'deleteContentBackward' || type === 'deleteContentForward') {
+                e.preventDefault();
+                clockTyping.buffer = '';
+                return;
+            }
+            e.preventDefault();
+        });
+        clockTypeProxy.addEventListener('input', () => {
+            clockTypeProxy.textContent = '';
+        });
     }
 
     if (periodControl) {
@@ -1234,7 +1298,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.preventDefault();
                 first.focus();
             }
+            return;
         }
+
+        if (e.defaultPrevented) return;
+        if (e.target === clockTypeProxy) return;
+
+        const targetButton = e.target && e.target.closest ? e.target.closest('button') : null;
+        if (targetButton && targetButton !== hourBtn && targetButton !== minuteBtn) return;
+
+        handleReadoutKeydown(e, clockState.mode, false);
     });
 
     // === Listeners ===
@@ -1469,4 +1542,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         loadSettings();
     });
+
+    // === Standalone preview helpers (used by double-ring-preview.html) ===
+    // Harmless in the extension popup: it never has these query parameters.
+    const previewParams = new URLSearchParams(location.search);
+    const previewLang = previewParams.get('lang');
+    const previewTheme = previewParams.get('theme');
+    const previewClock = previewParams.get('previewClock');
+    if (previewLang) document.documentElement.lang = previewLang;
+    if (previewParams.get('dial24') === 'double') document.body.dataset.clockDial24 = 'double';
+    if (previewTheme) applyTheme(previewTheme);
+    if (previewClock) {
+        const autoTab = document.querySelector('.tab[data-tab="auto"]');
+        if (autoTab) autoTab.click();
+        if (autoMode) {
+            autoMode.value = 'time';
+            updateAutoUI('time');
+        }
+        const showEnd = previewClock === 'end';
+        openClockPicker(showEnd ? timeEnd : timeStart, showEnd ? 'lblEndTime' : 'lblStartTime');
+    }
 });
