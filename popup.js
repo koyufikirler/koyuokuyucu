@@ -166,6 +166,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Koyu Okuyucu GitHub bağlantıları
+    const KOYU_OKUYUCU_URL = 'https://github.com/koyufikirler/koyuokuyucu';
+
+    const headerTitle = document.getElementById('headerTitle');
+    if (headerTitle) {
+        headerTitle.addEventListener('click', () => {
+            browser.tabs.create({ url: KOYU_OKUYUCU_URL });
+        });
+    }
+
+    const aboutLogo = document.getElementById('aboutLogo');
+    if (aboutLogo) {
+        aboutLogo.addEventListener('click', () => {
+            browser.tabs.create({ url: KOYU_OKUYUCU_URL });
+        });
+    }
+
+    const aboutTitle = document.getElementById('aboutTitle');
+    if (aboutTitle) {
+        aboutTitle.addEventListener('click', () => {
+            browser.tabs.create({ url: KOYU_OKUYUCU_URL });
+        });
+    }
+
     if (closeSettingsBtn) {
         closeSettingsBtn.addEventListener('click', () => {
             settingsOverlay.style.display = 'none';

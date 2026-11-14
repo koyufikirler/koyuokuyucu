@@ -1467,7 +1467,7 @@
 <body>
 
     <div class="header">
-        <h1 data-i18n="darkModeTitle">Dark Mode</h1>
+        <h1 data-i18n="darkModeTitle" id="headerTitle" style="cursor: pointer;" title="GitHub'da Koyu Okuyucu'yu aç">Koyu Okuyucu</h1>
         <div class="main-toggle">
             <span id="statusText" data-i18n="statusOff"
                 style="font-size: 14px; font-weight: 500; color: var(--text-muted);">Off</span>
@@ -1786,13 +1786,13 @@
                 <!-- About Us Panel -->
                 <div id="panel-about" class="settings-panel">
                     <div style="text-align: center; margin-bottom: 20px;">
-                        <div
-                            style="background: linear-gradient(135deg, var(--accent-orange), #ffcc00); width: 64px; height: 64px; border-radius: 18px; margin: 0 auto 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 15px rgba(255, 149, 0, 0.25);">
+                        <div id="aboutLogo"
+                            style="background: linear-gradient(135deg, var(--accent-orange), #ffcc00); width: 64px; height: 64px; border-radius: 18px; margin: 0 auto 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 15px rgba(255, 149, 0, 0.25); cursor: pointer;" title="GitHub'da Koyu Okuyucu'yu aç">
                             <img src="icons/icon.png" alt="Icon" style="width: 40px; height: 40px; border-radius: 8px;">
                         </div>
-                        <h3 data-i18n="extensionName"
-                            style="margin: 0 0 2px 0; font-size: 20px; font-weight: 800; letter-spacing: -0.5px;">
-                            Universal Dark Mode</h3>
+                        <h3 data-i18n="extensionName" id="aboutTitle"
+                            style="margin: 0 0 2px 0; font-size: 20px; font-weight: 800; letter-spacing: -0.5px; cursor: pointer;" title="GitHub'da Koyu Okuyucu'yu aç">
+                            Koyu Okuyucu</h3>
                         <div style="font-size: 12px; color: var(--text-muted);">
                             <span data-i18n="lblVersion">Version</span> <span id="appVersion">1.0.0</span>
                         </div>
@@ -1808,7 +1808,7 @@
                             Support & Donate</div>
                         <p data-i18n="descDonate"
                             style="margin: 0; font-size: 12px; color: var(--text-muted); line-height: 1.4;">If you love
-                            Universal Dark Mode, consider supporting its open-source development through any of the
+                            Koyu Okuyucu, consider supporting its open-source development through any of the
                             platforms below!</p>
                         <button type="button" class="donate-btn" id="aboutDonateBtn" style="width: 100%; border: none;">
                             <span style="font-size: 16px;">❤️</span>
@@ -1821,7 +1821,7 @@
                 <div id="panel-donate" class="settings-panel">
                     <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px; line-height: 1.4;"
                         data-i18n="descDonate">
-                        If you love Universal Dark Mode, consider supporting its open-source development through any of
+                        If you love Koyu Okuyucu, consider supporting its open-source development through any of
                         the platforms below!
                     </p>
 
