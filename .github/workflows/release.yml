@@ -59,7 +59,8 @@ jobs:
           name: "s${{ steps.version.outputs.VERSION }}"
           body: |
             ## Yenilikler ve Güncellemeler
-            * İsveççe eklendi
+            * Akıllı sekmesi altındaki zaman çizelgesi saat tasarımı değiştirildi ve Firefox'ta sağlıklı şekilde görünmesi sağlandı.
+            * Fince, İtalyanca, Norveççe, Basit ve Genel Çince Eklendi
           files: |
             release/koyu-chrome-${{ steps.version.outputs.VERSION }}.zip
             release/koyu-firefox-${{ steps.version.outputs.VERSION }}.zip
