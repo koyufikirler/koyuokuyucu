@@ -59,9 +59,7 @@ jobs:
           name: "s${{ steps.version.outputs.VERSION }}"
           body: |
             ## Yenilikler ve Güncellemeler
-            * Mobilde saat yazma sorunu düzeltildi
-            * Saati sürükleyerek değiştirmede 23ten 12ye geçmesi ve 11den 00'a geçmesi sorunu düzeltildi.
-            * Norveç dil kodu sorunu düzeltildi.
+            * Lehçe eklendi
           files: |
             release/koyu-chrome-${{ steps.version.outputs.VERSION }}.zip
             release/koyu-firefox-${{ steps.version.outputs.VERSION }}.zip
