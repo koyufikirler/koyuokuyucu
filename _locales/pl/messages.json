@@ -1,0 +1,335 @@
+{
+    "extensionName": {
+        "message": "Koyu Okuyucu"
+    },
+    "extensionDescription": {
+        "message": "Ciemny tryb odpowiedni dla każdej strony. Chroń swoje oczy. Używaj ciemnych kolorów w dzień i w nocy."
+    },
+    "darkModeTitle": {
+        "message": "Koyu Okuyucu"
+    },
+    "statusOn": {
+        "message": "Włączone"
+    },
+    "statusOff": {
+        "message": "Wyłączone"
+    },
+    "statusAuto": {
+        "message": "System"
+    },
+    "disableForSite": {
+        "message": "Wyłącz dla tej strony"
+    },
+    "thisSite": {
+        "message": "ta strona"
+    },
+    "thisPage": {
+        "message": "ta strona"
+    },
+    "tabVisuals": {
+        "message": "Wizualny"
+    },
+    "tabMedia": {
+        "message": "Obraz"
+    },
+    "tabType": {
+        "message": "Tekst"
+    },
+    "tabAuto": {
+        "message": "Mądry"
+    },
+    "tabSites": {
+        "message": "Strony"
+    },
+    "tabKeys": {
+        "message": "Skrót"
+    },
+    "lblBrightness": {
+        "message": "Jasność: "
+    },
+    "lblContrast": {
+        "message": "Kontrast: "
+    },
+    "lblSepia": {
+        "message": "Temperatura: "
+    },
+    "lblGrayscale": {
+        "message": "Skala szarości: "
+    },
+    "lblVisProtect": {
+        "message": "🎨 Tryb ochrony wzroku"
+    },
+    "descVisProtect": {
+        "message": "Łagodzi obrazy i wideo, zachowując ich naturalne kolory. <b>Zalecane dla stron bogatych w zdjęcia.</b>"
+    },
+    "lblSmartImages": {
+        "message": "Inteligentne przyciemnianie obrazu"
+    },
+    "descSmartImages": {
+        "message": "Przyciemnia obrazy, aby zapobiec zmęczeniu oczu. Możesz rozjaśnić obraz, <b>najedź na niego kursorem</b>!"
+    },
+    "lblDynamic": {
+        "message": "🤖 Wykrywanie dynamiczne"
+    },
+    "descDynamic": {
+        "message": "Natychmiast wykrywa i dostosowuje zmiany zawartości na dynamicznych stronach internetowych."
+    },
+    "lblPerformance": {
+        "message": "⚡ Tryb wydajności"
+    },
+    "descPerformance": {
+        "message": "Optymalizuje procesy w tle i przetwarzanie kolorów, aby oszczędzać baterię."
+    },
+    "lblCustomFonts": {
+        "message": "Niestandardowa czcionka"
+    },
+    "lblFontFamily": {
+        "message": "Rodzaj czcionki"
+    },
+    "optFontSystem": {
+        "message": "Domyślna systemu"
+    },
+    "optFontSans": {
+        "message": "Sans Serif"
+    },
+    "optFontSerif": {
+        "message": "Serif"
+    },
+    "optFontMono": {
+        "message": "Monospace (Stała szerokość)"
+    },
+    "optFontDyslexic": {
+        "message": "OpenDyslexic (Przyjazna dla dysleksji)"
+    },
+    "lblFontWeight": {
+        "message": "Grubość czcionki: "
+    },
+    "lblActivationMode": {
+        "message": "Tryb aktywacji"
+    },
+    "optModeManual": {
+        "message": "Ręczny"
+    },
+    "optModeSystem": {
+        "message": "Śledź wygląd systemu"
+    },
+    "optModeTime": {
+        "message": "Harmonogram czasowy"
+    },
+    "lblStartTime": {
+        "message": "Czas rozpoczęcia (Zachód słońca)"
+    },
+    "lblEndTime": {
+        "message": "Czas zakończenia (Wschód słońca)"
+    },
+    "descAutoInfoManual": {
+        "message": "Steruje tym, kiedy tryb ciemny włącza się automatycznie."
+    },
+    "descAutoInfoSystem": {
+        "message": "Tryb ciemny działa zgodnie z ogólnymi ustawieniami wyglądu systemu (jasny/ciemny)."
+    },
+    "descAutoInfoTime": {
+        "message": "Tryb ciemny włącza się i wyłącza w określonym przedziale czasowym."
+    },
+    "subTabWhitelist": {
+        "message": "Tylko lista"
+    },
+    "subTabBlacklist": {
+        "message": "Wyklucz listę"
+    },
+    "btnAdd": {
+        "message": "Dodaj"
+    },
+    "lblCurrentSite": {
+        "message": "Obecna: "
+    },
+    "btnAddCurrent": {
+        "message": "Dodaj bieżącą stronę"
+    },
+    "lblEmptyList": {
+        "message": "Lista jest pusta"
+    },
+    "lblHotkeySite": {
+        "message": "Skrót do dodawania strony: "
+    },
+    "lblToggleExt": {
+        "message": "Włącz/Wyłącz rozszerzenie"
+    },
+    "lblAddRemoveSite": {
+        "message": "Dodaj/Usuń bieżącą stronę"
+    },
+    "descKeysInfo": {
+        "message": "Kliknij w pole i naciśnij klawisze, aby zapisać."
+    },
+    "lblFooter": {
+        "message": "Zmiany są zapisywane automatycznie"
+    },
+    "fontWeightNormal": {
+        "message": "Normalna"
+    },
+    "fontWeightMedium": {
+        "message": "Średnia"
+    },
+    "fontWeightBold": {
+        "message": "Pogrubiona"
+    },
+    "shortcutNone": {
+        "message": "Brak"
+    },
+    "shortcutPressKeys": {
+        "message": "Naciśnij klawisze..."
+    },
+    "lblSettings": {
+        "message": "Ustawienia"
+    },
+    "lblAboutUs": {
+        "message": "O nas"
+    },
+    "lblLanguage": {
+        "message": "Język"
+    },
+    "lblClose": {
+        "message": "Zamknij"
+    },
+    "descAboutUs": {
+        "message": "CIEMNY CZYTNIK to dynamiczne i w pełni funkcjonalne rozszerzenie trybu ciemnego, zaprojektowane z myślą o wygodnym czytaniu."
+    },
+    "optLangSystem": {
+        "message": "Domyślny systemu"
+    },
+    "optLangTr": {
+        "message": "Türkçe"
+    },
+    "optLangAz": {
+        "message": "Azərbaycan dili"
+    },
+    "optLangDe": {
+        "message": "Deutsch"
+    },
+    "optLangEn": {
+        "message": "English"
+    },
+    "optLangFr": {
+        "message": "Français"
+    },
+    "optLangJa": {
+        "message": "日本語"
+    },
+    "optLangRu": {
+        "message": "Русский"
+    },
+    "optLangAr": {
+        "message": "العربية"
+    },
+    "optLangPt": {
+        "message": "Português"
+    },
+    "optLangPtBr": {
+        "message": "Português do Brasil"
+    },
+    "optLangSv": {
+        "message": "Svenska"
+    },
+    "optLangEs": {
+        "message": "Español"
+    },
+    "optLangKo": {
+        "message": "한국어"
+    },
+    "lblVersion": {
+        "message": "Wersja"
+    },
+    "descLanguage": {
+        "message": "Wybierz preferowany język interfejsu rozszerzenia."
+    },
+    "lblAppearance": {
+        "message": "Wygląd"
+    },
+    "descAppearance": {
+        "message": "Wybierz motyw graficzny wyskakującego okienka rozszerzenia."
+    },
+    "themeDefault": {
+        "message": "Domyślny"
+    },
+    "themeLight": {
+        "message": "Jasny"
+    },
+    "themeDark": {
+        "message": "Ciemny"
+    },
+    "themeBlack": {
+        "message": "Czarny"
+    },
+    "themeWhite": {
+        "message": "Biały"
+    },
+    "themeSepia": {
+        "message": "Papier"
+    },
+    "themeBlue": {
+        "message": "Niebieska Noc"
+    },
+    "errShortcutExists": {
+        "message": "Skrót jest już używany!"
+    },
+    "lblDonate": {
+        "message": "Wsparcie i darowizny"
+    },
+    "btnDonateCoffee": {
+        "message": "Postaw mi kawę"
+    },
+    "descDonate": {
+        "message": "Jeśli podoba Ci się Ciemny Czytnik, możesz wesprzeć jego rozwój jako projektu open-source na jednej z poniższych platform!"
+    },
+    "donateGhSponsors": {
+        "message": "GitHub Sponsors"
+    },
+    "donateGhDesc": {
+        "message": "Zostań sponsorem bezpośrednio przez GitHub"
+    },
+    "donatePatreon": {
+        "message": "Patreon"
+    },
+    "donatePatreonDesc": {
+        "message": "Wspomóż twórcę na Patreon"
+    },
+    "donateOpenCollective": {
+        "message": "Open Collective"
+    },
+    "donateOcDesc": {
+        "message": "Przeźroczysty fundusz społecznościowy"
+    },
+    "donateCoffeeDesc": {
+        "message": "Wspomóż, stawiamy kawę"
+    },
+    "lblGeneral": {
+        "message": "Ogólne"
+    },
+    "descGeneral": {
+        "message": "Skonfiguruj preferencje ogólne i ustawienia dokumentów."
+    },
+    "lblEnablePdf": {
+        "message": "Obsługa plików PDF"
+    },
+    "descEnablePdf": {
+        "message": "Włącz tryb ciemny dla dokumentów PDF otwieranych w kartach przeglądarki."
+    },
+    "store_listing": {
+        "message": "To rozszerzenie chroniące wzrok włącza tryb ciemny dla każdej odwiedzanej strony.\n\nOferuje w pełni konfigurowalny ciemny motyw dla stron internetowych, redukując zmęczenie oczu i znacznie poprawiając czytelność tekstu.\n\nCiemny Czytnik odwraca jasne kolory, zapewniając komfortowe czytanie w nocy.\n\nZapewnia wygodne rozwiązanie, szczególnie przy korzystaniu w nocy i podczas długich sesji internetowych, pozwalając uwolnić się od jasnego światła ekranu.\n\nMożesz dostosować jasność, kontrast, filtr temperatury, tryb ciemny, niestandardowe rodzaje i rozmiary czcionek oraz aktywację w żądanym czasie.\n\nDzięki przyjaznemu interfejsowi możesz spersonalizować swoje ustawienia i sprawić, że każda strona internetowa będzie bardziej relaksująca dla Twoich oczu.\n\nWyłącz podobne rozszerzenia, aby uniknąć konfliktów. Miłego przeglądania!\n\nhttps://github.com/koyufikirler/koyuokuyucu"
+    },
+    "lblHour": {
+        "message": "Godzina"
+    },
+    "lblMinute": {
+        "message": "Minuta"
+    },
+    "btnDone": {
+        "message": "Gotowe"
+    },
+    "btnCancel": {
+        "message": "Anuluj"
+    },
+    "hintClockDrag": {
+        "message": "Przeciągnij, dotknij lub wpisz."
+    }
+}
